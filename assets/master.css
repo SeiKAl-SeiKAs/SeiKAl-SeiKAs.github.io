@@ -3,12 +3,40 @@ body {
 }
 
 h1 {
+  text-align: left;
+  margin: 10px;
+  font-size: 50px;
   color: blue;
 }
 h3 {
   margin-left: 12px;
 }
 a{
-  color:orchid;
+  padding: 50px;
+  color:blue;
   font-size: 20px;
+}
+
+.circle{
+
+z-index: 5;
+width:100px;
+height: 100px;
+border-radius: 50%;
+transition: transform .2s ease-in-out;
+background-color: blue;
+display: inline-block;
+
+animation-name: sliding;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+
+.circle:hover{
+    transform: scale(2);
+  }
+@keyframes sliding {
+  to {
+  transform: translateX(400px); }
 }
