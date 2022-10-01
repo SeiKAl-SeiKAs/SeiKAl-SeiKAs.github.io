@@ -1,0 +1,43 @@
+body{
+  background: #808080;
+
+}
+
+.eye-white{
+  margin: 15px;
+  width:70px;
+  height: 70px;
+  border-radius: 50%;
+  transition: transform .2s ease-in-out;
+  background-color: white;
+  display: inline-block;
+}
+.eye{
+  position: relative;
+  display:inline-block;
+  top:20%;
+  left:20%;
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  background-color: black;
+}
+
+.eye-white:hover{
+  transform: scale(1.5);
+}
+
+
+.eye:hover{
+  pointer-events: inherit;
+  background-color: red;
+}
+
+h1.content-text {
+  z-index: 10;
+position: fixed;
+color: blue;
+bottom:50vh;
+right: 50vw;
+
+}
