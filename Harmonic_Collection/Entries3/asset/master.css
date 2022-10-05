@@ -1,0 +1,53 @@
+.outer-hive{
+
+
+}
+
+.inner-hive{
+
+
+}
+
+.text{
+
+
+}
+.bee-wheel{
+width:80vw;
+height:80vw;
+
+}
+.bee-container-1{
+  position:relative;
+}
+.bee-base{}
+.bee-eye{
+height:80%;
+width:30%;
+border-radius: 50%;
+
+}
+.bee-stripe{}
+.bee-sting{}
+.bee-wing{}
+
+.talk-bubble{
+width: 10vw;
+height:7vw;
+border-radius: 50%;
+
+}
+.talk-pointer{}
+
+.flower-wheel{
+height:20vw;
+width:20vw;
+position: absolute;
+  margin:50%;
+}
+.flower-1{}
+.flower-2{}
+.flower-3{}
+.flower-4{}
+
+.flower-center{}
