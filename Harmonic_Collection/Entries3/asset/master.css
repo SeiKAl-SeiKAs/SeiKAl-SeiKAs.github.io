@@ -9,7 +9,7 @@
 }
 
 .text{
-
+font-size:45pt;
 
 }
 .bee-wheel{
@@ -50,4 +50,28 @@ position: absolute;
 .flower-3{}
 .flower-4{}
 
-.flower-center{}
+.flower-center{
+width:30%;
+height:30%;
+border-radious:50%;
+position:relative;
+margin-top: 15%;
+  margin-left:15%;
+}
+
+
+@keyframe flower-wheel-spin {
+  to {tranform: rotate(180deg);}
+}
+@keyframe flower-spin{
+  to{transform:rotate(-360deg);}
+}
+@keyframe bee-wheel-spin(
+  to{transform: rotate(60deg);}
+@keyframe bee-spin{
+  to{transfrom: rotate(-60deg);}
+@keyframe talk-pointer-spin{
+    to{transform:rotate(-60deg);}
+   
+
+
