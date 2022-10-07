@@ -226,41 +226,36 @@ opacity: 50%
   height:108px;
   border-radius: 50%:
 }
+.bee-base:hover{
+ background-image: linear-gradient(red, yellow);
+
+}
 .bee-eye{
 height:80%;
 width:30%;
 border-radius: 50%;
 
 }
-.bee-stripe{}
-.bee-sting{}
+.bee-stripe{
+  position:relative;
+  margin-top:10%;
+}
+.bee-sting{
+  width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-right: 50px solid #d9d9d9;
+	border-bottom: 25px solid transparent;
+  position:relative;
+  margin-left:-45px;
+}
+
 .bee-wing{
-display: inline-block;
-transform:rotate(120deg);
-width:50px;
-height:80px;
-border-top-left-radius: 50%;
-border-bottom-left-radius: 50%;
-border-bottom-right-radius: 50%;
-}
-.bee-wing-2{
-  display: inline-block;
-  transform:rotate(150deg);
-  width:50px;
-  height:80px;
-  border-top-left-radius: 50%;
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
-
+position:relative;
+margin-top:-90px;
 }
 
-.talk-bubble{
-width: 10vw;
-height:7vw;
-border-radius: 50%;
 
-}
-.talk-pointer{}
 
 .flower-wheel{
 height:20vw;
@@ -268,18 +263,26 @@ width:20vw;
 position: absolute;
   margin:50%;
 }
-.flower-1{}
-.flower-2{}
-.flower-3{}
-.flower-4{}
+.flower-1{
+position:relative;
+}
+.flower-2{
+position:relative;
+}
+.flower-3{
+position:relative;
+}
+.flower-4{
+position:relative;
+}
 
 .flower-center{
 width:30%;
 height:30%;
-border-radious:50%;
+border-radius:50%;
 position:relative;
 margin-top: 15%;
-  margin-left:15%;
+margin-left:15%;
 }
 
 
@@ -289,9 +292,15 @@ margin-top: 15%;
 @keyframe flower-spin{
   to{transform:rotate(-360deg);}
 }
-@keyframe bee-wheel-spin(
+@keyframe bee-wheel-spin{
   to{transform: rotate(60deg);}
 @keyframe bee-spin{
-  to{transfrom: rotate(-60deg);}
-@keyframe talk-pointer-spin{
-    to{transform:rotate(-60deg);}
+  to{transform: rotate(-60deg);}
+@keyframe bee-angry{
+  from {transform: rotate(0deg);}
+  33% {transform: rotate(-30deg);}
+  66% {transform: rotate(0deg);}
+  to {transform: rotate(30deg);}
+  animation-duration:0.5s;
+  animation-timing-function: ease-in;
+  }
