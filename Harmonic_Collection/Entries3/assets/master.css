@@ -1,10 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,700&display=swap');
+
 body{
-  background-color: #D1AC27
+  background-color: #D1AC27;
+  font-family: 'Josefin Slab', serif;
 }
-
-
+#explain{  opacity:30%
+  font-size:30pt;
+}
+.the-big-box{
+margin-left:20px;
+margin-top:-70px;
+width:100vw;
+height:100vh;
+}
 .container{}
-
 
 .outer-hive-top-1{
 border-bottom:125px solid #A0780F;
@@ -206,8 +215,9 @@ padding-bottom:35px;
 }
 
 .text{
-font-size:38px;
+font-size:50px;
 color: #C35151;
+text-align: center;
 position: absolute;
 margin-left:560px;
 margin-top: 422px;
@@ -222,11 +232,10 @@ margin-top: 422px;
 width:900px;
 height:900px;
 border-radius:50%;
-background-color: blue;
-opacity:80%;
+background-color: transparent;
 margin-left: 200px;
 margin-top:50px;
-z-index:20%;
+
 display: block;
 position:absolute;
 }
@@ -234,7 +243,7 @@ position:absolute;
   display:block;
   width:10px;
   height:10px;
-  background-color: red;
+  background-color: transparent;
   animation-name: bee-spin;
   animation-duration: 5s;
   animation-direction: normal;
@@ -248,32 +257,32 @@ position:absolute;
 .bee-container-2{
   width:10px;
   height:10px;
-  background-color: red;
-  animation-name: bee- spin;
-  animation-duration: 35s;
+  background-color: transparent;
+  animation-name: bee-spin;
+  animation-duration: 5s;
   animation-direction: normal;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   position:relative;
-    padding:100px;
-  margin-left: -530px;
-  margin-top:325px;
+  padding:100px;
+  margin-left: 122px;
+  margin-top:165px;
 }
 .bee-container-3{
   width:10px;
   height:10px;
-  background-color: red;
-  animation-name: bee- spin;
-  animation-duration: 35s;
+  background-color: transparent;
+  animation-name: bee-spin;
+  animation-duration: 5s;
   animation-direction: normal;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   position:relative;
     padding:100px;
-  margin-left: 265px;
-  margin-top:-50px;
+  margin-left: 565px;
+  margin-top:-218px;
 }
-.bee-base{
+.bee-base-1{
   position:relative;
   display:block;
   width:223px;
@@ -284,10 +293,52 @@ position:absolute;
   margin-left:-109px;
 
 }
-.bee-base:hover{
- background-image: linear-gradient(red, yellow);
+
+.bee-base-2{
+  position:relative;
+  display:block;
+  width:223px;
+  height:173px;
+  border-radius: 50%;
+  background-color:#6b6b6b;
+  margin-top: -74px;
+  margin-left:-109px;
 
 }
+.bee-base-3{
+  position:relative;
+  display:block;
+  width:223px;
+  height:173px;
+  border-radius: 50%;
+  background-color:#6b6b6b;
+  margin-top: -74px;
+  margin-left:-109px;
+
+}
+.bee-container-1:hover{
+  animation-name: bee-angry;
+  animation-duration:0.2s;
+  animation-fill-mode: forwards;
+}
+
+.bee-container-2:hover{
+  animation-name: bee-angry;
+  animation-duration:0.2s;
+  animation-fill-mode: forwards;
+}
+.bee-container-3:hover{
+  animation-name: bee-angry;
+  animation-duration:0.2s;
+  animation-fill-mode: forwards;
+}
+.bee-container-1:hover .bee-base-1{
+ background-image: linear-gradient(to left,#b8000f, #bd9f4d);}
+ .bee-container-2:hover .bee-base-2{
+  background-image: linear-gradient(to left,#b8000f, #bd9f4d);}
+  .bee-container-3:hover .bee-base-3{
+   background-image: linear-gradient(to left,#b8000f, #bd9f4d);}
+
 .bee-eye{
   position:relative;
 height:105px;
@@ -303,7 +354,7 @@ opacity:100%;
   position:relative;
 height:105px;
 width:58px;
-margin-left: 820px;
+margin-left: 89px;
 margin-top:-150px;
 border-radius: 50%;
 background-color: #222924;
@@ -314,7 +365,7 @@ opacity:100%;
   position:relative;
 height:105px;
 width:58px;
-margin-left: 470px;
+margin-left: 70px;
 margin-top:-150px;
 border-radius: 50%;
 background-color: #222924;
@@ -330,8 +381,14 @@ opacity:100%;
 }
 .bee-stripe-2{
   position:relative;
-  margin-top: -174px;
-  margin-left: 45%;
+  margin-top: -172px;
+  margin-left: -116px;
+
+}
+.bee-stripe-3{
+  position:relative;
+  margin-top: -172px;
+  margin-left: -114px;
 
 }
 .bee-sting{
@@ -351,7 +408,7 @@ opacity:100%;
 	border-right: 50px solid #d9d9d9;
 	border-bottom: 25px solid transparent;
   position:relative;
-  margin-left:595px;
+  margin-left:-155px;
   margin-top:-80px;
 }
 .bee-sting-3{
@@ -361,7 +418,7 @@ opacity:100%;
 	border-right: 50px solid #d9d9d9;
 	border-bottom: 25px solid transparent;
   position:relative;
-  margin-left:245px;
+  margin-left:-155px;
   margin-top:-80px;
 }
 
@@ -372,43 +429,128 @@ margin-left: -140px;
 }
 .bee-wing-2{
 position:relative;
-margin-top:-177px;
-margin-left: 620px;
+margin-top:-182px;
+margin-left: -106px;
 }
 
 .bee-wing-3{
 position:relative;
 margin-top:-177px;
-margin-left: 270px;
+margin-left: -162px;
 }
-
+.flower-svg{
+position:relative;
+  background: transparent;
+  margin-left:1%;
+  margin-top:1%;
+}
 
 .flower-wheel{
-height:20vw;
-width:20vw;
+height:1000px;
+width:1000px;
+background-color: transparent;
+border-radius: 50%;
 position: absolute;
-  margin:50%;
+  margin-left:155px;
+  margin-top:-10px;
+  transform: scale(0.22);
+  opacity:0%;
+  transition:0.8s;
+}
+.flower-wheel:hover{
+  transform: scale(0.9);
+opacity:100%;
 }
 .flower-1{
+  height:311px;
+  width:308px;
 position:relative;
+margin-left: 920px;
+margin-top: 27px;
+display: block;
+animation-name: flower-spin;
+animation-duration: 5s;
+animation-direction: normal;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
 }
 .flower-2{
+  height:195px;
+  width:195px;
 position:relative;
-}
-.flower-3{
-position:relative;
+margin-left: 910px;
+margin-top: 250px;
+display: block;
+animation-name: flower-spin;
+animation-duration: 5s;
+animation-direction: normal;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
 }
 .flower-4{
+  height:222px;
+  width:222px;
 position:relative;
+margin-left: -30px;
+margin-top:-30px;
+display: block;
+animation-name: flower-spin;
+animation-duration: 5s;
+animation-direction: normal;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+.flower-3{
+  height:298px;
+  width:298px;
+position:relative;
+margin-left: -75px;
+margin-top: -1080px;
+display: block;
+animation-name: flower-spin;
+animation-duration: 5s;
+animation-direction: normal;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
 }
 
-.flower-center{
-width:30%;
-height:30%;
+
+.flower-center-1{
+width:100px;
+height:100px;
 border-radius:50%;
+background-color: #e4df59;
 position:relative;
-margin-top: 15%;
-margin-left:15%;
+margin-top: -210px;
+margin-left:100px;
+
+}
+.flower-center-2{
+width:60px;
+height:60px;
+border-radius:50%;
+background-color: #e4df59;
+position:relative;
+margin-top: -128px;
+margin-left: 70px;
+}
+.flower-center-4{
+width:100px;
+height:100px;
+border-radius:50%;
+background-color: #e4df59;
+position:relative;
+margin-top: -200px;
+margin-left:98px;
+}
+.flower-center-3{
+width:100px;
+height:100px;
+border-radius:50%;
+background-color: #e4df59;
+position:relative;
+margin-top: -163px;
+margin-left:65px;;
 }
 @keyframes flower-wheel-spin {
   to {transform: rotate(180deg);}
@@ -423,9 +565,13 @@ margin-left:15%;
 @keyframes bee-spin{
   to{transform: rotate(-360deg);}
 }
+@keyframes flower-spin{
+    to{transform: rotate(-360deg);}
+transform-origin: center center;
+}
 @keyframes bee-angry{
   from {transform: rotate(0deg);}
-  33% {transform: rotate(-30deg);}
-  66% {transform: rotate(0deg);}
-  to {transform: rotate(30deg);}
+  33% {transform: rotate(10deg);}
+  66% {transform: rotate(-8deg);}
+  to {transform: rotate(0deg);}
   }
