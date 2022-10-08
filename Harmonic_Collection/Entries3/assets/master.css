@@ -1,6 +1,8 @@
 body{
   background-color: #D1AC27
 }
+
+
 .container{}
 
 
@@ -197,7 +199,7 @@ transform:scaleX(1.2);
   height :0;
   width:120px;
   margin-left: -50px;
-  margin-top: -160px;
+  margin-top: -150px;
 padding-bottom:35px;
   position: relative;
   display: inline-block;
@@ -206,39 +208,131 @@ padding-bottom:35px;
 .text{
 font-size:38px;
 color: #C35151;
-position: fixed;
+position: absolute;
 margin-left:560px;
 margin-top: 422px;
 
 }
 .bee-wheel{
+  animation-name: bee-wheel-spin;
+  animation-duration: 5s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 width:900px;
 height:900px;
 border-radius:50%;
-background-color: #c7c7c7;
-opacity: 50%
+background-color: blue;
+opacity:80%;
+margin-left: 200px;
+margin-top:50px;
+z-index:20%;
+display: block;
+position:absolute;
 }
 .bee-container-1{
+  display:block;
+  width:10px;
+  height:10px;
+  background-color: red;
+  animation-name: bee-spin;
+  animation-duration: 5s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
   position:relative;
+  padding:100px;
+  margin-left: 345px;
+  margin-top:85px;
+}
+.bee-container-2{
+  width:10px;
+  height:10px;
+  background-color: red;
+  animation-name: bee- spin;
+  animation-duration: 35s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position:relative;
+    padding:100px;
+  margin-left: -530px;
+  margin-top:325px;
+}
+.bee-container-3{
+  width:10px;
+  height:10px;
+  background-color: red;
+  animation-name: bee- spin;
+  animation-duration: 35s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position:relative;
+    padding:100px;
+  margin-left: 265px;
+  margin-top:-50px;
 }
 .bee-base{
-  width:58px;
-  height:108px;
-  border-radius: 50%:
+  position:relative;
+  display:block;
+  width:223px;
+  height:173px;
+  border-radius: 50%;
+  background-color:#6b6b6b;
+  margin-top: -84px;
+  margin-left:-109px;
+
 }
 .bee-base:hover{
  background-image: linear-gradient(red, yellow);
 
 }
 .bee-eye{
-height:80%;
-width:30%;
+  position:relative;
+height:105px;
+width:58px;
+margin-left: 70px;
+margin-top:-150px;
 border-radius: 50%;
+background-color: #222924;
+opacity:100%;
 
 }
+.bee-eye-2{
+  position:relative;
+height:105px;
+width:58px;
+margin-left: 820px;
+margin-top:-150px;
+border-radius: 50%;
+background-color: #222924;
+opacity:100%;
+
+}
+.bee-eye-3{
+  position:relative;
+height:105px;
+width:58px;
+margin-left: 470px;
+margin-top:-150px;
+border-radius: 50%;
+background-color: #222924;
+opacity:100%;
+
+}
+
 .bee-stripe{
   position:relative;
-  margin-top:10%;
+  margin-top: -172px;
+  margin-left: -118px;
+
+}
+.bee-stripe-2{
+  position:relative;
+  margin-top: -174px;
+  margin-left: 45%;
+
 }
 .bee-sting{
   width: 0;
@@ -247,14 +341,46 @@ border-radius: 50%;
 	border-right: 50px solid #d9d9d9;
 	border-bottom: 25px solid transparent;
   position:relative;
-  margin-left:-45px;
+  margin-left:-157px;
+  margin-top:-80px;
+}
+.bee-sting-2{
+  width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-right: 50px solid #d9d9d9;
+	border-bottom: 25px solid transparent;
+  position:relative;
+  margin-left:595px;
+  margin-top:-80px;
+}
+.bee-sting-3{
+  width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-right: 50px solid #d9d9d9;
+	border-bottom: 25px solid transparent;
+  position:relative;
+  margin-left:245px;
+  margin-top:-80px;
 }
 
 .bee-wing{
 position:relative;
-margin-top:-90px;
+margin-top:-187px;
+margin-left: -140px;
+}
+.bee-wing-2{
+position:relative;
+margin-top:-177px;
+margin-left: 620px;
 }
 
+.bee-wing-3{
+position:relative;
+margin-top:-177px;
+margin-left: 270px;
+}
 
 
 .flower-wheel{
@@ -284,23 +410,22 @@ position:relative;
 margin-top: 15%;
 margin-left:15%;
 }
-
-
-@keyframe flower-wheel-spin {
-  to {tranform: rotate(180deg);}
+@keyframes flower-wheel-spin {
+  to {transform: rotate(180deg);}
 }
-@keyframe flower-spin{
+@keyframes flower-spin{
+  from{transform: rotate(0deg);}
   to{transform:rotate(-360deg);}
 }
-@keyframe bee-wheel-spin{
-  to{transform: rotate(60deg);}
-@keyframe bee-spin{
-  to{transform: rotate(-60deg);}
-@keyframe bee-angry{
+@keyframes bee-wheel-spin {
+  to{transform: rotate(360deg);}
+}
+@keyframes bee-spin{
+  to{transform: rotate(-360deg);}
+}
+@keyframes bee-angry{
   from {transform: rotate(0deg);}
   33% {transform: rotate(-30deg);}
   66% {transform: rotate(0deg);}
   to {transform: rotate(30deg);}
-  animation-duration:0.5s;
-  animation-timing-function: ease-in;
   }
