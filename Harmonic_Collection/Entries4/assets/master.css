@@ -1,0 +1,55 @@
+body{
+  background-color: #c9c9c9;
+
+}
+.the-big-box{
+margin:0 auto;
+border:20px;
+
+}
+
+
+media (max-width: 650px) {
+  body {
+    background-color: #black;
+    color:  white;
+  }
+}
+
+/*stages-display*/
+
+@media(min-width:500px){
+  }
+
+@media(min-width:820px){
+
+}
+@media(min-width:1000px){
+
+}
+@media(min-width:1500px){
+
+}
+@media(min-width:1900px){
+
+}
+
+@keyframes beats {
+from {opacity:20%;}
+  50%{opacity:100%;}
+    to{opacity:10%;}
+animation-direction:normal;
+}
+@keyframes infini-loop{
+from {transform: rotate(-5deg);}
+to{transform: rotate(360deg);}
+}
+
+@keyframe final-burst-scene switich{
+  from{opacity: 0%;}
+  30%{opacity: 5%;}
+    40%{opacity: 60%;}
+      50%{opacity: 10%;}
+        55%{opacity: 100%;}
+  to{opacity: 0%;}
+}
