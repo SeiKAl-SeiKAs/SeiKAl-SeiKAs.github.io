@@ -5,11 +5,58 @@ body{
 .the-big-box{
 margin:0 auto;
 border:20px;
-
 }
 
+.person-1 {
+position:fixed
+left:0px;
+bottom:0px;
+width:5vw;
+height:10vw;
+border-radius: 20%;
+background-color:white;
+}
+.person-2 {
+ position:fixed
+right:0px;
+bottom:0px;
+width:5vw;
+height:10vw;
+border-radius: 20%;
+background-color:white;
+}
+.head {
+width:5vw;
+  height:5vw;
+  border-radius:50%;
+ backgroun-color:inferit;
+positon: relative
+  margin-top: -30%;
+  margin-left: 50%;
+}
 
-media (max-width: 650px) {
+media (max-width: 576px) {
+  body {
+    background-color: #black;
+    color:  white;
+  }
+}
+
+media (max-width: 768px) {
+  body {
+    background-color: #black;
+    color:  white;
+  }
+}
+
+media (max-width: 992px) {
+  body {
+    background-color: #black;
+    color:  white;
+  }
+}
+
+media (max-width: 1200px) {
   body {
     background-color: #black;
     color:  white;
@@ -18,21 +65,19 @@ media (max-width: 650px) {
 
 /*stages-display*/
 
-@media(min-width:500px){
+@media(min-width:576px){
   }
 
-@media(min-width:820px){
+@media(min-width:768px){
 
 }
-@media(min-width:1000px){
+@media(min-width:992px){
 
 }
-@media(min-width:1500px){
+@media(min-width:1200px){
 
 }
-@media(min-width:1900px){
 
-}
 
 @keyframes beats {
 from {opacity:20%;}
@@ -45,11 +90,4 @@ from {transform: rotate(-5deg);}
 to{transform: rotate(360deg);}
 }
 
-@keyframe final-burst-scene switich{
-  from{opacity: 0%;}
-  30%{opacity: 5%;}
-    40%{opacity: 60%;}
-      50%{opacity: 10%;}
-        55%{opacity: 100%;}
-  to{opacity: 0%;}
-}
+
