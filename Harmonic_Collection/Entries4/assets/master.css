@@ -2,39 +2,171 @@ body{
   background-color: #c9c9c9;
 
 }
+
 .the-big-box{
 margin:0 auto;
 border:20px;
 }
+.container{
+  width:100vw;
+  height:100vh;
+}
 
+.text-scale{
+text-align: center;
+font-size: 50pt;
+display: block;
+}
 .person-1 {
-position:fixed
+display: block;
+position:fixed;
 left:0px;
 bottom:0px;
-width:5vw;
-height:10vw;
-border-radius: 20%;
+width:100px;
+height:300px;
+border-radius: 10%;
 background-color:white;
 }
 .person-2 {
- position:fixed
+  display: block;
+position:fixed;
 right:0px;
 bottom:0px;
-width:5vw;
-height:10vw;
-border-radius: 20%;
+width:100px;
+height:300px;
+border-radius: 10%;
 background-color:white;
 }
 .head {
-width:5vw;
-  height:5vw;
+width:100px;
+  height:100px;
   border-radius:50%;
- backgroun-color:inferit;
-positon: relative
-  margin-top: -30%;
-  margin-left: 50%;
+ background-color:inherit;
+position: relative;
+  margin-top: -120px;
+  margin-left: 0px;
+}
+.spinner{
+  position: fixed;
+  width:50vw;
+aspect-ratio:1/1;
+  left:50%;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+.infini-loop-1{
+position: fixed;
+max-width: 50%;
+width:50%;
+aspect-ratio:1/1;
+left:50%;
+top:50%;
+transform:translate(-50%, -50%);
+background-color: red;
+
+}
+.infini-loop-2{
+position: fixed;
+max-width: 50%;
+width:50%;
+aspect-ratio:1/1;
+left:50%;
+top:50%;
+transform:translate(-50%, -50%);
+background-color: blue;
+
+}
+.infini-loop-3{
+position: fixed;
+max-width: 50%;
+width:50%;
+aspect-ratio:1/1;
+left:50%;
+top:50%;
+transform:translate(-50%, -50%);
+background-color: yellow;
+
+}
+.infini-loop-4{
+position: fixed;
+max-width: 50%;
+width:50%;
+aspect-ratio:1/1;
+left:50%;
+top:50%;
+transform:translate(-50%, -50%);
+background-color: green;
+
 }
 
+.loop-left{
+display:inherit;
+width: 100%;
+aspect-ratio:1/1;
+position:relative;
+box-sizing: border-box;
+margin-left:-48%;
+border-radius: 50%;
+border:10px solid #ffffff;
+animation-name:infini-loop;
+animation-duration:2s;
+animation-direction: normal;
+animation-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+animation-iteration-count: infinite;
+z-index: 8;
+}
+.loop-right{
+  display:inherit;
+width: 100%;
+  aspect-ratio:1/1;
+  position:relative;
+  box-sizing: border-box;
+  margin-left:48%;
+  margin-top: -100%;
+border-radius: 50%;
+border:10px solid #ffffff;
+animation-name:infini-loop;
+animation-duration:2s;
+animation-direction: reverse;
+animation-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+animation-iteration-count: infinite;
+z-index: 8;
+}
+.dot-left{
+  width:20%;
+  height:20%;
+  position:relative;
+  border-radius:50%;
+  display: inherit;
+  left:6%;
+  top:50%;
+  transform:translate(-50%, -50%);
+  background-color:white;
+  z-index: 10;
+  animation-name: dot-pass;
+  animation-duration: 4s;
+  animation-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+}
+.dot-right{
+  width:20%;
+  height:20%;
+  position:relative;
+  border-radius:50%;
+  display:inherit;
+  left:94%;
+  top:50%;
+  transform:translate(-50%, -50%);
+  background-color:black;
+    z-index: 10;
+    animation-name: dot-pass2;
+    animation-duration: 4s;
+    animation-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
 media (max-width: 576px) {
   body {
     background-color: #black;
@@ -66,28 +198,63 @@ media (max-width: 1200px) {
 /*stages-display*/
 
 @media(min-width:576px){
+  .text-1 {display:none;}
+  .text-2 {display:none;}
+  .text-3 {display:none;}
+  .text-4 {display:block;}
+  .infini-loop-1 {display:none;}
+  .infini-loop-2 {display:none;}
+  .infini-loop-3 {display:none;}
+  .infini-loop-4 {display:block;}
   }
 
 @media(min-width:768px){
-
+  .text-1 {display:none;}
+  .text-2 {display:none;}
+  .text-3 {display:block;}
+  .text-4 {display:none;}
+  .infini-loop-1 {display:none;}
+  .infini-loop-2 {display:none;}
+  .infini-loop-3 {display:block;}
+  .infini-loop-4 {display:none;}
 }
 @media(min-width:992px){
-
+  .text-1 {display:none;}
+  .text-2 {display:block;}
+  .text-3 {display:none;}
+  .text-4 {display:none;}
+  .infini-loop-1 {display:none;}
+  .infini-loop-2 {display:block;}
+  .infini-loop-3 {display:none;}
+  .infini-loop-4 {display:none;}
 }
 @media(min-width:1200px){
 
+.text-1 {display:block;}
+.text-2 {display:none;}
+.text-3 {display:none;}
+.text-4 {display:none;}
+.infini-loop-1 {display:block;}
+.infini-loop-2 {display:none;}
+.infini-loop-3 {display:none;}
+.infini-loop-4 {display:none;}
+
+
 }
 
 
-@keyframes beats {
-from {opacity:20%;}
-  50%{opacity:100%;}
-    to{opacity:10%;}
-animation-direction:normal;
-}
+
 @keyframes infini-loop{
-from {transform: rotate(-5deg);}
+from {transform: rotate(0deg);}
 to{transform: rotate(360deg);}
 }
-
-
+@keyframes dot-pass{
+from{opacity: 0%;}
+50%{opacity: 100%;}
+to{opacity: 0%;}
+}
+@keyframes dot-pass2{
+from{opacity: 100%;}
+50%{opacity: 0%;}
+to{opacity: 100%;}
+}
