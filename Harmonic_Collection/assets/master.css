@@ -1,0 +1,17 @@
+body {
+  background-color: gainsboro;
+}
+h1 {
+  text-align: left;
+  margin: 10px;
+  font-size: 50px;
+  color: blue;
+}
+h3 {
+  margin-left: 12px;
+}
+a{
+
+  color:blue;
+  font-size: 20px;
+}
