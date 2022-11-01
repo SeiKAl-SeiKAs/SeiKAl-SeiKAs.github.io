@@ -1,0 +1,51 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: grey;
+}
+
+.canvas {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+}
+.circle{
+	width:100px;
+	aspect-ratio:1/1;
+	border-radius: 35%;
+	background-color: black;
+	position:relative;
+	margin-top:30%;
+	margin-left: 10%;
+	border:10px;
+	display: inline-block;
+
+		animation-name:rotating;
+		animation-duration: 8s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+
+	}
+
+
+/* clock hands */
+
+
+/* hover */
+
+.circle:hover{
+	animation-name: rotating;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+
+
+
+}
+@keyframes rotating {
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,65 @@
+html, body, * {
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+        }
+
+.canvas {
+    width: 1200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+        }
+
+.circle {
+    background-color: white;
+    border-radius: 50%;
+    border-width: 5px;
+    height: 400px;
+    width: 400px;
+    margin-right: 5px;
+    float: left;
+    animation-name: blur;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.circle2 {
+    background-color: red;
+    border-radius: 50%;
+    border-width: 5px;
+    height: 300px;
+    width: 300px;
+    margin-right: 5px;
+    float: left;
+    animation-name: blur2;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blur {
+    from {
+
+        filter: blur(00px);  }
+
+    to {
+
+        filter: blur(80px);  }
+}
+
+
+@keyframes blur2 {
+    from {
+
+        filter: opacity(100%);
+      filter:blur(0px); }
+
+    to {
+
+        filter: opacity(10%);
+        filter:blur(50px);  }
+}
