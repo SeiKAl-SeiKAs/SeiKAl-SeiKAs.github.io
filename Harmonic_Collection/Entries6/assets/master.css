@@ -1,26 +1,252 @@
 body{
+  background-color: #696969;
+  color: white;
+  note: text =koho
 
 
 }
-.the-big-box{}
+.fake-box{
+  display: block;
+  position: fixed: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(0%, -50%);
+  width:75vw;
+  height:75vw;
+  margin:10vw;
+  border-radius: 50px;
+  background-color: #b9b9b9;
+}
+.the-big-box{
+  position: relative;
+margin-left: 50%;
+margin-top: 50%;
+transform: translate(-50%, 5%);
+  width:90%;
+  height:90%;
+border:5vw;
+  border-radius: 50px;
+  display:flex;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0.2);
+}
 
-.background-flex-container{}
 
-.loop-container{}
-.loop-container-background{}
+.loop-container{
+width: 15%;
+height: 15%;
+display: flex;
+flex-wrap: wrap;
+border-radius: 20px;
+background-color: #AAAAAA;
+margin:2.5%;
 
-.loop-person{}
+
+}
+.loop-container-click{
+  width: 15%;
+  height: 15%;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  background-color: #AAAAAA;
+  margin:2.5%;
+  animation-play-state: paused;
+
+}
 
 
-.loop-ball{}
+.loop-person{
+  width: 30%;
+  height: 30%;
+  margin:10%;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
 
+}
+.loop-person2{
+  width: 30%;
+  height: 30%;
+    margin:10%;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+
+}
+.loop-person3{
+  width: 30%;
+  height: 30%;
+    margin:10%;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+
+}
+.loop-person4{
+  width: 30%;
+  height: 30%;
+    margin:10%;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+
+}
+.loop-person-click{
+  width: 30%;
+  height: 30%;
+    margin:10%;
+  border-radius: 50%;
+  background-color: blue;
+  position: relative;
+
+}
+
+
+.loop-ball{
+  width:50%;
+  height:50%;
+  border-radius: 50%;
+  background-color: red;
+  position:relative;
+  margin-left: 50%;
+  margin-top: 50%;
+  transform: translate(-50%,-50%);
+
+  animation-name: passing-2;
+ animation-duration: 1s;
+animation-fill-mode: both;
+animation-iteration-count: infinite;
+}
+.loop-ball-2{
+  width:50%;
+  height:50%;
+  border-radius: 50%;
+  background-color: red;
+  position:relative;
+  margin-left: 50%;
+  margin-top: 50%;
+  transform: translate(-50%,-50%);
+  animation-name: passing;
+ animation-duration: 1s;
+animation-fill-mode: both;
+animation-iteration-count: infinite;
+}
+.loop-ball-3{
+  width:50%;
+  height:50%;
+  border-radius: 50%;
+  background-color: red;
+  position:relative;
+  margin-left: 50%;
+  margin-top: 50%;
+  transform: translate(-50%,-50%);
+  animation-name: passing-3;
+ animation-duration: 1s;
+animation-fill-mode: both;
+animation-iteration-count: infinite;
+}
+.loop-ball-4{
+  width:50%;
+  height:50%;
+  border-radius: 50%;
+  background-color: red;
+  position:relative;
+  margin-left: 50%;
+  margin-top: 50%;
+  transform: translate(-50%,-50%);
+  animation-name: passing-4;
+ animation-duration: 1s;
+animation-fill-mode: both;
+animation-iteration-count: infinite;
+}
+
+.loop-ball-ck{
+  width:50%;
+  height:50%;
+  border-radius: 50%;
+  background-color: red;
+  position:relative;
+  margin-left: 50%;
+  margin-top: 50%;
+  transform: translate(-50%,-50%);
+
+  animation-name: passing-2;
+ animation-duration: 1s;
+animation-fill-mode: both;
+animation-iteration-count: infinite;
+}
+.loop-ball-2-ck{
+  width:50%;
+  height:50%;
+  border-radius: 50%;
+  background-color: red;
+  position:relative;
+  margin-left: 50%;
+  margin-top: 50%;
+  transform: translate(-50%,-50%);
+  animation-name: passing;
+ animation-duration: 1s;
+animation-fill-mode: both;
+animation-iteration-count: infinite;
+}
+.loop-ball-3-ck{
+  width:50%;
+  height:50%;
+  border-radius: 50%;
+  background-color: red;
+  position:relative;
+  margin-left: 50%;
+  margin-top: 50%;
+  transform: translate(-50%,-50%);
+  animation-name: passing-3;
+ animation-duration: 1s;
+animation-fill-mode: both;
+animation-iteration-count: infinite;
+}
+.loop-ball-click{
+  width:50%;
+  height:50%;
+  border-radius: 50%;
+  background-color: red;
+  position:relative;
+  margin-left: 50%;
+  margin-top: 50%;
+  transform: translate(-50%,-50%);
+  animation-name: passing-4;
+ animation-duration: 1s;
+animation-fill-mode: both;
+animation-iteration-count: infinite;
+}
 
 .text-explain{}
 
 .text-instruct{}
 
-@keyframes passing-bg{}
+@keyframes passing{
+  from{transform: scale(0.1) translate(-50%, -50%)}
+  50%{opacity:100; transform: scale(1.2)translate(-175%, -50%)}
+    to {transform: translate(-350%, -50%)scale(0.1);opacity:0; }
 
-@keyframes passing{}
+
+}
+@keyframes passing-2{
+  from{transform: scale(0.1) translate(-50%, -50%)}
+  50%{opacity:100; transform: scale(1.2)translate(-50%, 125%)}
+    to {transform: translate(-50%, 250%) scale(0.1);opacity:0; }
+
+}
+@keyframes passing-3{
+  from{transform: scale(0.1) translate(-50%, -50%)}
+  50%{opacity:100; transform: scale(1.2)translate(125%, -50%)}
+    to {transform:  translate(300%, -50%); scale(0.1);opacity:0; }
+
+}
+@keyframes passing-4{
+  from{transform: scale(0.1) translate(-50%, -50%)}
+  50%{opacity:100; transform: scale(1.2)translate(-50%, -175%)}
+    to {transform: translate(-50%, -350%) scale(0.1);opacity:0; }
+}
+@keyframes passing-click{}
 
 @keyframes pauser{}
