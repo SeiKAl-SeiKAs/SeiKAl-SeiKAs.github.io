@@ -1,8 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=KoHo&display=swap');
 body{
   background-color: #696969;
-  color: white;
-  note: text =koho
+  color: black;
+font-family: 'KoHo', sans-serif;
 
+}
+.title {
+font-size: 10pt;
+position: fixed;
+display: inline-block;
+left:0px;
+top:0px;
+z-index:50;
 
 }
 .fake-box{
@@ -43,17 +52,18 @@ margin:2.5%;
 
 
 }
+
 .loop-container-click{
   width: 15%;
   height: 15%;
   display: flex;
   flex-wrap: wrap;
   border-radius: 20px;
-  background-color: #AAAAAA;
+  background-color: #666666;
   margin:2.5%;
-  animation-play-state: paused;
-
+animation-play-state: paused;
 }
+
 
 
 .loop-person{
@@ -174,7 +184,7 @@ animation-iteration-count: infinite;
   animation-name: passing-2;
  animation-duration: 1s;
 animation-fill-mode: both;
-animation-iteration-count: infinite;
+animation-iteration-count:infinite;
 }
 .loop-ball-2-ck{
   width:50%;
@@ -188,7 +198,7 @@ animation-iteration-count: infinite;
   animation-name: passing;
  animation-duration: 1s;
 animation-fill-mode: both;
-animation-iteration-count: infinite;
+animation-iteration-count:infinite;
 }
 .loop-ball-3-ck{
   width:50%;
@@ -202,13 +212,13 @@ animation-iteration-count: infinite;
   animation-name: passing-3;
  animation-duration: 1s;
 animation-fill-mode: both;
-animation-iteration-count: infinite;
+animation-iteration-count:infinite;
 }
 .loop-ball-click{
   width:50%;
   height:50%;
   border-radius: 50%;
-  background-color: red;
+  background-color: lime;
   position:relative;
   margin-left: 50%;
   margin-top: 50%;
@@ -218,10 +228,70 @@ animation-iteration-count: infinite;
 animation-fill-mode: both;
 animation-iteration-count: infinite;
 }
+.clicker {
+animation-play-state: paused;
+}
 
-.text-explain{}
+.loop-container-click :hover > .clicker{
+animation-play-state: running;
+}
+.loop-person-click :hover > .gj{
 
-.text-instruct{}
+display: block;
+}
+
+
+.pointer{
+  position: relative;
+  margin-top: -10%;
+  margin-left: 75%;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 15px solid rgba(255, 255, 255, 0.8);
+  }
+.hint {
+ height: 30%;
+ width:100%;
+  position: relative;
+  margin-left: 20px;
+  background-color:rgba(255, 255, 255, 0.8);
+  font-size: 1vmin;
+  color: black;
+  border-radius: 20px;
+  text-align: center;
+}
+
+
+
+
+.text-explain{
+  position: absolute;
+  height: 10vh;
+width: 60vw;
+  background-color: transparent;
+  top :30%;
+    left:50%;
+  font-size:56pt;
+  text-align: center;
+  transform: translate(-50%,-50%);
+  pointer-events: none;
+
+}
+
+.text-instruct{
+  position: absolute;
+  height: 10vh;
+  width:60vw;
+  background-color: transparent;
+  top :70%;
+    left:50%;
+    font-size:32pt;
+    text-align: center;
+  transform: translate(-50%,-50%);
+    pointer-events: none;
+}
 
 @keyframes passing{
   from{transform: scale(0.1) translate(-50%, -50%)}
