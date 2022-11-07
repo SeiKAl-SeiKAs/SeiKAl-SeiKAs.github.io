@@ -4,8 +4,8 @@ background-color: #c8c8c8;
 }
 
 .spinner-wheel-container{
-  width:40vw;
-  height:40vw;
+  width:40%;
+aspect-ratio: 1/1;
 
   border-radius: 50%;
   background-color: transparent;
@@ -182,9 +182,9 @@ border: solid red 10px;
   z-index:2;
 }
 .opt-spin1{ transform:rotate(0deg);}
-.opt-spin2{ transform:rotate(20deg);}
-.opt-spin3{ transform:rotate(40deg);}
-.opt-spin4{ transform:rotate(60deg);}
+.opt-spin2{ transform:rotate(15deg);}
+.opt-spin3{ transform:rotate(30eg);}
+.opt-spin4{ transform:rotate(45deg);}
 
 .option-box{
 width:33%;
@@ -199,6 +199,6 @@ z-index: 35;
   }
 
   .opt-b-spin1{ transform:rotate(0deg);}
-  .opt-b-spin2{ transform:rotate(-20deg);}
-  .opt-b-spin3{ transform:rotate(-40deg);}
-  .opt-b-spin4{ transform:rotate(-60deg);}
+  .opt-b-spin2{ transform:rotate(-15deg);}
+  .opt-b-spin3{ transform:rotate(-30deg);}
+  .opt-b-spin4{ transform:rotate(-45deg);}
