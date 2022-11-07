@@ -202,3 +202,15 @@ z-index: 35;
   .opt-b-spin2{ transform:rotate(-15deg);}
   .opt-b-spin3{ transform:rotate(-30deg);}
   .opt-b-spin4{ transform:rotate(-45deg);}
+<!-- option hover ani-->
+.opt-spin1 :hover { transform: scale(1.1); translateX(-50px);}
+.opt-spin1 :hover + .opt-spin2 + .opt-spin3 + .opt-spin4{ transform:scale(0.9);}
+
+.opt-spin2 :hover { transform: scale(1.1);translateX(-50px);}
+.opt-spin2 :hover + .opt-spin1 + .opt-spin3 + .opt-spin4{ transform:scale(0.9);}
+
+.opt-spin3 :hover { transform: scale(1.1);translateX(-50px);}
+.opt-spin3 :hover + .opt-spin2 + .opt-spin1 + .opt-spin4{ transform:scale(0.9);}
+
+.opt-spin4 :hover { transform: scale(1.1);translateX(-50px);}
+.opt-spin4 :hover + .opt-spin2 + .opt-spin3 + .opt-spin1{ transform:scale(0.9);}
