@@ -1,0 +1,70 @@
+*{}
+body{}
+
+/*page colors */
+.page1{}
+.page1-1{}
+.page2{}
+.page3{}
+.page4{}
+.page5{}
+
+/*puzzle shape page1*/
+.the-shape-option-container{}
+.the-made-piece{}
+.button-p1{}
+.button-to-p1-1{}
+
+  /*puzzle refuse- broken shape page1-1*/
+  .the-shape-option-container{}
+  .the-made-piece-p1-1{}
+  .the-made-piece-broken{}
+  .button-giveup{}
+  .button-force{}
+  .button-back-top{}
+  @keyframes force piece-in { }
+  @keyframes break-piece-1 { }
+  @keyframes break-piece-2 { }
+  @keyframes break-piece-3 { }
+  @keyframes break-piece-4 { }
+/*puzzle solve page2*/
+.iframe-1{}
+.iframe-2{}
+.iframe-3{}
+.iframe-4{}
+.button-p2{}
+
+/*treasure box and pop up display page3*/
+.treasure-container{}
+.treasure-box{}
+.treasure-lid{}
+.the-new-piece{}
+.the-new-piece :hover{}
+.the-new-piece-link{ display:none;}
+.sparkles{}
+.spark-center{}
+.spark-line{}
+@keyframes pop-up {}
+@keyframes sparks {}
+@keyframes link-appear {}
+
+/*piece click page 4*/
+.text {}
+.the-new-piece-p4{}
+.button-p4{}
+.opacity-p4{}
+/*cusor hover, eye ani page 5*/
+.the-made-piece-p5{}
+.cursor{}
+  @keyframes break-piece-1-p5 { }
+  @keyframes break-piece-2-p5 { }
+  @keyframes break-piece-3-p5 { }
+  @keyframes break-piece-4-p5 { }
+.black-veil{}
+.eye-container{}
+      .eye-white
+      .eye-black{}
+      .eye-black-line{}
+      .eye-black-2{}
+.text-explain{}
+.button-to-top{}
