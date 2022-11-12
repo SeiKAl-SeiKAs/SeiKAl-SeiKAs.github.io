@@ -28,13 +28,66 @@ body{}
   @keyframes break-piece-3 { }
   @keyframes break-piece-4 { }
 /*puzzle solve page2*/
-.iframe-1{}
-.iframe-2{}
-.iframe-3{}
-.iframe-4{}
-.button-p2{}
+.p2{
+  width: 100%;
+  height:100%;
+  background-color: #f0d4bb;
+  overflow:hidden;
+}
+.the-big-box-p2{
+  width: 100%;
+  height:100%;
+
+}
+.iframe-1{
+  display: block;
+  width:45%;
+  height:45%;
+  position: absolute;
+  left:0;
+  top:0;
+  background-color: #black;
+}
+.iframe-2{
+    display: block;
+    width:45%;
+    height:45%;
+  position: absolute;
+  right:0;
+  top:0;
+}
+.iframe-3{
+    display: block;
+    width:45%;
+    height:45%;
+  position: absolute;
+  left:0;
+  bottom:0;
+}
+.iframe-4{
+    display: block;
+    width:45%;
+    height:45%;
+  position: absolute;
+  right:0;
+  bottom:0;
+}
+.text-p2{
+  width: 150px;
+  height:75px;
+  background-color: lightsteelblue;
+  text-align: center;
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+}
+#text-p2-h3 {
+font-weight: lighter;
+}
 
 /*treasure box and pop up display page3*/
+.the-big-box-p3{}
 .treasure-container{}
 .treasure-box{}
 .treasure-lid{}
@@ -54,17 +107,157 @@ body{}
 .button-p4{}
 .opacity-p4{}
 /*cusor hover, eye ani page 5*/
+.the-big-box-p5{
+background-color: transparent;
+    position:absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    z-index:2;
+}
 .the-made-piece-p5{}
 .cursor{}
   @keyframes break-piece-1-p5 { }
   @keyframes break-piece-2-p5 { }
   @keyframes break-piece-3-p5 { }
   @keyframes break-piece-4-p5 { }
-.black-veil{}
-.eye-container{}
-      .eye-white
-      .eye-black{}
-      .eye-black-line{}
-      .eye-black-2{}
-.text-explain{}
-.button-to-top{}
+
+.veil{
+  background:black;
+    position:absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    opacity:10%;
+
+}
+.eye-container{
+  position:relative;
+  margin-top:20%;
+  margin-left: 50%;
+  width: 650px;
+  height:300px;
+  background-color:transparent;
+  transform: translate(-50%, -50%);
+}
+
+.left-white{
+  width: 0;
+       height: 0;
+       border-top: 150px solid transparent;
+       border-right: 180px solid white;
+       border-bottom: 150px solid transparent;
+
+}
+.right-white{
+  width: 0;
+       height: 0;
+       border-top: 150px solid transparent;
+       border-left: 180px solid white;
+       border-bottom: 150px solid transparent;
+      margin-left: 73%;
+      margin-top: -46%;
+}
+.eye-w1{
+width:270px;
+aspect-ratio:1/1;
+border-radius: 50%;
+background-color: white;
+position: relative;
+margin-left: 30%;
+margin-top: -45%;
+
+}
+.eye-r1{
+  width:240px;
+  aspect-ratio:1/1;
+  border-radius: 50%;
+  background-color: red;
+  position: relative;
+  margin-left: 50%;
+  margin-top: -17%;
+  transform: translate(-50%, -50%);
+
+}
+.eye-w2{
+  width:210px;
+  aspect-ratio:1/1;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  margin-left: 50%;
+  margin-top: -35%;
+  transform: translate(-50%, -50%);
+}
+.eye-r2{
+  width:180px;
+  aspect-ratio:1/1;
+  border-radius: 50%;
+  background-color: red;
+  position: relative;
+  margin-left: 50%;
+  margin-top: -30%;
+  transform: translate(-50%, -50%);
+}
+.eye-w3{
+  width:150px;
+  aspect-ratio:1/1;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  margin-left: 50%;
+  margin-top: -30%;
+  transform: translate(-50%, -50%);
+}
+.eye-black{
+  width:150px;
+  aspect-ratio:1/1;
+  border-radius: 50%;
+  background-color: black;
+  position: relative;
+  margin-left: 50%;
+  margin-top: -20%;
+  transform: translate(-50%, -50%);
+}
+.eye-high-light{
+  width:50px;
+  aspect-ratio:1/1;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  margin-left: 50%;
+  margin-top: -20%;
+  transform: translate(-50%, -50%);
+}
+.eye-lid {
+  position: relative;
+  width:600px;
+  aspect-ratio:1/1;
+  border-radius: 50%;
+  background-color: rgba(0,0,0, 0.8);
+  margin-top: -600px;
+  margin-left: 50%;
+  transform: translate(-50%, 10%);
+}
+
+
+.text-explain{
+  position: fixed;
+  width:70%;
+  height:30%;
+left:50%;
+top:130%;
+transform: translate(-50%, -50%);
+background-color: lightsteelblue;
+}
+.button-to-top{
+  display: block;
+  position: absolute;
+  width:150px;
+  height:100px;
+right:0;
+bottom:0;
+background-color: lightsteelblue;
+}
