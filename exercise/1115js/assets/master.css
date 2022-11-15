@@ -1,0 +1,242 @@
+body{ background-color: black;}
+
+.button-1 {
+	box-shadow:inset 0px 1px 0px 0px #fbafe3;
+	background:linear-gradient(to bottom, #ff5bb0 5%, #ef027d 100%);
+	background-color:#ff5bb0;
+	border-radius:6px;
+	border:1px solid #ee1eb5;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #c70067;
+}
+.button-1:hover {
+	background:linear-gradient(to bottom, #ef027d 5%, #ff5bb0 100%);
+	background-color:#ef027d;
+}
+.button-1:active {
+	position:relative;
+	top:1px;
+}
+
+.button-2 {
+box-shadow:inset 0px 1px 0px 0px #d9fbbe;
+background-color:transparent;
+border-radius:6px;
+border:1px solid #83c41a;
+display:inline-block;
+cursor:pointer;
+color:#ffffff;
+font-family:Arial;
+font-size:15px;
+font-weight:bold;
+padding:6px 24px;
+text-decoration:none;
+text-shadow:0px 1px 0px #86ae47;
+}
+.button-2:hover {
+background-color:transparent;
+}
+.button-2:active {
+position:relative;
+top:1px;
+}
+
+.button-3 {
+	box-shadow:inset 0px 0px 15px 3px #23395e;
+background-image: url('https://imagesvc.meredithcorp.io/v3/mm/gif?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F19%2F2018%2F02%2F13%2Fwhy-eggs-for-breakfast-hero.gif&q=60');
+background-size: cover;
+width: 200%;
+height: 130%;
+	border-radius:30px;
+	border:5px solid #1f2f47;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:6px 13px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;
+}
+.button-3:hover {
+	background:linear-gradient(to bottom, #415989 5%, #2e466e 100%);
+	background-color:#415989;
+}
+.button-3:active {
+	position:relative;
+	top:1px;
+}
+
+.button-4{
+box-shadow: 0px 10px 14px -7px #276873;
+background-color:#599bb3;
+border-radius:8px;
+display:inline-block;
+cursor:pointer;
+color:#ffffff;
+font-family:Arial;
+font-size:20px;
+font-weight:bold;
+padding:13px 32px;
+text-decoration:none;
+text-shadow:0px 1px 0px #3d768a;
+}
+.button-4:hover {
+background-color:#408c99;
+}
+.button-4:active {
+position:relative;
+top:1px;
+}
+
+.button-5 {
+	height:250px;
+	background:linear-gradient(to bottom, #c74545 5%, #87e5ff 100%);
+	background-color:#c74545;
+	border-radius:28px;
+	border:1px solid #00ffd5;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:50px;
+	padding:0;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #93b0bd;
+}
+.button-5:hover {
+	background-image: url('https://media.tenor.com/d86y4TQvB7AAAAAC/dancing-cockroach.gif');
+	background-size: auto;
+}
+.button-5:active {
+	position:relative;
+	top:1px;
+}
+
+.button-6 {
+	box-shadow:inset 0px 1px 0px 0px #a6827e;
+	background:linear-gradient(to bottom, #7d5d3b 5%, #634b30 100%);
+	background-color:#7d5d3b;
+	border-radius:3px;
+	border:1px solid #54381e;
+  width: 100%;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #4d3534;
+}
+.button-6:hover {
+	background:linear-gradient(to bottom, #634b30 5%, #7d5d3b 100%);
+	background-color:#634b30;
+}
+.button-6:active {
+	position:relative;
+	top:1px;
+}
+
+.button-7 {
+	box-shadow: 3px 4px 0px 0px #8a2a21;
+	background:linear-gradient(to bottom, #c62d1f 5%, #ffb300 100%);
+	background-color:#c62d1f;
+	border-radius:18px;
+	border:1px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+}
+.button-7:hover {
+	background-image: url('https://www.winstarfarm.com/wp-content/uploads/2022/08/3_headshot-audible.png');
+  transform:scale(300%);
+}
+.button-7:active {
+	position:relative;
+	top:1px;
+}
+
+.button-8 {
+	box-shadow:inset 0px 1px 0px 2px #9fb4f2;
+	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+	background-color:#7892c2;
+	border:12px solid #944d94;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Times New Roman;
+	font-size:28px;
+	font-style:italic;
+	padding:32px 0px;
+	text-decoration:none;
+	text-shadow:0px 1px 7px #283966;
+}
+.button-8:hover {
+	background-image: url('https://compote.slate.com/images/26572c3a-0e51-4a9f-9049-b64e730ca75d.jpg');
+	background-size: cover;
+}
+.button-8:active {
+	position:relative;
+	top:1px;
+}
+
+.button-9 {
+	box-shadow: 3px 4px 0px 0px #1564ad;
+	background-color:transparent;
+	border-radius:5px;
+	border:1px solid #337bc4;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:12px 44px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+}
+.button-9:hover {
+	background-color:transparent;
+}
+.button-9:active {
+	position:relative;
+	top:1px;
+}
+
+.button-10 {
+	box-shadow: 0px 1px 0px 0px #fff6af;
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	background-color:#ffec64;
+	border-radius:6px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Trebuchet MS;
+	font-size:28px;
+	font-weight:bold;
+	padding:32px 27px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+}
+.button-10:hover {
+	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	background-color:#ffab23;
+}
+.button-10:active {
+	position:relative;
+	top:1px;
+}
