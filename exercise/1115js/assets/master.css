@@ -51,9 +51,9 @@ top:1px;
 .button-3 {
 	box-shadow:inset 0px 0px 15px 3px #23395e;
 background-image: url('https://imagesvc.meredithcorp.io/v3/mm/gif?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F19%2F2018%2F02%2F13%2Fwhy-eggs-for-breakfast-hero.gif&q=60');
-background-size: cover;
+background-size: contain;
 width: 200%;
-height: 130%;
+height: 200px;
 	border-radius:30px;
 	border:5px solid #1f2f47;
 	display:inline-block;
