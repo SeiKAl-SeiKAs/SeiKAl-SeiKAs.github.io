@@ -113,7 +113,7 @@ top:1px;
 }
 .button-5:hover {
 	background-image: url('https://media.tenor.com/d86y4TQvB7AAAAAC/dancing-cockroach.gif');
-	background-size: auto;
+	background-size: contain;
 }
 .button-5:active {
 	position:relative;
