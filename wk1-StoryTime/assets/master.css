@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+
+body{
+background-color: rgb(107, 171, 144);
+color: white;
+font-family: 'Teko', sans-serif;
+}
+div{text-align: center;}
+img{
+    width:70%;
+    align-items: center;
+}
+.title-text{
+    font-size: 1em;
+    text-align: left;
+
+}
+.iframe{
+    padding: 2%;
+    width:60%;
+    height:450px;
+    position: run-in;
+    display: block;
+    margin-top: 5%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px;
+    background-color: black; /*iframe position proto*/
+}
+.foot{
+    position: relative;
+  width: 35%; 
+  height: 0; 
+  margin-left: 50%;
+  transform: translateX(-50%);
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  
+  border-bottom: 50px solid black;
+}
+.window{
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+
+.text-1,
+.text-2,
+.text-3,
+.text-4,
+.text-5
+{
+     font-size: 2em;
+     text-align:center;
+     display: block;
+    }
+.text-4{ color: rgb(247, 109, 155)}
