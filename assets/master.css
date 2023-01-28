@@ -9,3 +9,122 @@ h1{ font-size: 3em;}
 h2{ font-size: 2em;}
 a{color: blueviolet;}
 a:active{color:brown}
+
+.decoBox{
+   width:50%;
+   height: max-content;
+   position: fixed; 
+   right:0;
+   top: 0;
+}
+.pic1{
+    display: inline;
+    position: fixed;
+    right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.spinner{
+    position: fixed;
+    width:20vw;
+  aspect-ratio:1/1;
+    left:25%;
+    bottom:0;
+    transform:translate(-50%, 0%);
+    opacity:40%;
+  }
+  .infini-loop-1{
+  position: fixed;
+  max-width: 70%;
+  width:70%;
+  aspect-ratio:1/1;
+  left:50%;
+  top:50%;
+  transform:translate(-50%, -50%);
+  background-color: transparent;
+
+  }
+  .loop-left-1{
+  display:inherit;
+  width: 100%;
+  aspect-ratio:1/1;
+  position:relative;
+  box-sizing: border-box;
+  margin-left:-49%;
+  border-radius: 50%;
+  border:20px solid ;
+  border-color:rgba(255, 255, 255, 0.2);
+  animation-name:infini-loop;
+  animation-duration:2s;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+  animation-iteration-count: infinite;
+  z-index: 8;
+  }
+  .loop-right-1{
+    display:inherit;
+  width: 100%;
+    aspect-ratio:1/1;
+    position:relative;
+    box-sizing: border-box;
+    margin-left:49%;
+    margin-top:-100%;
+    border-radius: 50%;
+    border:20px solid ;
+    border-color:rgba(255, 255, 255, 0.2);
+    animation-name:infini-loop;
+  animation-duration:2s;
+  animation-direction: reverse;
+  animation-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+  animation-iteration-count: infinite;
+  z-index: 8;
+  }
+  .dot-left-1{
+    width:20%;
+    height:20%;
+    position:relative;
+    border-radius:50%;
+    display: inherit;
+    left:6%;
+    top:50%;
+    transform:translate(-50%, -50%);
+    background-color:red;
+    z-index: 10;
+    animation-name: dot-pass;
+    animation-duration: 4s;
+    animation-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  .dot-right-1{
+    width:20%;
+    height:20%;
+    position:relative;
+    border-radius:50%;
+    display:inherit;
+    left:94%;
+    top:50%;
+    transform:translate(-50%, -50%);
+    background-color:black;
+      z-index: 10;
+      animation-name: dot-pass2;
+      animation-duration: 4s;
+      animation-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+  }
+
+@keyframes infini-loop{
+from {transform: rotate(0deg);}
+to{transform: rotate(360deg);}
+}
+@keyframes dot-pass{
+from{opacity: 0%;}
+50%{opacity: 100%;}
+to{opacity: 0%;}
+}
+@keyframes dot-pass2{
+from{opacity: 100%;}
+50%{opacity: 0%;}
+to{opacity: 100%;}
+}
