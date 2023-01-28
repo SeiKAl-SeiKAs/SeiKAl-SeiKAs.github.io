@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
+
+body{
+background-color: rgb(16, 32, 42);
+color: beige;
+font-family: 'Nova Mono', monospace;
+}
+h1{ font-size: 3em;}
+h2{ font-size: 2em;}
+a{color: blueviolet;}
+a:active{color:brown}
