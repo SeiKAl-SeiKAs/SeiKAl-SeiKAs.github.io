@@ -1,0 +1,40 @@
+.pc-ver-container{  display: grid;
+    grid-template-columns: 10% 5fr 10%;
+    grid-template-rows: 5% 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      ". . ."
+      ". . ."
+      ". . ."
+      ". . ."
+      ". . .";
+      background-color: antiquewhite;
+  }
+
+  .mobi-ver-container{  display: grid;
+    grid-template-columns: 10% 5fr 10%;
+    grid-template-rows: 5% 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      ". . ."
+      ". . ."
+      ". . ."
+      ". . ."
+      ". . .";
+      background-color: lightcoral;
+  }
+
+  @media only screen and (min-width:600px) {
+    .mobi{display: none;}
+
+  }
+  @media only screen and (max-width:600px) {
+    .pc{display: none;}
+    
+  }
+
+  
