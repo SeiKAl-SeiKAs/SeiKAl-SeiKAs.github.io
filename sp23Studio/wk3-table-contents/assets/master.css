@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital@0;1&display=swap');
+body{
+  font-family: 'Old Standard TT', serif;
+}
+.iframe-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(231, 226, 221);
+    width: 100%;
+    height:40vh;
+  }
+
+.iframe {
+    flex: 1 1 31%; /*  Stretching: */
+    margin: 5px;
+    flex-grow: inherit;
+    background-color: rgb(255, 246, 208);
+  }
+iframe{
+width: 100%;
+height: 100%;
+}
+.title-center-text{
+  text-align: center;
+  font-size: 3em;
+}
+
+.onetyponesiz{
+  display: inline-block;
+    font-size: 2%;
+
+    background-color: transparent;
+}
+.size-norm1tp1siz {
+background-color: transparent; 
+width: 100%;
+display: inline-block;
+text-align: right;  
+position: relative;
+margin-top: -73%;
+transform: translate(90%, -60% );
+}
+.linonesiz {
+    font-size: 1%;
+}
+.onetones-right {
+  text-align: right;
+}
+span{
+  line-height: 3em;
+}
+.free > i {
+  display: block;
+text-align: right;
+line-height: 1.6em;
+
+}
