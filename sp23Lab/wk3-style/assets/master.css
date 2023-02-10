@@ -23,13 +23,16 @@ ul{
 background-color: azure;
 border-radius: 10%;
 }
-.like-list{
+#like-list{
     height: 30vh;
     font-size: 1em;
     border: 50px;
 }
 #title-bar{
     font-family: 'Libre Barcode 39 Extended Text', cursive; 
+    font-size: 2em;
+}
+.like-more{
     font-size: 2em;
 }
 summary{
