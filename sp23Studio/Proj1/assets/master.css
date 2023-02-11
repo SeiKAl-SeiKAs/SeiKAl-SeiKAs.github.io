@@ -6,48 +6,18 @@ body{
   
 }
 .pc{
-overflow-x:hidden;
-overflow-y: scroll;    
+background-color: transparent;  
 }
 .mobi{
-    overflow-x:hidden;
-overflow-y: scroll;  
+  background-color: transparent;  
 }
 
 
-.pc-ver-container{  display: grid;
-    grid-template-columns: 10% 5fr 10%;
-    grid-template-rows: 50px 1fr;
-    gap: 10px 10px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "h h h"
-      "t t t"
-      "s one one"
-      "s two two"
-      "s three three"
-      "s four four"
-      "s fiv fiv"
-      "s end end"
-      "f f f";
+.pc-ver-container{  
       background-color: antiquewhite;
-  }
+}
 
-.mobi-ver-container{  display: grid;
-  grid-template-columns: 7% 8fr 50px;
-  grid-template-rows: 5% 1fr;
-  gap: 10px 10px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "h h h"
-    "t t t"
-    "one one s"
-    "two two s"
-    "three three s"
-    "four four s"
-    "fiv fiv s"
-    "end end s"
-    "f f f";
+.mobi-ver-container{  
     background-color: lightcoral;
 }
 
@@ -63,37 +33,41 @@ overflow-y: scroll;
 }
 
 .header{
-    grid-area: h;
     background-color: cadetblue;
     height: 10vh;
 }
 .title{
-    grid-area: t;
+   
     align-items: center;
     text-align: center;
     background-color: azure;
     height: 100vh;
+    z-index: 10;
 }
 .side-menu {
-    grid-area: s;
-    background-color: lightcoral;
+  background-color: lightcoral;
+  position: sticky;
+  bottom:0;
+  z-index: 1;
+}
+.side-list{
+  background-color: red;
+  width: 70%;
+  height: 50px;
+  
 }
 .footer{
-    grid-area: f;
     align-items: center;
     text-align: center;
 }
-.seg1{grid-area:one;}
-.seg2{grid-area:two;}
-.seg3{grid-area:three;}
-.seg4{grid-area:four;}
-.seg5{grid-area:fiv;}
-.seged{grid-area:end;}
+
 
 .seg1,.seg2, .seg3,.seg4, .seg5,.seged{
-background-color: gold;
-width: 100%;
+font-size: 1em;
+background-color: lime;
+width: 80%;
 height: 100vh;
+margin: 0 10%;
 }
 
 .question-wheel{
@@ -106,7 +80,7 @@ position: relative;
 background-color: darkkhaki;
 z-index: 1;
 margin-top: -15em;
-opacity: 100%;
+opacity: 10%;
 }
 .outer-que-wheel{
   aspect-ratio: 1/1;
@@ -183,8 +157,8 @@ height: 80%;
 width: 100%;
 position: relative;
 margin-top: -300px;
-background-color: aqua;
-opacity: 50%;
+background-color: blue;
+opacity: 30%;
 z-index: 1;
 font-size: 30em;
 }
