@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
-
+html {
+  scroll-behavior: smooth;
+}
 
 body{
   font-family: 'Work Sans', sans-serif;
+  background-color: antiquewhite;
   
 }
 .pc{
@@ -33,16 +36,27 @@ background-color: transparent;
 }
 
 .header{
+  font-size: 12pt;
     background-color: cadetblue;
-    height: 10vh;
+    height: 3vh;
 }
 .title{
    
     align-items: center;
+    
     text-align: center;
     background-color: azure;
-    height: 100vh;
+    height: 90vh;
     z-index: 10;
+}
+.title-pos-mid{
+  height: 40%;
+  background-color: bisque;
+  vertical-align: middle;
+}
+#title-name{
+  font-size: 5em;
+  line-height: 1.6em;
 }
 .side-menu {
   background-color: lightcoral;
@@ -51,12 +65,22 @@ background-color: transparent;
   z-index: 1;
 }
 .side-list{
+  display: flex;
+  justify-content: space-around;
   background-color: red;
-  width: 70%;
-  height: 50px;
+  width: 80%;
+  margin: 0 10%;
+  height: 80px;
   
 }
+.side-list a:nth-child(n){
+  width: 10%;
+  aspect-ratio: 1/1;
+  background-color: cornflowerblue;
+
+}
 .footer{
+  height:20vh;
     align-items: center;
     text-align: center;
 }
@@ -67,7 +91,21 @@ font-size: 1em;
 background-color: lime;
 width: 80%;
 height: 100vh;
-margin: 0 10%;
+margin: 5% 10%;
+}
+.seg1{
+ text-align: right;
+ line-height: 1.6em;
+ 
+}
+.seg1-1{
+transform: translateX(-5%);
+}
+.seg2{
+  text-align: center;
+}
+.seg2-2{
+  transform: translateX(-8%);
 }
 
 .question-wheel{
@@ -149,22 +187,29 @@ position: relative;
 background-color: aqua;
 opacity: 10%;
 font-size: 5rem;
+margin-left: 87%;
+margin-top: -30%;
+transform: scale(8);
 
 }
 .quote-gene{
 display:inline-block;
-height: 80%;
-width: 100%;
+height: 8%;
+width: 10%;
 position: relative;
-margin-top: -300px;
-background-color: blue;
-opacity: 30%;
+background-color: rgba(0, 0, 255, 0.114);
+margin-top: -20%;
 z-index: 1;
-font-size: 30em;
+transform: scale(11);
+font-size: 2em;
 }
 .quote1{
-  margin-top: -65%;
+  transform: translateY(-100%);
+  text-align: left;
+  margin-top: 5%;
 }
 .quote2{
-  margin-top: -50%;
+  margin-top: 0%;
+  text-align: right;
+  transform: translateY(-120%);
 }
