@@ -58,6 +58,13 @@ background-color: transparent;
   font-size: 5em;
   line-height: 1.6em;
 }
+.title-button{
+  width: 67%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 10em;
+  transform: translateX(20%);
+}
 .side-menu {
   background-color: lightcoral;
   position: sticky;
@@ -87,10 +94,12 @@ background-color: transparent;
 
 
 .seg1,.seg2, .seg3,.seg4, .seg5,.seged{
+  display: block;
 font-size: 1em;
 background-color: lime;
 width: 80%;
-height: 100vh;
+height:auto;
+
 margin: 5% 10%;
 }
 .seg1{
@@ -102,26 +111,45 @@ margin: 5% 10%;
 transform: translateX(-5%);
 }
 .seg2{
-  text-align: center;
+height: 52em;
+  background-color: red;
+  display: block;
 }
 .seg2-2{
-  transform: translateX(-8%);
+ 
+  text-align: center;
+  transform: translateX(1%);
+}
+.seg3{ 
+  background-color: maroon;}
+.seg3-le{
+  text-align: left;
+}
+.seg3-ri{
+  text-align: right;
+}
+.seg3-ri, .seg3-le{
+  margin: 3%;
+}
+.seg3-punc{
+  font-size: 3em;
 }
 
 .question-wheel{
 display: block;
-padding: 50px;
-aspect-ratio: 1/1;
+
 border-radius: 50%;
-height: 50%;
+width: 40%;
+aspect-ratio: 1/1;
+margin-left: 5%;
 position: relative;
 background-color: darkkhaki;
 z-index: 1;
-margin-top: -15em;
-opacity: 10%;
+margin-top: -5%;
+opacity: 100%;
 }
 .outer-que-wheel{
-  aspect-ratio: 1/1;
+aspect-ratio: 1/1;
 height: 100%;
 border-radius: 50%;
 position: relative;
@@ -136,7 +164,7 @@ aspect-ratio: 1/1;
 height: 50%;
 border-radius: 50%;
 position: relative;
-background-color: black;
+background-color: white;
 opacity: 50%;
 margin-top: -75%;
 margin-left: 25%;
@@ -182,34 +210,66 @@ transform: translate(-50%, -50%) rotate(270deg);
 
 .surprise{
 height: 10%;
-aspect-ratio: 1/2;
+aspect-ratio: 1/1;
 position: relative;
 background-color: aqua;
-opacity: 10%;
-font-size: 5rem;
+opacity: 100%;
+font-size: 20em;
 margin-left: 87%;
-margin-top: -30%;
-transform: scale(8);
+margin-top: -40%;
+transform: scale(6) translate(-20% -10%);
 
 }
-.quote-gene{
-display:inline-block;
-height: 8%;
-width: 10%;
-position: relative;
-background-color: rgba(0, 0, 255, 0.114);
-margin-top: -20%;
-z-index: 1;
-transform: scale(11);
-font-size: 2em;
-}
+
 .quote1{
-  transform: translateY(-100%);
+ display:block;
   text-align: left;
-  margin-top: 5%;
+  float: left;
+  font-size: 30em;
+  margin-top: -20%;
+  transform: translateX(-25%);
+
+  
 }
 .quote2{
-  margin-top: 0%;
+  display:inlnie;
   text-align: right;
-  transform: translateY(-120%);
+  float: right;
+  margin-top: 20%;
+  font-size: 30em;
+  transform: translate(-50% -10%);
+}
+.seg3-period-spinner{
+  border-radius: 50%;
+
+  width: 20vw;
+  height: 20vw;
+
+  background-color: darkcyan;
+ 
+  
+}
+.seg3-spin-period{
+  aspect-ratio: 1/1;
+  align-items: center;
+  text-align: center;
+  
+  display: block;
+  font-size: 5em;
+  position: relative;
+  width: 35%;
+  aspect-ratio: 1/1;
+ 
+  
+}
+.seg3-spin-period:first-child{
+  text-align: center;
+margin-left: -5%;
+background-color: red;
+}
+.seg3-spin-period:last-child{
+  text-align: center;
+margin-top: -50%;
+margin-left: 90%;
+background-color: grey;
 }
