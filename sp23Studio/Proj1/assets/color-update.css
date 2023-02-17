@@ -1,7 +1,9 @@
 body{
     
-    background-image: url("imgs/texture-paper.jpg");
+    background-image: url("imgs/texture-paper.png");
+    background-color: #17150e27;
 }
+
 .header{
     background-color: #6a6464c8;
     color: white;
