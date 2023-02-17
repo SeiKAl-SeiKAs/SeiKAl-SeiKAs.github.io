@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 html {
   scroll-behavior: smooth;
+  font-size: calc(0.6em+1vw);
+  
 }
 
 body{
@@ -8,6 +10,7 @@ body{
   background-color: transparent;
   
 }
+
 .pc{
 background-color: transparent;  
 }
@@ -18,7 +21,7 @@ background-color: transparent;
       background-color:transparent;
 }
 .header{
-  font-size: 12pt;
+  font-size: 1em;
     background-color: cadetblue;
     height: 3vh;
 }
@@ -36,7 +39,7 @@ background-color: transparent;
   vertical-align: middle;
 }
 #title-name{
-  font-size: 5em;
+  font-size:calc(2em + 3vw);
   line-height: 1.6em;
 }
 #title-recomm{
@@ -46,7 +49,7 @@ background-color: transparent;
   width: 77%;
   display: flex;
   justify-content: space-between;
-  font-size: 8em;
+  font-size:calc(1em + 5vw);
   font-variant: small-caps;
   transform: translateX(15%);
 }
@@ -59,13 +62,14 @@ background-color: transparent;
 }
 .side-list{
   text-align: center;
-  font-size:3em;
+  font-size:calc(1em + 3vw);
   display: flex;
   justify-content: space-around;
   background-color: red;
   width: 80%;
   margin: 0 10%;
-  height: 90px;
+  height: calc(1em+3vh);
+  font-size: calc(0.5em+3vw);
   
 }
 .side-list a:nth-child(n){
@@ -92,12 +96,13 @@ background-color: transparent;
   height:20vh;
     align-items: center;
     text-align: center;
+    font-size: calc(1em+2vw);
 }
 
 
 .seg1,.seg2, .seg3,.seg4, .seg5,.seged{
   display: block;
-font-size: 1em;
+  font-size:calc(0.4em + 1vw);
 background-color: lime;
 width: 80%;
 height:auto;
@@ -106,36 +111,35 @@ margin: 5% 10%;
 }
 .seg1{
  text-align: right;
- line-height: 1.6em;
+ line-height: calc(1em + 2vh);
  
 }
 .seg1-1{
 transform: translateX(-5%);
 }
 .seg2{
-height: 52em;
   background-color: red;
   display: block;
 }
 .seg2-2{
- 
+ margin-top: -10%;
   text-align: center;
   transform: translateX(1%);
 }
 .seg3{ 
   background-color: maroon;
-  width: 85%;  
+  width: 85%; 
+  margin-top: -35%;
+  
 }
 #seg3para1{
-  width: 50%;
+  max-width: 30ch;
   display: inline-block;
 }
 #seg3-p1{
-  
-  font-size: 10em;
-margin-right: 0;
+    font-size:calc(5em + 3vw);
+  margin-right: 0;
   text-align: right;
-  float: right;
   margin-top: -10%; 
   
   animation: shake-tr-1 19s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
@@ -168,9 +172,9 @@ margin-right: 0;
 }
 #seg3-p2{
   display: inline-block;
-  font-size: 10em;
+  font-size: calc(5em + 3vw);
   text-align: left;
-  margin-top: -5%;  
+  margin-top: -20%;  
   animation: shake-bl-1 6s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
 }
 
@@ -201,7 +205,7 @@ margin-right: 0;
   }
 }
 #seg3-p3{
-  font-size: 6em;
+  font-size: 7vw;
   animation: shake-horizontal 18s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
 }
 @keyframes shake-horizontal {
@@ -230,16 +234,22 @@ margin-right: 0;
 
 .seg3-le{
   text-align: left;
+  float: left;
+}
+.seg3-mi{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .seg3-ri{
   text-align: right;
+  float: right;
 }
-.seg3-ri, .seg3-le{
+.seg3-ri, .seg3-le, .seg3-mi{
   margin: 3%;
 }
 .seg3-punc{
-  font-size: 3em;
-
+  font-size:calc(1em + 3vh);
 }
 
 
@@ -264,7 +274,7 @@ margin-right: 0;
 .seg4-punc{
   display: block;
   margin-left: 60%;
-  margin-top: -13%;
+  margin-top: -5%;
   font-size: 2em;
 }
 .seg5-le{
@@ -283,7 +293,7 @@ margin-right: 0;
   margin: 4%;
 }
 .seg5-half{
- line-height: 3em;
+ line-height: calc(2em + 3vh);
 
 }
 
@@ -295,31 +305,31 @@ text-align: center;
 display: block;
 
 border-radius: 50%;
-width: 40%;
+width: 30%;
 aspect-ratio: 1/1;
 margin-left: 5%;
 position: relative;
 background-color: darkkhaki;
 z-index: 1;
-margin-top: -5%;
+margin-top: -15%;
 opacity: 100%;
 }
 .outer-que-wheel{
 
 aspect-ratio: 1/1;
-height: 100%;
+height: 90%;
 border-radius: 50%;
 position: relative;
 background-color: black;
 opacity: 50%;
-font-size: 15em;
+font-size: calc(10em + 8vw);
 text-align: center;
 animation: rotate-center 5s cubic-bezier(0.550, 0.055, 0.675, 0.190) infinite reverse both;
 }
 
 .inner-que-wheel{
 aspect-ratio: 1/1;
-height: 50%;
+height: 15vw;
 border-radius: 50%;
 position: relative;
 background-color: white;
@@ -327,7 +337,7 @@ opacity: 50%;
 margin-top: -75%;
 margin-left: 25%;
 transform: rotate(45deg);
-font-size: 5em;
+font-size: calc(4em + 3vw);
 text-align: center;
 animation: rotate-center 4s cubic-bezier(0.550, 0.055, 0.675, 0.190) infinite alternate both;
 }
@@ -380,12 +390,13 @@ height: 10%;
 aspect-ratio: 1/1;
 position: relative;
 background-color: aqua;
-opacity: 100%;
-font-size: 20em;
-margin-left: 87%;
-margin-top: -40%;
+
+font-size:calc(5em + 5vw);
+margin-left: 50%;
+margin-top: -10%;
+
 transform: scale(6) translate(-20% -10%);
-animation: flicker-4 6s linear infinite alternate both;
+
 
 }
 .seg5-punc1{
@@ -394,7 +405,7 @@ margin-left: 20%;
 position: relative;
 background-color: rgba(0, 255, 255, 0.26);
 opacity: 100%;
-font-size: 15em;
+font-size: calc(10em + 3vw);
 transform: scale(6) translate(-20% -10%);
 animation: flicker-4 6s linear infinite alternate both;
   text-align: center;
@@ -489,7 +500,7 @@ margin-top: -15%;
 width:15%;
 aspect-ratio: 1/1;
 background-color: #f9d52350;
-font-size: 15em;
+font-size: calc(12em + 3vw);
 animation: swing-top-fwd 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
 }
 @keyframes swing-top-fwd {
@@ -504,21 +515,21 @@ animation: swing-top-fwd 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite 
 }
 .quote1{
  display:block;
-  text-align: left;
+  text-align:left;
   float: left;
-  font-size: 30em;
-  margin-top: -50%;
-  transform: translateX(-25%);
+  font-size: calc(15em + 2vw);
+  margin-top: -35%;
+  margin-left: -10%;
+
   animation: vibrate-3 2s linear infinite both;
   
 }
 .quote2{
   display:inline;
   text-align: right;
-  float: right;
-  margin-top: 20%;
-  font-size: 30em;
-  transform: translatex(30%);
+  margin-top: 2%;
+  margin-left: 90%;
+  font-size: calc(15em + 2vw);
   animation: vibrate-3 2s linear infinite both;
 }
 @keyframes vibrate-3 {
@@ -557,12 +568,12 @@ animation: swing-top-fwd 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite 
   }
 }
 .seg3-period-spinner{
+  display: inline-block;
   border-radius: 50%;
-
-margin-left: 45%;
-  width: 10vw;
-  height: 10vw;
-transform: translateX(-50%) translateY(10%);
+margin-left: 50%;
+width:8vw;
+height: 8vw;
+font-size: calc(1em + 2vw);
   background-color: darkcyan;
   
     animation: rotate-center 2.6s ease-in-out infinite alternate-reverse both;  
@@ -575,26 +586,14 @@ transform: translateX(-50%) translateY(10%);
           transform: rotate(360deg);
         }
       }
-.seg3-spin-period{
-  aspect-ratio: 1/1;
-  text-align: left;
-  display: inline-block;
 
-  font-size: 3.5em;
-  position: relative;
-  width: 55%;
-  aspect-ratio: 1/1;
- width: 100%;
-  
-}
 
 
 .question-wheel-seged{
   display: block;
-
   border-radius: 50%;
-  width: 10%;
-  font-size: 10pt;
+  width: 1vw;
+
   aspect-ratio: 1/1;
   margin-left: 10%;
   margin-top: 10%;
@@ -603,7 +602,7 @@ transform: translateX(-50%) translateY(10%);
   z-index: 1;
   margin-top: -5%;
   opacity: 100%;
-
+ transform: scale(0.8);
 }
 
 .rainbow {
@@ -613,7 +612,7 @@ transform: translateX(-50%) translateY(10%);
    top:0;
   left: 35%;
   width: 40%;
-  margin-top:-45%;
+  margin-top:-55%;
   transform: translateX(60%)rotate(180deg);
   opacity: 80%;
 }
@@ -622,11 +621,11 @@ transform: translateX(-50%) translateY(10%);
   display: block;
   position: relative;
   margin-right: 1px;
-  height: 35px;
+  height: 3vw;
   width: 1px;
   overflow:hidden;
   text-align: left;
-  font-size: 2em;
+  font-size: calc(1em + 2vw);
   
   color: transparent;
   animation-name: pulse;
@@ -672,19 +671,19 @@ transform: translateX(-50%) translateY(10%);
     margin-left: 0;
   }
   10% {
-    width: 340px;
+    width: 20vw;
     margin-left: -40px;
   }
   50% {
-    width: 160px;
+    width: 12vw;
     margin-left: -20px;
   }
   60% {
-    width: 20px;
+    width: 5vw;
     margin-left: -30px;
   }
   80% {
-    width: 660px;
+    width: 40vw;
     margin-left: -60px;
   }
   100% {
@@ -694,16 +693,16 @@ transform: translateX(-50%) translateY(10%);
 }
 
 .newtons-cradle {
-margin-left: 50%;
-  width: 4em;
+margin-left: 40%;
+  width: calc(5em + 6vw);
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: space-between;
 }
 .newtons-cradle div {
-  width: 0.8em;
-  height: 0.8em;
+  width: 1vw;
+  height: 1vw;
   border-radius: 50%;
   background-color: black;
 }
@@ -732,7 +731,7 @@ body {
 }
 
 .marquee {
-  font-size: 5em;
+  font-size:calc(3em + 3vw);
   position: relative;
   width: 100vw;
   max-width: 100%;
@@ -752,6 +751,24 @@ body {
   to { transform: translateX(-50%); }
 }
 #switch-fina{
-  font-size: 0.2em;
+  font-size: 3vw;
   line-height: 1.6rem;
+}
+#seged-alter-outer .ques1, .ques2, .ques3,.ques4{
+  font-size: calc(2rem + 8vw);
+
+}
+.text-wid-fix{
+  max-width: 60ch;
+  line-height: calc(1.2em + 1vh);
+}
+.text-wid-fix2{
+  max-width: 40ch;
+}
+#seg4-mid-fix1{
+  margin-left: 10%;
+}
+.seged .text-wid-fix{
+
+ margin-left: 10%;
 }
