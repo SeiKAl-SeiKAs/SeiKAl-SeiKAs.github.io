@@ -5,7 +5,7 @@ html {
 
 body{
   font-family: 'Work Sans', sans-serif;
-  background-color: antiquewhite;
+  background-color: transparent;
   
 }
 .pc{
@@ -15,7 +15,7 @@ background-color: transparent;
 
 
 .pc-ver-container{  
-      background-color: antiquewhite;
+      background-color:transparent;
 }
 .header{
   font-size: 12pt;
@@ -39,26 +39,33 @@ background-color: transparent;
   font-size: 5em;
   line-height: 1.6em;
 }
+#title-recomm{
+  font-variant: small-caps;
+}
 .title-button{
-  width: 67%;
+  width: 77%;
   display: flex;
   justify-content: space-between;
-  font-size: 10em;
+  font-size: 8em;
+  font-variant: small-caps;
   transform: translateX(15%);
 }
 .side-menu {
+  
   background-color: lightcoral;
   position: sticky;
   bottom:0;
   z-index: 1;
 }
 .side-list{
+  text-align: center;
+  font-size:3em;
   display: flex;
   justify-content: space-around;
   background-color: red;
   width: 80%;
   margin: 0 10%;
-  height: 80px;
+  height: 90px;
   
 }
 .side-list a:nth-child(n){
@@ -67,6 +74,20 @@ background-color: transparent;
   background-color: cornflowerblue;
 
 }
+.side-list a {
+  color: #000000;
+
+  text-decoration: none;
+  font-weight: bold;
+
+}
+.side-list a:hover {
+  color: #4359B0;
+}
+.side-list a:active {
+  color: #B5B5B5;
+}
+
 .footer{
   height:20vh;
     align-items: center;
@@ -102,14 +123,22 @@ height: 52em;
   transform: translateX(1%);
 }
 .seg3{ 
-  background-color: maroon;}
+  background-color: maroon;
+  width: 85%;  
+}
+#seg3para1{
+  width: 50%;
+  display: inline-block;
+}
 #seg3-p1{
+  
   font-size: 10em;
-
+margin-right: 0;
   text-align: right;
+  float: right;
   margin-top: -10%; 
   
-  animation: shake-tr-1 3s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+  animation: shake-tr-1 19s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
 }
 @keyframes shake-tr-1 {
   0%,
@@ -138,10 +167,11 @@ height: 52em;
   }
 }
 #seg3-p2{
+  display: inline-block;
   font-size: 10em;
   text-align: left;
   margin-top: -5%;  
-  animation: shake-bl-1 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+  animation: shake-bl-1 6s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
 }
 
 @keyframes shake-bl-1 {
@@ -172,7 +202,7 @@ height: 52em;
 }
 #seg3-p3{
   font-size: 6em;
-  animation: shake-horizontal 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+  animation: shake-horizontal 18s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
 }
 @keyframes shake-horizontal {
   0%,
@@ -231,7 +261,12 @@ height: 52em;
 .seg4-ri, .seg4-mid, .seg4-le{
   margin: 4%;
 }
-
+.seg4-punc{
+  display: block;
+  margin-left: 60%;
+  margin-top: -13%;
+  font-size: 2em;
+}
 .seg5-le{
   text-align: left;
   transform: translateX(2%);
@@ -251,6 +286,7 @@ height: 52em;
  line-height: 3em;
 
 }
+
 .seged{
 text-align: center;
 }
@@ -278,6 +314,7 @@ background-color: black;
 opacity: 50%;
 font-size: 15em;
 text-align: center;
+animation: rotate-center 5s cubic-bezier(0.550, 0.055, 0.675, 0.190) infinite reverse both;
 }
 
 .inner-que-wheel{
@@ -292,6 +329,15 @@ margin-left: 25%;
 transform: rotate(45deg);
 font-size: 5em;
 text-align: center;
+animation: rotate-center 4s cubic-bezier(0.550, 0.055, 0.675, 0.190) infinite alternate both;
+}
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 .ques1{
 height: 50%;
@@ -339,7 +385,21 @@ font-size: 20em;
 margin-left: 87%;
 margin-top: -40%;
 transform: scale(6) translate(-20% -10%);
-animation: flicker-4 4s linear infinite alternate both;
+animation: flicker-4 6s linear infinite alternate both;
+
+}
+.seg5-punc1{
+width: 60%;
+margin-left: 20%;
+position: relative;
+background-color: rgba(0, 255, 255, 0.26);
+opacity: 100%;
+font-size: 15em;
+transform: scale(6) translate(-20% -10%);
+animation: flicker-4 6s linear infinite alternate both;
+  text-align: center;
+margin-top: -15%;
+  margin-right: 10%;
 
 }
 @keyframes flicker-4 {
@@ -421,6 +481,27 @@ animation: flicker-4 4s linear infinite alternate both;
   }
 }
 
+.seg5-punc2{
+  display: block;
+  float:right;
+  margin-right: 7%;
+  margin-top: -10%;
+width:15%;
+aspect-ratio: 1/1;
+background-color: #f9d52350;
+font-size: 15em;
+animation: swing-top-fwd 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+}
+@keyframes swing-top-fwd {
+  0% {
+    transform: rotateX(0);
+    transform-origin: top;
+  }
+  100% {
+    transform: rotateX(180deg);
+    transform-origin: top;
+  }
+}
 .quote1{
  display:block;
   text-align: left;
@@ -428,7 +509,7 @@ animation: flicker-4 4s linear infinite alternate both;
   font-size: 30em;
   margin-top: -50%;
   transform: translateX(-25%);
-  animation: vibrate-3 0.5s linear infinite both;
+  animation: vibrate-3 2s linear infinite both;
   
 }
 .quote2{
@@ -438,7 +519,7 @@ animation: flicker-4 4s linear infinite alternate both;
   margin-top: 20%;
   font-size: 30em;
   transform: translatex(30%);
-  animation: vibrate-3 0.5s linear infinite both;
+  animation: vibrate-3 2s linear infinite both;
 }
 @keyframes vibrate-3 {
   0% {
@@ -477,10 +558,11 @@ animation: flicker-4 4s linear infinite alternate both;
 }
 .seg3-period-spinner{
   border-radius: 50%;
-margin-left: 35%;
-  width: 20vw;
-  height: 20vw;
-transform: translateX(-50%);
+
+margin-left: 45%;
+  width: 10vw;
+  height: 10vw;
+transform: translateX(-50%) translateY(10%);
   background-color: darkcyan;
   
     animation: rotate-center 2.6s ease-in-out infinite alternate-reverse both;  
@@ -498,7 +580,7 @@ transform: translateX(-50%);
   text-align: left;
   display: inline-block;
 
-  font-size: 5.5em;
+  font-size: 3.5em;
   position: relative;
   width: 55%;
   aspect-ratio: 1/1;
@@ -531,7 +613,7 @@ transform: translateX(-50%);
    top:0;
   left: 35%;
   width: 40%;
-  margin-top:-40%;
+  margin-top:-45%;
   transform: translateX(60%)rotate(180deg);
   opacity: 80%;
 }
@@ -590,11 +672,11 @@ transform: translateX(-50%);
     margin-left: 0;
   }
   10% {
-    width: 440px;
+    width: 340px;
     margin-left: -40px;
   }
   50% {
-    width: 260px;
+    width: 160px;
     margin-left: -20px;
   }
   60% {
@@ -602,11 +684,74 @@ transform: translateX(-50%);
     margin-left: -30px;
   }
   80% {
-    width: 860px;
+    width: 660px;
     margin-left: -60px;
   }
   100% {
     width: 1px;
     margin-left: 0;
   }
+}
+
+.newtons-cradle {
+margin-left: 50%;
+  width: 4em;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.newtons-cradle div {
+  width: 0.8em;
+  height: 0.8em;
+  border-radius: 50%;
+  background-color: black;
+}
+.newtons-cradle div:nth-of-type(1) {
+  transform: translateX(-100%);
+  animation: left-swing 0.5s ease-in alternate infinite;
+}
+.newtons-cradle div:nth-of-type(3) {
+  transform: translateX(-95%);
+  animation: right-swing 0.5s ease-out alternate infinite;
+}
+@keyframes left-swing {
+  50%, 100% { transform: translateX(95%); }
+}
+@keyframes right-swing {
+  50% {transform: translateX(-95%); }
+  100% {transform: translateX(100%); }
+}
+HTML CSSResult Skip Results Iframe
+body {
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-size: 144px;
+  font-weight: bold;
+}
+
+.marquee {
+  font-size: 5em;
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  height: 200px;
+  overflow-x: hidden;
+}
+
+.track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+#switch-fina{
+  font-size: 0.2em;
+  line-height: 1.6rem;
 }
