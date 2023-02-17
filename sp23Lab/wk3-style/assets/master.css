@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Extended+Text&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Flow+Circular&display=swap');
+html{
+    font-size: calc(0.6em + 1vw);
+}
 body{
     font-family: 'Share Tech Mono', monospace;
     margin:0;
@@ -9,11 +12,12 @@ body{
 }
 header, section, ul, summary, footer{ padding:10px;}
 header{
-font-size: 5em;
+font-size: 2em;
 
 }
 
 section{
+    font-size: 0.8em;
     background-color: aquamarine;
     border-radius: 5%;
     border: 50px;
@@ -30,10 +34,10 @@ border-radius: 10%;
 }
 #title-bar{
     font-family: 'Libre Barcode 39 Extended Text', cursive; 
-    font-size: 2em;
+    font-size: 1em;
 }
 .like-more{
-    font-size: 2em;
+    font-size: 1em;
 }
 summary{
     background-color: blue;
@@ -42,6 +46,7 @@ summary{
 footer{
     text-align: center;
     font-family: 'Flow Circular', cursive;
+    font-size: 0.6rem;
 }
 h3{
     font-weight: bold;
