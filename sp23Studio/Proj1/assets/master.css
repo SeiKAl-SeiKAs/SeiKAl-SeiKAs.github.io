@@ -21,18 +21,19 @@ background-color: transparent;
       background-color:transparent;
 }
 .header{
-  font-size: 1em;
+  font-size: 2vh;
     background-color: cadetblue;
     height: 3vh;
 }
 .title{
-   height: auto;
+   height: 90vh;
     align-items: center;
     text-align: center;
     background-color: azure;
     
     z-index: 10;
 }
+
 .title-pos-mid{
   height: auto;
   background-color: bisque;
@@ -46,13 +47,56 @@ background-color: transparent;
   font-variant: small-caps;
 }
 .title-button{
-  width: 77%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70vw;
   display: flex;
   justify-content: space-between;
-  font-size:calc(1em + 5vw);
+  font-size:calc(1em + 4vw);
   font-variant: small-caps;
-  transform: translateX(15%);
+
+  animation: bounce-top 2s ease-in-out 2 backwards;
 }
+
+@keyframes bounce-top {
+  0% {
+    transform: translateY(-45px);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-24px);
+    animation-timing-function: ease-in;
+  }
+  65% {
+    transform: translateY(-12px);
+    animation-timing-function: ease-in;
+  }
+  82% {
+    transform: translateY(-6px);
+    animation-timing-function: ease-in;
+  }
+  93% {
+    transform: translateY(-4px);
+    animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+
 .side-menu {
   
   background-color: lightcoral;
@@ -68,7 +112,7 @@ background-color: transparent;
   background-color: red;
   width: 80%;
   margin: 0 10%;
-  height: calc(1em+3vh);
+  height: 10vh;
   font-size: calc(0.5em+3vw);
   
 }
@@ -76,8 +120,32 @@ background-color: transparent;
   width: 10%;
   aspect-ratio: 1/1;
   background-color: cornflowerblue;
-
+  animation: heartbeat 1.5s ease-in-out 3 both;
 }
+@keyframes heartbeat {
+  from {
+    transform: scale(1);
+    transform-origin: center center;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    transform: scale(0.91);
+    animation-timing-function: ease-in;
+  }
+  17% {
+    transform: scale(0.98);
+    animation-timing-function: ease-out;
+  }
+  33% {
+    transform: scale(0.87);
+    animation-timing-function: ease-in;
+  }
+  45% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+}
+
 .side-list a {
   color: #000000;
 
@@ -305,7 +373,7 @@ text-align: center;
 display: block;
 
 border-radius: 50%;
-width: 30%;
+width: 30vw;
 aspect-ratio: 1/1;
 margin-left: 5%;
 position: relative;
@@ -322,7 +390,7 @@ border-radius: 50%;
 position: relative;
 background-color: black;
 opacity: 50%;
-font-size: calc(10em + 8vw);
+font-size: calc(5rem + 8vw);
 text-align: center;
 animation: rotate-center 5s cubic-bezier(0.550, 0.055, 0.675, 0.190) infinite reverse both;
 }
@@ -350,6 +418,7 @@ animation: rotate-center 4s cubic-bezier(0.550, 0.055, 0.675, 0.190) infinite al
   }
 }
 .ques1{
+  font-size:  calc(2rem + 8vw);
 height: 50%;
 aspect-ratio: 1/1;
 background-color: blueviolet;
@@ -608,20 +677,21 @@ font-size: calc(1em + 2vw);
 .rainbow {
   position: relative;
   display: block;
-  
+  overflow: hidden;
+
    top:0;
   left: 35%;
   width: 40%;
-  margin-top:-55%;
+  margin-top:-90vh;
   transform: translateX(60%)rotate(180deg);
-  opacity: 80%;
+  opacity: 70%;
 }
 
 .rainbow.bar-ani .bar {
   display: block;
   position: relative;
   margin-right: 1px;
-  height: 3vw;
+  height: 5vh;
   width: 1px;
   overflow:hidden;
   text-align: left;
