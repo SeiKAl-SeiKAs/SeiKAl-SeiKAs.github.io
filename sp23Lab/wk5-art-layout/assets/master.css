@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Belgrano&display=swap');
+body{
+   color: white;
+   background-color: lightslategray;
+   font-family: 'Belgrano', serif;
+}
+h2{
+    color: black;
+    opacity: 50%;
+    position: fixed;
+    left: 0;
+    bottom: 1rem  ;
+    font-size: 6em;
+}
+.sect3-flex{
+    
+    background-color: lightslategray;
+    gap: 5%;
+
+    display: flex;
+    
+    transform: scale(0.9);
+}
+a{
+    color: #FFFFFF;
+    font-size: 3em;
+    text-decoration: underline;
+    font-weight: bold;
+}
+a:hover {
+    color: #D90000;
+    font-weight: bold;
+    font-style: italic;
+ }
+
+
+.agnes-container{
+    margin: 5%;
+width: 23vw;
+height: 35vw;
+background-color:whitesmoke;
+border: 0.5em solid whitesmoke;
+display: flex;
+justify-content: space-around;
+align-content: space-around;
+flex-wrap: wrap;
+overflow: hidden;
+}
+.agnes-div{
+    
+    background-color: white;
+    
+    height: calc(100% / 19 - 0.5%) ;
+    width: calc(100% / 12 - 0.5%) ;
+    box-shadow: rgba(0, 0, 0, 0.72) 1px 1px 4px,
+     rgba(31, 14, 14, 0.54) 0px 1px 2px;
+
+}
+.claudia-container{
+    background-color: rgb(241, 47, 163);
+    aspect-ratio: 1/1;
+    width: 25vw;
+    margin-top: 5%;
+    overflow: hidden;
+}
+.claudia-square{
+background-color:rgba(34, 22, 86, 0.55);
+width: 100%;
+aspect-ratio: 1/1;    
+transform: translateX(-58%) translateY(-58%) scale(2.15);
+margin-top: -100%;
+
+}
+.claudia-square-minor{
+    filter: blur(0.2px);
+    background-color: transparent;
+    width: 95%;
+    aspect-ratio: 1/1;
+    opacity: 100%;
+    border: 0.15rem solid rgba(255, 255, 255, 0.783); 
+    position: relative;
+   
+    }
+.claudia-circle{
+    background-color: rgba(241, 47, 163, 0.38);
+    border-radius: 50%;
+    border: 0.15rem solid white;
+    width: 100%;
+    aspect-ratio: 1/1;    
+   
+   transform: rotate(180deg) translateX(-58%) translateY(-58%) scale(2.15)
+}
+.claudia-circle-minor{
+    filter: blur(0.2px);
+    border-radius: 50%;
+    background-color: transparent;
+    width: 95%;
+    aspect-ratio: 1/1;
+   
+    border: 0.15rem solid white; 
+    position: relative;
+}
+.claudia-overlay{
+    
+    filter: blur(2.2px) brightness(2.2) contrast(1.2) saturate(2) ;
+    margin-top: -100%;
+    width: 98%;
+    aspect-ratio: 1/1; 
+}
+.tauba-container{
+margin-top: -35%;
+margin-left: -30%;
+    width: 80vw;
+    height:100vw;
+    background-color: beige;
+    transform: scale(0.4);
+}
+.tauba-4x8-min-container{
+    position: relative;
+    margin:  auto;
+    width: 60%;
+    aspect-ratio: 7/8;
+    display: flex;
+    flex-wrap: wrap;
+    gap:  0 calc(50% / 7);
+    justify-content: space-between;
+   background-color: transparent;
+   transform: translateY(30%);
+} 
+.tauba-4x8-min{
+    width: calc(95% / 7);
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border:  0.3rem solid black;} 
+
+.tauba-3x10-min-container{
+    position: relative;
+    border: 5% solid transparent;
+    margin:  0 auto 0;
+    width: 43%;
+    aspect-ratio: 1/2;
+    display: flex;
+    flex-wrap: wrap;
+    gap:  0 calc(50% / 7);
+    justify-content: space-between;
+  
+    background-color: transparent;
+    margin-top: -59.5%;
+} 
+.tauba-3x10-min{
+    width: calc(95% / 5);
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border:  0.3rem solid black;} 
+.tauba-3x8-plus-container{
+    position: relative;
+    margin:  0 auto 0;
+    width: 43%;
+    aspect-ratio: 5/8.2;
+    display: flex;
+    flex-wrap: wrap;
+    gap:  0 calc(50% / 7);
+    justify-content: space-between;
+    flex: 1 1 1;
+    background-color: transparent;
+    margin-top: -80%;  
+}
+.tauba-3x8-plus{
+    width: calc(95% / 5);
+    height: calc(90% / 8);
+    border-radius: 50%;
+    border:  0.18rem solid black;
+    transform: scale(1.8);
+
+}
+.tauba-4x1-big-container{
+    position: relative;
+    margin:  0 auto 0;
+    width: 8.6%;
+    aspect-ratio: 1/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 100%;
+    background-color: transparent;
+    margin-top: -53.5%;
+}
+.tauba-4x1-big{
+    margin: auto;
+    width: calc(100% / 4);
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border:  0.07rem solid black;
+    transform: scale(11);
+}
+#tauba-cap{
+   margin-left: -10%;
+   margin-top: -40%;
+   transform: translateY(30%);
+}
