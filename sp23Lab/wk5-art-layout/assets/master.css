@@ -243,3 +243,85 @@ margin-left: -20%;
         margin-left: 0;
     }
   }
+  @media screen and (max-width: 420px) {
+    body{
+        overflow-y: scroll;
+        font-size: 0.5em;
+    }
+    .sect3-flex{
+        margin: 0 auto;
+     flex-direction: column;
+     column-gap:  10vh;
+     row-gap: 10vh;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    .agnes-container{
+        width: 80vw;
+        height: 70vw;
+    }
+    .claudia-container{
+        width: 70vw;
+    }
+    .tauba-container{
+    transform: scale(1.2);
+    height: 110vw;
+    margin-top: 5%;
+    margin-left: 10%;
+    }
+  
+    .tauba-3x10-min-container{
+        margin-top: -75%;
+       
+    }
+    .tauba-3x8-plus-container{
+        margin-top: -102%;
+    }
+    #tauba-cap{
+        margin-top: 10%;
+        margin-left: 0;
+    }
+  }
+  @media screen and (max-width: 770px) {
+    body{
+        overflow-y: scroll;
+        font-size: 0.5em;
+    }
+    .sect3-flex{
+        margin: 0 auto;
+     flex-direction: column;
+     column-gap:  10vh;
+     row-gap: 10vh;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    .agnes-container{
+        margin-top: -10%;
+        width: 80vw;
+        height: 70vw;
+    }
+    .claudia-container{
+        margin-top: -10%;
+        width: 70vw;
+    }
+    .tauba-container{
+    transform: scale(1.2);
+    height: 110vw;
+    margin-top: 5%;
+    margin-left: 10%;
+    }
+  
+    .tauba-3x10-min-container{
+        margin-top: -63%;
+       
+    }
+    .tauba-3x8-plus-container{
+        margin-top: -88%;
+    }
+    #tauba-cap{
+        margin-top: 10%;
+        margin-left: 0;
+    }
+  }
