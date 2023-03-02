@@ -18,6 +18,7 @@ a:active{color:brown}
    top: 0;
 }
 .pic1{
+  max-width: 50vw;
     display: inline;
     position: fixed;
     right: 0;
