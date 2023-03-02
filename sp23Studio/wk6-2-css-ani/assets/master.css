@@ -2,6 +2,7 @@ body{
     background-color: antiquewhite;
 }
 .container-1{
+    margin-left: 90vw;
 animation-name: movement;
 animation-duration: 8s;
 animation-iteration-count: infinite;
@@ -57,5 +58,67 @@ animation-iteration-count: infinite;
 @keyframes scale {
     0%,  100%{transform: scale(0.5);}
     50%{transform: scale(2);}   
+    
+}
+.claudia-container{
+    background-color: rgb(241, 47, 163);
+    aspect-ratio: 1/1;
+    width: 25vw;
+    margin-top: 5%;
+    margin-left: 10vw;
+    overflow: hidden;
+}
+.claudia-square{
+background-color:rgba(34, 22, 86, 0.55);
+width: 100%;
+aspect-ratio: 1/1;    
+transform: translateX(-58%) translateY(-58%) scale(2.15);
+margin-top: -100%;
+
+}
+.claudia-square-minor{
+    filter: blur(0.2px);
+    background-color: transparent;
+    width: 95%;
+    aspect-ratio: 1/1;
+    opacity: 100%;
+    border: 0.15rem solid rgba(255, 255, 255, 0.783); 
+    position: relative;
+    animation: art-scale 18s;
+    animation-iteration-count: infinite;
+   
+    }
+.claudia-circle{
+    background-color: rgba(241, 47, 163, 0.38);
+    border-radius: 50%;
+    border: 0.15rem solid white;
+    width: 100%;
+    aspect-ratio: 1/1;    
+   
+   transform: rotate(180deg) translateX(-58%) translateY(-58%) scale(2.15)
+}
+.claudia-circle-minor{
+    filter: blur(0.2px);
+    border-radius: 50%;
+    background-color: transparent;
+    width: 95%;
+    aspect-ratio: 1/1;
+   
+    border: 0.15rem solid white; 
+    position: relative;
+    animation: art-scale 18s;
+    animation-iteration-count: infinite;
+}
+.claudia-overlay{
+    
+    filter: blur(2.2px) brightness(2.2) contrast(1.2) saturate(2) ;
+    margin-top: -100%;
+    width: 98%;
+    aspect-ratio: 1/1; 
+}
+
+@keyframes art-scale {
+    0%,  100%{transform: scale(0.5);}
+    50%{transform: scale(1.2);}   
     
 }
