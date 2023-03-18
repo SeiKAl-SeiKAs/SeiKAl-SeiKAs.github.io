@@ -1,0 +1,583 @@
+{
+    "sheets": [
+        {
+            "name": "SaabListCaught",
+            "description": "Project 2 json content list",
+            "displayColumn": "id",
+            "guid": "f56893a9-08df-4130-9843-b2b4ba30e826",
+            "columns": [
+                {
+                    "typeStr": "image",
+                    "guid": "7996713d-6213-468b-bceb-5b968ba5c69c",
+                    "name": "ImgsPath",
+                    "description": "link to assets imgs folder",
+                    "defaultValue": "",
+                    "iconName": "newImage",
+                    "configurable": {
+                        "name": "text",
+                        "description": "text",
+                        "defaultValue": "text"
+                    }
+                },
+                {
+                    "typeStr": "int",
+                    "guid": "2a5be152-03b0-487e-b647-96935d86553b",
+                    "description": "photo time",
+                    "name": "TimeSlot",
+                    "min": -10000,
+                    "max": 100000,
+                    "defaultValue": 202108120900,
+                    "iconName": "newInt",
+                    "configurable": {
+                        "name": "text",
+                        "description": "text",
+                        "min": "int",
+                        "max": "int",
+                        "defaultValue": "int"
+                    }
+                },
+                {
+                    "typeStr": "int",
+                    "guid": "85bcb48b-8ecc-485e-997e-4d8070471718",
+                    "description": "MadeYear_RollOut",
+                    "name": "MY",
+                    "min": 1800,
+                    "max": 2012,
+                    "defaultValue": 2000,
+                    "iconName": "newInt",
+                    "configurable": {
+                        "name": "text",
+                        "description": "text",
+                        "min": "int",
+                        "max": "int",
+                        "defaultValue": "int"
+                    }
+                },
+                {
+                    "typeStr": "bool",
+                    "guid": "4cf9e8e3-1801-4224-b664-089145f5bf9b",
+                    "description": "info from actual licence plate?",
+                    "name": "PlateInfoVeriQA",
+                    "defaultValue": false,
+                    "iconName": "newBool",
+                    "configurable": {
+                        "name": "text",
+                        "description": "text",
+                        "defaultValue": "bool"
+                    }
+                },
+                {
+                    "typeStr": "enum",
+                    "guid": "0495cdb8-adde-416b-b737-c8950de6e6eb",
+                    "name": "Model",
+                    "description": "Identify the model if possible",
+                    "options": "9-5, 9-3, 9000, 900",
+                    "defaultValue": "9-5",
+                    "iconName": "newEnum",
+                    "configurable": {
+                        "name": "text",
+                        "description": "text",
+                        "defaultValue": "text",
+                        "options": "text"
+                    }
+                },
+                {
+                    "typeStr": "enum",
+                    "guid": "8a13c04c-b1c3-49af-9009-24b60b9427b1",
+                    "name": "ModelVar",
+                    "description": " various type",
+                    "options": "Sedan, Wagon, SC, Conv, N/A",
+                    "defaultValue": "Wagon",
+                    "iconName": "newEnum",
+                    "configurable": {
+                        "name": "text",
+                        "description": "text",
+                        "defaultValue": "text",
+                        "options": "text"
+                    }
+                },
+                {
+                    "typeStr": "longtext",
+                    "guid": "bf3bb09b-1e06-43ba-a943-93dad16292aa",
+                    "name": "ExtraDetail",
+                    "description": "Just recording, not used in site",
+                    "defaultValue": "N/A",
+                    "iconName": "newLongText",
+                    "configurable": {
+                        "name": "text",
+                        "description": "text",
+                        "defaultValue": "longtext"
+                    }
+                }
+            ],
+            "lines": [
+                {
+                    "guid": "72d32e97-dfcf-43c0-9472-3da3924224d8",
+                    "id": "0",
+                    "ImgsPath": "",
+                    "TimeSlot": 0,
+                    "MY": 0,
+                    "PlateInfoVeriQA": false,
+                    "Model": "9-5",
+                    "ModelVar": "N/A",
+                    "ExtraDetail": "N/A"
+                },
+                {
+                    "guid": "87da25cb-220f-4cd0-804c-4d28fc7ed327",
+                    "id": "1",
+                    "ImgsPath": "..\\imgs\\sp23stu2proj2Alt\\202108162022.jpg",
+                    "TimeSlot": 202108162022,
+                    "MY": 2004,
+                    "PlateInfoVeriQA": true,
+                    "Model": "9-3",
+                    "ModelVar": "Conv",
+                    "ExtraDetail": "ArcConvertible_MI_GrazAustria"
+                },
+                {
+                    "guid": "9f041fae-16d2-4606-8566-e471ac4f58eb",
+                    "id": "2",
+                    "ImgsPath": "..\\imgs\\sp23stu2proj2Alt\\202108211320.jpg",
+                    "TimeSlot": 202108211320,
+                    "MY": 2006,
+                    "PlateInfoVeriQA": false,
+                    "Model": "9-3",
+                    "ModelVar": "Sedan",
+                    "ExtraDetail": "N/A /PlateNotVeri/F2"
+                },
+                {
+                    "guid": "4b3fd099-3ece-4208-a1df-a69d60718c8c",
+                    "id": "3",
+                    "ImgsPath": "..\\imgs\\sp23stu2proj2Alt\\202109191353.jpg",
+                    "TimeSlot": 202109191353,
+                    "MY": 2006,
+                    "PlateInfoVeriQA": false,
+                    "Model": "9-3",
+                    "ModelVar": "Sedan",
+                    "ExtraDetail": "N/A /PlateNotVeri/F2/ caughtCount2"
+                },
+                {
+                    "guid": "400688fb-b329-47e8-8ab9-b6a16b2a790d",
+                    "id": "4",
+                    "ImgsPath": "..\\imgs\\sp23stu2proj2Alt\\202109211147.jpg",
+                    "TimeSlot": 202109211147,
+                    "MY": 2008,
+                    "PlateInfoVeriQA": false,
+                    "Model": "9-3",
+                    "ModelVar": "Conv",
+                    "ExtraDetail": "N/A /PlateNotVeri"
+                },
+                {
+                    "guid": "ede82fa0-fa74-48e9-b883-e0f40dbeb98c",
+                    "id": "5",
+                    "ImgsPath": "..\\imgs\\sp23stu2proj2Alt\\202109241354.jpg",
+                    "TimeSlot": 202109241354,
+                    "MY": 2010,
+                    "PlateInfoVeriQA": false,
+                    "Model": "9-5",
+                    "ModelVar": "Sedan",
+                    "ExtraDetail": "N/A /95NG"
+                },
+                {
+                    "guid": "1e58ab61-eae9-4303-ba65-d1e9d977478f",
+                    "id": "6",
+                    "ImgsPath": "..\\imgs\\sp23stu2proj2Alt\\202109271445.jpg",
+                    "TimeSlot": 202109271445,
+                    "MY": 2007,
+                    "PlateInfoVeriQA": true,
+                    "Model": "9-3",
+                    "ModelVar": "Sedan",
+                    "ExtraDetail": "2.0T_MI_TrollhattanSweden"
+                },
+                {
+                    "guid": "527ec290-e321-47c9-ac67-4c913d0720d1",
+                    "id": "7",
+                    "ImgsPath": "..\\imgs\\sp23stu2proj2Alt\\202110081847.jpg",
+                    "TimeSlot": 202110081847,
+                    "MY": 2006,
+                    "PlateInfoVeriQA": false,
+                    "Model": "9-3",
+                    "ModelVar": "Sedan",
+                    "ExtraDetail": "N/A/PlateNotVeri/F2?/caughtCount3?"
+                },
+                {
+                    "guid": "3839707a-7b08-4624-ae31-53c6c6e6128e",
+                    "id": "8",
+                    "ImgsPath": "..\\imgs\\sp23stu2proj2Alt\\202110311653.jpg",
+                    "TimeSlot": 202110311653,
+                    "MY": 2005,
+                    "PlateInfoVeriQA": false,
+                    "Model": "9-3",
+                    "ModelVar": "Sedan",
+                    "ExtraDetail": "N/A/PlateNotVeri"
+                },
+                {
+                    "guid": "406dc6e1-caf7-4251-af14-da3855151040",
+                    "id": "9",
+                    "ImgsPath": "..\\imgs\\sp23stu2proj2Alt\\202111051850.jpg",
+                    "TimeSlot": 20211051850,
+                    "MY": 2005,
+                    "PlateInfoVeriQA": false,
+                    "Model": "9-3",
+                    "ModelVar": "Conv",
+                    "ExtraDetail": "N/A/PlateNotVeri"
+                },
+                {
+                    "guid": "eb425e93-03b3-4ef2-aed6-08c22ac6952d",
+                    "id": "10",
+                    "ImgsPath": "..\\imgs\\sp23stu2proj2Alt\\202111211259.jpg",
+                    "TimeSlot": 202111211259,
+                    "MY": 2001,
+                    "PlateInfoVeriQA": true,
+                    "Model": "9-5",
+                    "ModelVar": "Wagon",
+                    "ExtraDetail": "Aero_MI_TrollhattanSweden_2.3L"
+                },
+                {
+                    "guid": "a60be659-e14e-4547-85d2-eb1523d862e1",
+                    "id": "11",
+                    "ImgsPath": "..\\imgs\\sp23stu2proj2Alt\\202111221307.jpg",
+                    "TimeSlot": 202111221307,
+                    "MY": 2000,
+                    "PlateInfoVeriQA": true,
+                    "Model": "9-3",
+                    "ModelVar": "Conv",
+                    "ExtraDetail": "2.0L_MI_NystadFinland"
+                },
+                {
+                    "guid": "afbddc6a-fb0a-4128-bcff-88502b1eb47a",
+                    "id": "12",
+                    "ImgsPath": "..\\imgs\\sp23stu2proj2Alt\\202112271043.jpg",
+                    "TimeSlot": 202112271042,
+                    "MY": 2000,
+                    "PlateInfoVeriQA": true,
+                    "Model": "9-3",
+                    "ModelVar": "Conv",
+                    "ExtraDetail": "2.0L_MI_NystadFinland/CaughtCount2"
+                },
+                {
+                    "guid": "eefe51d5-2046-4150-bc8f-6a27b7b7475a",
+                    "id": "13",
+                    "ImgsPath": "..\\imgs\\sp23stu2proj2Alt\\202201221354.jpg",
+                    "TimeSlot": 202201221354,
+                    "MY": 2008,
+                    "PlateInfoVeriQA": true,
+                    "Model": "9-5",
+                    "ModelVar": "SC",
+                    "ExtraDetail": "NG/2.3T_MI_TrollhattanSweden"
+                },
+                {
+                    "guid": "86bf6341-2cb0-47a6-a23c-656509e37f97",
+                    "id": "14",
+                    "ImgsPath": "..\\imgs\\sp23stu2proj2Alt\\202202081137.jpg",
+                    "TimeSlot": 202202081137,
+                    "MY": 2008,
+                    "PlateInfoVeriQA": false,
+                    "Model": "9-3",
+                    "ModelVar": "Conv",
+                    "ExtraDetail": "N/A/PlateNotVeri/ 2.0T=Arc+/CaughtCount2 (exceed)"
+                },
+                {
+                    "guid": "5d032bda-a579-488f-9b73-d7265af65793",
+                    "id": "15",
+                    "ImgsPath": "..\\imgs\\sp23stu2proj2Alt\\202202280832.jpg",
+                    "TimeSlot": 202202280832,
+                    "MY": 2004,
+                    "PlateInfoVeriQA": true,
+                    "Model": "9-5",
+                    "ModelVar": "Wagon",
+                    "ExtraDetail": "Linear2.3t_MI_TrollhattanSweden"
+                },
+                {
+                    "guid": "d24e9406-e0ac-4c4e-96b9-ffc0adaa6b60",
+                    "id": "16",
+                    "ImgsPath": "..\\imgs\\sp23stu2proj2Alt\\202202281531.jpg",
+                    "TimeSlot": 202202281531,
+                    "MY": 2004,
+                    "PlateInfoVeriQA": true,
+                    "Model": "9-5",
+                    "ModelVar": "Wagon",
+                    "ExtraDetail": "Linear2.3t_MI_TrollhattanSweden/CaughtCount2"
+                },
+                {
+                    "guid": "e7d03a21-b575-45ed-b384-294a5cddedee",
+                    "id": "17",
+                    "ImgsPath": "..\\imgs\\sp23stu2proj2Alt\\202203061215.jpg",
+                    "TimeSlot": 202203061215,
+                    "MY": 2002,
+                    "PlateInfoVeriQA": true,
+                    "Model": "9-5",
+                    "ModelVar": "Wagon",
+                    "ExtraDetail": "Aero_MI_TrollhattanSweden"
+                },
+                {
+                    "guid": "40703e42-f7c5-4ac5-9016-1944299c8bd9",
+                    "id": "18",
+                    "ImgsPath": "..\\imgs\\sp23stu2proj2Alt\\202203070831.jpg",
+                    "TimeSlot": 202203070831,
+                    "MY": 2008,
+                    "PlateInfoVeriQA": false,
+                    "Model": "9-3",
+                    "ModelVar": "Conv",
+                    "ExtraDetail": "N/A/PlateNotVeri"
+                },
+                {
+                    "guid": "e5f816a9-5b12-4280-9f10-9e432fcea44b",
+                    "id": "19",
+                    "ImgsPath": "..\\imgs\\sp23stu2proj2Alt\\202203131303.jpg",
+                    "TimeSlot": 202203131303,
+                    "MY": 2002,
+                    "PlateInfoVeriQA": true,
+                    "Model": "9-5",
+                    "ModelVar": "Wagon",
+                    "ExtraDetail": "Aero_MI_TrollhattanSweden/CaughtCount2"
+                },
+                {
+                    "guid": "4c6e40b9-5ec6-4aa0-a4c7-d39cc4ffc73d",
+                    "id": "20",
+                    "ImgsPath": "..\\imgs\\sp23stu2proj2Alt\\202203201219.jpg",
+                    "TimeSlot": 202203201219,
+                    "MY": 2002,
+                    "PlateInfoVeriQA": true,
+                    "Model": "9-5",
+                    "ModelVar": "Wagon",
+                    "ExtraDetail": "Aero_MI_TrollhattanSweden/CaughtCount3"
+                },
+                {
+                    "guid": "8f4e0de5-721f-4918-8f3d-04bfc1794be5",
+                    "id": "21",
+                    "ImgsPath": "..\\imgs\\sp23stu2proj2Alt\\202204031343.jpg",
+                    "TimeSlot": 202204031343,
+                    "MY": 2007,
+                    "PlateInfoVeriQA": true,
+                    "Model": "9-3",
+                    "ModelVar": "SC",
+                    "ExtraDetail": "2.0T_MI_TrollhattanSweden"
+                },
+                {
+                    "guid": "b98d7937-de48-414c-83e9-a97406d0f440",
+                    "id": "22",
+                    "ImgsPath": "..\\imgs\\sp23stu2proj2Alt\\202204101254.jpg",
+                    "TimeSlot": 202204101254,
+                    "MY": 2002,
+                    "PlateInfoVeriQA": false,
+                    "Model": "9-5",
+                    "ModelVar": "Sedan",
+                    "ExtraDetail": "N/A"
+                },
+                {
+                    "guid": "ad9115c6-9124-4ed8-be2a-91ae5649be2f",
+                    "id": "23",
+                    "ImgsPath": "..\\imgs\\sp23stu2proj2Alt\\202204101321.jpg",
+                    "TimeSlot": 202204101321,
+                    "MY": 2002,
+                    "PlateInfoVeriQA": false,
+                    "Model": "9-5",
+                    "ModelVar": "Wagon",
+                    "ExtraDetail": "N/A"
+                },
+                {
+                    "guid": "1236feb1-cd1a-4fca-8613-2ebd40869bb7",
+                    "id": "24",
+                    "ImgsPath": "..\\imgs\\sp23stu2proj2Alt\\202204101335.jpg",
+                    "TimeSlot": 202204101335,
+                    "MY": 2000,
+                    "PlateInfoVeriQA": true,
+                    "Model": "9-3",
+                    "ModelVar": "Conv",
+                    "ExtraDetail": "SE_MI_NystadFinland"
+                },
+                {
+                    "guid": "d12ede0c-1ff2-4da6-b6f2-a6b41c9d6efa",
+                    "id": "25",
+                    "ImgsPath": "..\\imgs\\sp23stu2proj2Alt\\202204241155.jpg",
+                    "TimeSlot": 202204241155,
+                    "MY": 2002,
+                    "PlateInfoVeriQA": true,
+                    "Model": "9-5",
+                    "ModelVar": "Wagon",
+                    "ExtraDetail": "Aero_MI_TrollhattanSweden/CaughtCount4+"
+                },
+                {
+                    "guid": "979aded1-c16d-48c8-b268-ad1558da7edc",
+                    "id": "26",
+                    "ImgsPath": "..\\imgs\\sp23stu2proj2Alt\\202204241336.jpg",
+                    "TimeSlot": 202204241336,
+                    "MY": 2000,
+                    "PlateInfoVeriQA": true,
+                    "Model": "9-3",
+                    "ModelVar": "Conv",
+                    "ExtraDetail": "SE_MI_NystadFinland/CaughtCount2"
+                },
+                {
+                    "guid": "26abc202-271f-46f4-abe4-96b75e53f71f",
+                    "id": "27",
+                    "ImgsPath": "..\\imgs\\sp23stu2proj2Alt\\202205081446.jpg",
+                    "TimeSlot": 202205081446,
+                    "MY": 2002,
+                    "PlateInfoVeriQA": true,
+                    "Model": "9-5",
+                    "ModelVar": "Wagon",
+                    "ExtraDetail": "Aero_MI_TrollhattanSweden/CaughtCount5+"
+                },
+                {
+                    "guid": "bea387eb-8ca5-447c-9ec8-186475efcd69",
+                    "id": "28",
+                    "ImgsPath": "..\\imgs\\sp23stu2proj2Alt\\202205151214.jpg",
+                    "TimeSlot": 202205151214,
+                    "MY": 2011,
+                    "PlateInfoVeriQA": true,
+                    "Model": "9-3",
+                    "ModelVar": "Sedan",
+                    "ExtraDetail": "2.0T_MI_TrollhattanSweden"
+                },
+                {
+                    "guid": "07169112-9008-42fc-8241-fbdabf489a0f",
+                    "id": "29",
+                    "ImgsPath": "..\\imgs\\sp23stu2proj2Alt\\202208291247.jpg",
+                    "TimeSlot": 202208291247,
+                    "MY": 2008,
+                    "PlateInfoVeriQA": false,
+                    "Model": "9-3",
+                    "ModelVar": "Conv",
+                    "ExtraDetail": "N/A/PlateNotVeri/ 2.0T=Arc+/CaughtCount3(exceed)"
+                },
+                {
+                    "guid": "e586fe5a-3900-45a9-b619-82452322b4b3",
+                    "id": "30",
+                    "ImgsPath": "..\\imgs\\sp23stu2proj2Alt\\202208291314.jpg",
+                    "TimeSlot": 202208291314,
+                    "MY": 2004,
+                    "PlateInfoVeriQA": true,
+                    "Model": "9-3",
+                    "ModelVar": "Sedan",
+                    "ExtraDetail": "Linear_MI_TrollhattanSweden"
+                },
+                {
+                    "guid": "96b900a1-7242-4488-b703-a10c88b22921",
+                    "id": "31",
+                    "ImgsPath": "..\\imgs\\sp23stu2proj2Alt\\202210021203(2).jpg",
+                    "TimeSlot": 202210021203,
+                    "MY": 2008,
+                    "PlateInfoVeriQA": true,
+                    "Model": "9-3",
+                    "ModelVar": "SC",
+                    "ExtraDetail": "(badge:Aero)TurboX?_MI_TrollhattanSweden"
+                },
+                {
+                    "guid": "ea1f5aae-fb04-4543-aeb5-dda11c072015",
+                    "id": "32",
+                    "ImgsPath": "..\\imgs\\sp23stu2proj2Alt\\202210161220.jpg",
+                    "TimeSlot": 202210161220,
+                    "MY": 2008,
+                    "PlateInfoVeriQA": true,
+                    "Model": "9-3",
+                    "ModelVar": "SC",
+                    "ExtraDetail": "(badge:Aero)TurboX?_MI_TrollhattanSweden/CaughtCount2"
+                },
+                {
+                    "guid": "662c77c8-7ea7-4e29-95d6-04ceb355f21c",
+                    "id": "33",
+                    "ImgsPath": "..\\imgs\\sp23stu2proj2Alt\\202210231259.jpg",
+                    "TimeSlot": 202210231259,
+                    "MY": 2002,
+                    "PlateInfoVeriQA": true,
+                    "Model": "9-5",
+                    "ModelVar": "Wagon",
+                    "ExtraDetail": "Aero_MI_TrollhattanSweden/CaughtCount6+"
+                },
+                {
+                    "guid": "2879f4bc-7283-4cd3-8ea7-3a61abb84555",
+                    "id": "34",
+                    "ImgsPath": "..\\imgs\\sp23stu2proj2Alt\\202210301154.jpg",
+                    "TimeSlot": 202210301154,
+                    "MY": 2008,
+                    "PlateInfoVeriQA": true,
+                    "Model": "9-3",
+                    "ModelVar": "SC",
+                    "ExtraDetail": "(badge:Aero)TurboX?_MI_TrollhattanSweden/CaughtCount3"
+                },
+                {
+                    "guid": "c8263f4e-8232-4047-b59f-d4a8ae63b123",
+                    "id": "35",
+                    "ImgsPath": "..\\imgs\\sp23stu2proj2Alt\\202210301255.jpg",
+                    "TimeSlot": 202210301255,
+                    "MY": 2003,
+                    "PlateInfoVeriQA": true,
+                    "Model": "9-5",
+                    "ModelVar": "Sedan",
+                    "ExtraDetail": "Linear2.3t_MI_TrollhattanSweden"
+                },
+                {
+                    "guid": "15421ce7-ff4f-42d6-8cd6-f3fe2d52de4f",
+                    "id": "36",
+                    "ImgsPath": "..\\imgs\\sp23stu2proj2Alt\\202211061251.jpg",
+                    "TimeSlot": 202211061251,
+                    "MY": 2003,
+                    "PlateInfoVeriQA": true,
+                    "Model": "9-5",
+                    "ModelVar": "Sedan",
+                    "ExtraDetail": "Linear2.3t_MI_TrollhattanSweden/CaughtCount2"
+                },
+                {
+                    "guid": "dcee7526-8205-45b7-aa72-762a79bfc747",
+                    "id": "37",
+                    "ImgsPath": "..\\imgs\\sp23stu2proj2Alt\\202211271302.jpg",
+                    "TimeSlot": 202211271302,
+                    "MY": 2011,
+                    "PlateInfoVeriQA": true,
+                    "Model": "9-3",
+                    "ModelVar": "Sedan",
+                    "ExtraDetail": "2.0T_MI_TrollhattanSweden/CaughtCount2"
+                },
+                {
+                    "guid": "a9654703-b8dc-4a53-bb8e-0f32f065e61a",
+                    "id": "38",
+                    "ImgsPath": "..\\imgs\\sp23stu2proj2Alt\\202301041409.jpg",
+                    "TimeSlot": 202301041409,
+                    "MY": 1993,
+                    "PlateInfoVeriQA": false,
+                    "Model": "900",
+                    "ModelVar": "Sedan",
+                    "ExtraDetail": "CE?"
+                },
+                {
+                    "guid": "5095be56-2a33-4cdf-8d40-b5d77acc8ce8",
+                    "id": "39",
+                    "ImgsPath": "..\\imgs\\sp23stu2proj2Alt\\202301291243.jpg",
+                    "TimeSlot": 202301291243,
+                    "MY": 2003,
+                    "PlateInfoVeriQA": true,
+                    "Model": "9-5",
+                    "ModelVar": "Sedan",
+                    "ExtraDetail": "Linear2.3t_MI_TrollhattanSweden/CaughtCount3"
+                },
+                {
+                    "guid": "8822db28-0cf0-4eb9-bda2-30bd7f41a1af",
+                    "id": "40",
+                    "ImgsPath": "..\\imgs\\sp23stu2proj2Alt\\202302131536.jpg",
+                    "TimeSlot": 202302131536,
+                    "MY": 2005,
+                    "PlateInfoVeriQA": true,
+                    "Model": "9-3",
+                    "ModelVar": "SC",
+                    "ExtraDetail": "Arc_MI_GrazAustria"
+                }
+            ],
+            "hidden": false,
+            "isProps": false,
+            "configurable": {
+                "name": "text",
+                "description": "text",
+                "displayColumn": "columnSelect@name",
+                "columnSelect@name@displayColumn": {
+                    "allowedTypes": [
+                        "int",
+                        "float",
+                        "text",
+                        "longtext"
+                    ]
+                }
+            }
+        }
+    ]
+}

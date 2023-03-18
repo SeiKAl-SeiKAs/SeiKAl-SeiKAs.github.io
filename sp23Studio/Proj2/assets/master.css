@@ -1,0 +1,107 @@
+:root{
+    --page-flex:row;
+    --page-flex-space:space-between;
+    --emblem-height:10vw;
+    --list-height:50vmax;
+    --footer-position:sticky;
+
+    --page-bg-color:#0341d178;
+    --page-emblem-text-color:white;
+    --page-dubby-circle-loc:25%;
+    --page-text-color:white;
+    --page-accent-color:rgb(196, 14, 11);
+    --container-mobi-loc-tweak: 0%;
+}
+
+*{
+    color: --page-text-color;
+    background-color: gray;
+}
+body{
+    background-color:--page-bg-color;
+}
+
+.pc-mobi-container{
+    margin: 5vmin;   
+    width: 100vw;
+    display: flex;
+    justify-content: var(--page-flex-space);
+    align-items: var(--page-flex-space);
+    flex-direction:var(--page-flex);
+   
+    background-color: aqua;
+
+    margin-top: var(--container-mobi-loc-tweak);
+      
+    
+}
+.emblem-container{
+    border-radius: 3vmin;
+    width: 30%;
+    aspect-ratio: 1/2;
+    background-color: burlywood;
+   
+}
+.dubbytext{
+    border-radius: 50%;
+    width: 150%;
+    aspect-ratio: 1/1;
+    background-color: red ;
+    margin-top:  var(--page-dubby-circle-loc);
+    transform: translateX(-25%);
+    
+}
+
+.main-container{
+    display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+    width: 65%;
+    background-color: beige;
+    height: 80vh;
+    
+}
+
+.main-container div {
+    width: 80%;
+    height: 10%;
+    margin: .5%;
+    background-color: lightblue;
+}
+
+
+.main-container .list-container {
+    width: 90%;
+    height: 75%;
+    margin: 5%;
+    background-color: lightblue;
+}
+#option-row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+      width: 100%;
+      background-color: beige;
+      height: 10%;
+}
+#option-row div{
+    width: 20%;
+    height: 5vh;
+    margin: .5%;
+    background-color: maroon;
+}
+
+@media screen and (min-width: 320px){
+    :root{
+        --page-flex:column;
+        --page-flex-space:center;
+        --container-mobi-loc-tweak: -20%;
+    }
+}
+@media screen and (min-width: 1024px){
+    :root{
+        --page-flex:row;
+        --page-flex-space:space-between;
+    }
+}
