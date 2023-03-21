@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+*{
+  background-color: aliceblue;
+  
+  
+}
+h1{
+  font-family: 'Jost', sans-serif;
+}
+.container{
+  width: 80%;
+  height: 80%;
+  margin: 10% auto;
+  overflow: hidden;
+ 
+}
+.table-pattern{
+    position: relative;
+margin-top: -35%;
+  width: 100vw;
+  height: 60vmin;
+
+  background: linear-gradient(90deg, transparent 50%, #de4e4e 50%),linear-gradient(to bottom, transparent 50%, #de4e4e80 50%);
+        background-size: 3em 3em;
+        background-color: #fad7d7;
+       opacity: .4;
+  transform: rotateX(60deg);
+  z-index: 2;
+}
+.wall{
+  height: 30vh;  
+  background-color: lightgray;
+  }
+.back{
+  height: 30vh;
+  margin-top: -30vh;
+  background-color: transparent;
+  z-index: 3;
+  }
+.mid{
+  height: 30vh;
+
+  background-color: transparent;
+  z-index: 23;
+  }
+.fore{
+  height: 40vh;
+  margin-top: -10vh;
+  background-color: transparent;
+  z-index: 33;
+  }
+
+  .book{
+    position: relative;
+    height: 70%;
+    aspect-ratio: 4/3;
+    background-color: rgb(164, 240, 184);
+    transform: translate(63px, 0px) scale(0.8) skew(55deg, 0deg);
+  box-shadow: -54px 11px 0px 5px rgba(224, 38, 38);
+  z-index: 33;
+  }
+ 
+.choco{
+  margin-left: 50%;
+  margin-top: -15%;
+  position: relative;
+  width: 60%;
+  aspect-ratio: 5/1;
+  color: red;
+  background-color: rgb(75, 72, 72);
+  transform: scale(1, 0.5) skew(-25deg, 0deg);
+  box-shadow:
+    inset -38px 13px 0px 0px rgba(97, 80, 80, 1),
+    35px 16px 0px 0px rgba(66, 36, 36);
+    z-index: 33;
+}
+.fri-yello{
+ 
+  position: relative;
+  background-color: blanchedalmond;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  height: 80%;
+  box-shadow: 21px 29px 35px 0px rgba(0, 0, 0);
+  margin-left: 20%;
+  z-index: 23;
+}
+.fri-red{
+  position: relative;
+  margin-left: 60%;
+  margin-top: -15%;
+  background-color: rgb(238, 169, 169);
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  height: 80%;
+  box-shadow: 21px 29px 35px 0px rgba(0, 0, 0);
+  z-index: 25;
+  
+}
+.fri-orange{
+  position: relative;
+  margin-left: 68%;
+  margin-top: -20%;
+  background-color: rgb(255, 205, 25);
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  height: 80%;
+  box-shadow: 21px 29px 35px 0px rgba(0, 0, 0);
+  z-index: 23;
+  
+}
+.casette{
+  position: relative;
+  aspect-ratio: 2/1;
+  height: 60%;
+  margin-left: 78%;
+  margin-top: -10%;
+  border-radius: 3%;
+  background: radial-gradient(circle at 50% 50%, #525252 20%, transparent 21%),
+  radial-gradient(circle at 60% 60%, #52525280 15%, transparent 16%);
+
+        background-size: 50% 100%;
+        background-color: #e6e5e0;
+        opacity: 1;
+        transform: translate(0px, 0px) skew(4deg, 17deg);
+        box-shadow: inset -21px -8px 0px 0px rgba(0, 0, 0, 0.3);
+  z-index: 21;
+
+}
+.glass-neck{
+  margin-left: 10%;
+  background-color: rgb(206, 206, 206);
+  width: 5%;
+  aspect-ratio: 1/2;
+  background-image: 
+    linear-gradient(90deg, rgba(128, 128, 128, 0.564) 3px, transparent 0),
+    linear-gradient(90deg, rgba(128, 128, 128, 0.564) 11px, transparent 0),
+    linear-gradient(90deg, rgba(128, 128, 128, 0.564) 23px, transparent 0);
+  background-size: 11px 100%, 21px 100%, 33px 100%;
+  z-index: 3;
+
+}
+.glass-cap{
+  position: relative;
+  margin-top: -5%;
+  margin-left: 7%;
+  background-color: orange;
+  width: 5%;
+  aspect-ratio: 1/1;
+  z-index: 3;
+
+}
+.glass-body{
+  position: relative;
+
+  margin-left: 7%;
+  background-color: rgb(206, 206, 206);
+  width: 10%;
+  aspect-ratio: 1/2;
+  background-image: 
+    linear-gradient(90deg, rgba(128, 128, 128, 0.564) 3px, transparent 0),
+    linear-gradient(90deg, rgba(128, 128, 128, 0.564) 11px, transparent 0),
+    linear-gradient(90deg, rgba(128, 128, 128, 0.564) 23px, transparent 0);
+  background-size: 11px 100%, 21px 100%, 33px 100%;
+  z-index: 3;
+}
+.book-black{
+
+  position: relative;
+  margin-left: 15%;
+  margin-top: -25%;
+width: 17%;
+aspect-ratio: 2/3;
+background-color: rgb(54, 54, 54);
+transform: translate(0px, 0px) skew(14deg, 6deg);
+box-shadow: inset 30px 13px 0px 0px rgba(255, 255, 255, 0.4), 
+-15px 19px 0px 0px rgba(138, 77, 77, 0.3);
+z-index: 4;  
+
+}
+
+.cup-wine-top{
+  position: relative;
+  margin-left: 50%;
+  margin-top: -30%;
+  background-color: rgb(206, 206, 206);
+  width: 10%;
+  aspect-ratio: 2/1;
+
+background-image: linear-gradient(90deg, rgba(255,255,255,.07) 50%, transparent 50%),
+linear-gradient(90deg, rgba(255,255,255,.13) 50%, transparent 50%),
+linear-gradient(90deg, transparent 50%, rgba(255,255,255,.17) 50%),
+linear-gradient(90deg, transparent 50%, rgba(255,255,255,.19) 50%);
+background-size: 13px, 29px, 37px, 53px;
+
+}
+.cup-wine-mid{
+  position: relative;
+  margin-left: 50%;
+  margin-top: -3%;
+
+  background-color: rgb(95, 127, 55);
+  width: 10%;
+  aspect-ratio: 2/1;
+border-radius: 10% / 50%;
+background-image: linear-gradient(90deg, rgba(255,255,255,.07) 50%, transparent 50%),
+linear-gradient(90deg, rgba(255,255,255,.13) 50%, transparent 50%),
+linear-gradient(90deg, transparent 50%, rgba(255,255,255,.17) 50%),
+linear-gradient(90deg, transparent 50%, rgba(255,255,255,.19) 50%);
+background-size: 13px, 29px, 37px, 53px;
+z-index: 3;
+
+}
+.cup-wine-down{
+  position: relative;
+  margin-left: 50%;
+ 
+  background-color: rgb(206, 206, 206);
+  width: 10%;
+  aspect-ratio: 1/2;
+
+background-image: linear-gradient(90deg, rgba(255,255,255,.07) 50%, transparent 50%),
+linear-gradient(90deg, rgba(255,255,255,.13) 50%, transparent 50%),
+linear-gradient(90deg, transparent 50%, rgba(255,255,255,.17) 50%),
+linear-gradient(90deg, transparent 50%, rgba(255,255,255,.19) 50%);
+background-size: 13px, 29px, 37px, 53px;
+border-radius: 0% 0% 70% 70%;
+
+}
+
+.cup-wine-foot{
+  position: relative;
+  margin-left: 50%;
+
+  background-color: rgb(206, 206, 206);
+  width: 10%;
+  aspect-ratio: 2/1;
+  border-radius: 100% 100% 10% 10%;
+
+background-image: linear-gradient(90deg, rgba(255,255,255,.07) 50%, transparent 50%),
+linear-gradient(90deg, rgba(255,255,255,.13) 50%, transparent 50%),
+linear-gradient(90deg, transparent 50%, rgba(255,255,255,.17) 50%),
+linear-gradient(90deg, transparent 50%, rgba(255,255,255,.19) 50%);
+background-size: 13px, 29px, 37px, 53px;
+
+
+}
+.mirror{
+  position: relative;
+  margin-left: 80%;
+  margin-top: -30%;
+  border-radius: 40%;
+width: 25%;
+aspect-ratio: 1/1;
+background: whitesmoke;
+
+background: radial-gradient(circle, rgba(237,237,237,1) 66%, rgba(187,187,187,1) 70%, rgba(144,144,144,1) 72%,
+ rgba(0,0,0,1) 76%, rgba(0,0,0,1) 93%, rgba(130,130,130,1) 96%, rgba(130,130,130,1) 98%);
+ transform: translate(0px, 0px) skew(-17deg, 8deg);
+}
