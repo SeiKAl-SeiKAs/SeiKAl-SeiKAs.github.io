@@ -1,7 +1,9 @@
 [
     {
-      "guid": "72d32e97-dfcf-43c0-9472-3da3924224d8",
+       
       "id": "0",
+      "idClass": "Id0",
+      "idClassBtn": "IdB0",
       "ImgsPath": "n/a",
       "TimeSlot": 0,
       "MY": 0,
@@ -11,9 +13,12 @@
       "ExtraDetail": "N/A"
     },
     {
-      "guid": "87da25cb-220f-4cd0-804c-4d28fc7ed327",
+       
       "id": "1",
+      "idClass": "Id1",
+      "idClassBtn": "IdB1",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202108162022.jpg",
+      "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202108162022.jpg",
       "TimeSlot": 202108162022,
       "MY": 2004,
       "PlateInfoVeriQA": true,
@@ -22,9 +27,12 @@
       "ExtraDetail": "ArcConvertible_MI_GrazAustria"
     },
     {
-      "guid": "9f041fae-16d2-4606-8566-e471ac4f58eb",
+       
       "id": "2",
+      "idClass": "Id2",
+      "idClassBtn": "IdB2",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202108211320.jpg",
+      "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202108211320.jpg",
       "TimeSlot": 202108211320,
       "MY": 2006,
       "PlateInfoVeriQA": false,
@@ -33,9 +41,12 @@
       "ExtraDetail": "N/A /PlateNotVeri/F2"
     },
     {
-      "guid": "4b3fd099-3ece-4208-a1df-a69d60718c8c",
+       
       "id": "3",
+      "idClass": "Id3",
+      "idClassBtn": "IdB3",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202109191353.jpg",
+      "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202109191353.jpg",
       "TimeSlot": 202109191353,
       "MY": 2006,
       "PlateInfoVeriQA": false,
@@ -44,9 +55,12 @@
       "ExtraDetail": "N/A /PlateNotVeri/F2/ caughtCount2"
     },
     {
-      "guid": "400688fb-b329-47e8-8ab9-b6a16b2a790d",
+       
       "id": "4",
+      "idClass": "Id4",
+      "idClassBtn": "IdB4",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202109211147.jpg",
+      "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202109211147.jpg",
       "TimeSlot": 202109211147,
       "MY": 2008,
       "PlateInfoVeriQA": false,
@@ -55,9 +69,12 @@
       "ExtraDetail": "N/A /PlateNotVeri"
     },
     {
-      "guid": "ede82fa0-fa74-48e9-b883-e0f40dbeb98c",
+       
       "id": "5",
+      "idClass": "Id5",
+      "idClassBtn": "IdB5",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202109241354.jpg",
+      "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202109241354.jpg",
       "TimeSlot": 202109241354,
       "MY": 2010,
       "PlateInfoVeriQA": false,
@@ -66,9 +83,12 @@
       "ExtraDetail": "N/A /95NG"
     },
     {
-      "guid": "1e58ab61-eae9-4303-ba65-d1e9d977478f",
+       
       "id": "6",
+      "idClass": "Id6",
+      "idClassBtn": "IdB6",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202109271445.jpg",
+      "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202109271445.jpg",
       "TimeSlot": 202109271445,
       "MY": 2007,
       "PlateInfoVeriQA": true,
@@ -77,9 +97,12 @@
       "ExtraDetail": "2.0T_MI_TrollhattanSweden"
     },
     {
-      "guid": "527ec290-e321-47c9-ac67-4c913d0720d1",
+       
       "id": "7",
+      "idClass": "Id7",
+      "idClassBtn": "IdB7",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202110081847.jpg",
+      "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202110081847.jpg",
       "TimeSlot": 202110081847,
       "MY": 2006,
       "PlateInfoVeriQA": false,
@@ -88,9 +111,12 @@
       "ExtraDetail": "N/A/PlateNotVeri/F2?/caughtCount3?"
     },
     {
-      "guid": "3839707a-7b08-4624-ae31-53c6c6e6128e",
+       
       "id": "8",
+      "idClass": "Id8",
+      "idClassBtn": "IdB8",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202110311653.jpg",
+      "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202110311653.jpg",
       "TimeSlot": 202110311653,
       "MY": 2005,
       "PlateInfoVeriQA": false,
@@ -99,9 +125,12 @@
       "ExtraDetail": "N/A/PlateNotVeri"
     },
     {
-      "guid": "406dc6e1-caf7-4251-af14-da3855151040",
+       
       "id": "9",
+      "idClass": "Id9",
+      "idClassBtn": "IdB9",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202111051850.jpg",
+      "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202111051850.jpg",
       "TimeSlot": 20211051850,
       "MY": 2005,
       "PlateInfoVeriQA": false,
@@ -110,9 +139,12 @@
       "ExtraDetail": "N/A/PlateNotVeri"
     },
     {
-      "guid": "eb425e93-03b3-4ef2-aed6-08c22ac6952d",
+       
       "id": "10",
+      "idClass": "Id10",
+      "idClassBtn": "IdB10",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202111211259.jpg",
+      "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202111211259.jpg",
       "TimeSlot": 202111211259,
       "MY": 2001,
       "PlateInfoVeriQA": true,
@@ -121,9 +153,12 @@
       "ExtraDetail": "Aero_MI_TrollhattanSweden_2.3L"
     },
     {
-      "guid": "a60be659-e14e-4547-85d2-eb1523d862e1",
+       
       "id": "11",
+      "idClass": "Id11",
+      "idClassBtn": "IdB11",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202111221307.jpg",
+      "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202111221307.jpg",
       "TimeSlot": 202111221307,
       "MY": 2000,
       "PlateInfoVeriQA": true,
@@ -132,9 +167,12 @@
       "ExtraDetail": "2.0L_MI_NystadFinland"
     },
     {
-      "guid": "afbddc6a-fb0a-4128-bcff-88502b1eb47a",
+       
       "id": "12",
+      "idClass": "Id12",
+      "idClassBtn": "IdB12",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202112271043.jpg",
+      "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202112271043.jpg",
       "TimeSlot": 202112271042,
       "MY": 2000,
       "PlateInfoVeriQA": true,
@@ -143,9 +181,12 @@
       "ExtraDetail": "2.0L_MI_NystadFinland/CaughtCount2"
     },
     {
-      "guid": "eefe51d5-2046-4150-bc8f-6a27b7b7475a",
+       
       "id": "13",
+      "idClass": "Id13",
+      "idClassBtn": "IdB13",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202201221354.jpg",
+      "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202201221354.jpg",
       "TimeSlot": 202201221354,
       "MY": 2008,
       "PlateInfoVeriQA": true,
@@ -154,9 +195,12 @@
       "ExtraDetail": "NG/2.3T_MI_TrollhattanSweden"
     },
     {
-      "guid": "86bf6341-2cb0-47a6-a23c-656509e37f97",
+       
       "id": "14",
+      "idClass": "Id14",
+      "idClassBtn": "IdB14",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202202081137.jpg",
+      "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202202081137.jpg",
       "TimeSlot": 202202081137,
       "MY": 2008,
       "PlateInfoVeriQA": false,
@@ -165,9 +209,12 @@
       "ExtraDetail": "N/A/PlateNotVeri/ 2.0T=Arc+/CaughtCount2 (exceed)"
     },
     {
-      "guid": "5d032bda-a579-488f-9b73-d7265af65793",
+       
       "id": "15",
+      "idClass": "Id15",
+      "idClassBtn": "IdB15",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202202280832.jpg",
+      "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202202280832.jpg",
       "TimeSlot": 202202280832,
       "MY": 2004,
       "PlateInfoVeriQA": true,
@@ -176,9 +223,12 @@
       "ExtraDetail": "Linear2.3t_MI_TrollhattanSweden"
     },
     {
-      "guid": "d24e9406-e0ac-4c4e-96b9-ffc0adaa6b60",
+       
       "id": "16",
+      "idClass": "Id16",
+      "idClassBtn": "IdB16",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202202281531.jpg",
+      "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202202281531.jpg",
       "TimeSlot": 202202281531,
       "MY": 2004,
       "PlateInfoVeriQA": true,
@@ -187,9 +237,12 @@
       "ExtraDetail": "Linear2.3t_MI_TrollhattanSweden/CaughtCount2"
     },
     {
-      "guid": "e7d03a21-b575-45ed-b384-294a5cddedee",
+       
       "id": "17",
+      "idClass": "Id17",
+      "idClassBtn": "IdB17",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202203061215.jpg",
+      "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202203061215.jpg",
       "TimeSlot": 202203061215,
       "MY": 2002,
       "PlateInfoVeriQA": true,
@@ -198,9 +251,12 @@
       "ExtraDetail": "Aero_MI_TrollhattanSweden"
     },
     {
-      "guid": "40703e42-f7c5-4ac5-9016-1944299c8bd9",
+       
       "id": "18",
+      "idClass": "Id18",
+      "idClassBtn": "IdB18",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202203070831.jpg",
+      "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202203070831.jpg",
       "TimeSlot": 202203070831,
       "MY": 2008,
       "PlateInfoVeriQA": false,
@@ -209,9 +265,12 @@
       "ExtraDetail": "N/A/PlateNotVeri"
     },
     {
-      "guid": "e5f816a9-5b12-4280-9f10-9e432fcea44b",
+       
       "id": "19",
+      "idClass": "Id19",
+      "idClassBtn": "IdB19",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202203131303.jpg",
+      "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202203131303.jpg",
       "TimeSlot": 202203131303,
       "MY": 2002,
       "PlateInfoVeriQA": true,
@@ -220,9 +279,12 @@
       "ExtraDetail": "Aero_MI_TrollhattanSweden/CaughtCount2"
     },
     {
-      "guid": "4c6e40b9-5ec6-4aa0-a4c7-d39cc4ffc73d",
+       
       "id": "20",
+      "idClass": "Id20",
+      "idClassBtn": "IdB20",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202203201219.jpg",
+      "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202203201219.jpg",
       "TimeSlot": 202203201219,
       "MY": 2002,
       "PlateInfoVeriQA": true,
@@ -231,9 +293,12 @@
       "ExtraDetail": "Aero_MI_TrollhattanSweden/CaughtCount3"
     },
     {
-      "guid": "8f4e0de5-721f-4918-8f3d-04bfc1794be5",
+       
       "id": "21",
+      "idClass": "Id21",
+      "idClassBtn": "IdB21",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202204031343.jpg",
+      "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202204031343.jpg",
       "TimeSlot": 202204031343,
       "MY": 2007,
       "PlateInfoVeriQA": true,
@@ -242,9 +307,12 @@
       "ExtraDetail": "2.0T_MI_TrollhattanSweden"
     },
     {
-      "guid": "b98d7937-de48-414c-83e9-a97406d0f440",
+       
       "id": "22",
+      "idClass": "Id22",
+      "idClassBtn": "IdB22",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202204101254.jpg",
+      "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202204101254.jpg",
       "TimeSlot": 202204101254,
       "MY": 2002,
       "PlateInfoVeriQA": false,
@@ -253,9 +321,12 @@
       "ExtraDetail": "N/A"
     },
     {
-      "guid": "ad9115c6-9124-4ed8-be2a-91ae5649be2f",
+       
       "id": "23",
+      "idClass": "Id23",
+      "idClassBtn": "IdB23",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202204101321.jpg",
+      "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202204101321.jpg",
       "TimeSlot": 202204101321,
       "MY": 2002,
       "PlateInfoVeriQA": false,
@@ -264,9 +335,12 @@
       "ExtraDetail": "N/A"
     },
     {
-      "guid": "1236feb1-cd1a-4fca-8613-2ebd40869bb7",
+       
       "id": "24",
+      "idClass": "Id24",
+      "idClassBtn": "IdB24",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202204101335.jpg",
+      "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202204101335.jpg",
       "TimeSlot": 202204101335,
       "MY": 2000,
       "PlateInfoVeriQA": true,
@@ -275,9 +349,12 @@
       "ExtraDetail": "SE_MI_NystadFinland"
     },
     {
-      "guid": "d12ede0c-1ff2-4da6-b6f2-a6b41c9d6efa",
+       
       "id": "25",
+      "idClass": "Id25",
+      "idClassBtn": "IdB25",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202204241155.jpg",
+      "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202204241155.jpg",
       "TimeSlot": 202204241155,
       "MY": 2002,
       "PlateInfoVeriQA": true,
@@ -286,9 +363,12 @@
       "ExtraDetail": "Aero_MI_TrollhattanSweden/CaughtCount4+"
     },
     {
-      "guid": "979aded1-c16d-48c8-b268-ad1558da7edc",
+       
       "id": "26",
+      "idClass": "Id26",
+      "idClassBtn": "IdB26",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202204241336.jpg",
+      "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202204241336.jpg",
       "TimeSlot": 202204241336,
       "MY": 2000,
       "PlateInfoVeriQA": true,
@@ -297,9 +377,12 @@
       "ExtraDetail": "SE_MI_NystadFinland/CaughtCount2"
     },
     {
-      "guid": "26abc202-271f-46f4-abe4-96b75e53f71f",
+       
       "id": "27",
+      "idClass": "Id27",
+      "idClassBtn": "IdB27",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202205081446.jpg",
+      "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202205081446.jpg",
       "TimeSlot": 202205081446,
       "MY": 2002,
       "PlateInfoVeriQA": true,
@@ -308,9 +391,12 @@
       "ExtraDetail": "Aero_MI_TrollhattanSweden/CaughtCount5+"
     },
     {
-      "guid": "bea387eb-8ca5-447c-9ec8-186475efcd69",
+       
       "id": "28",
+      "idClass": "Id28",
+      "idClassBtn": "IdB28",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202205151214.jpg",
+      "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202205151214.jpg",
       "TimeSlot": 202205151214,
       "MY": 2011,
       "PlateInfoVeriQA": true,
@@ -319,9 +405,12 @@
       "ExtraDetail": "2.0T_MI_TrollhattanSweden"
     },
     {
-      "guid": "07169112-9008-42fc-8241-fbdabf489a0f",
+       
       "id": "29",
+      "idClass": "Id29",
+      "idClassBtn": "IdB29",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202208291247.jpg",
+      "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202208291247.jpg",
       "TimeSlot": 202208291247,
       "MY": 2008,
       "PlateInfoVeriQA": false,
@@ -330,9 +419,12 @@
       "ExtraDetail": "N/A/PlateNotVeri/ 2.0T=Arc+/CaughtCount3(exceed)"
     },
     {
-      "guid": "e586fe5a-3900-45a9-b619-82452322b4b3",
+       
       "id": "30",
+      "idClass": "Id30",
+      "idClassBtn": "IdB30",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202208291314.jpg",
+      "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202208291314.jpg",
       "TimeSlot": 202208291314,
       "MY": 2004,
       "PlateInfoVeriQA": true,
@@ -341,9 +433,12 @@
       "ExtraDetail": "Linear_MI_TrollhattanSweden"
     },
     {
-      "guid": "96b900a1-7242-4488-b703-a10c88b22921",
+      
       "id": "31",
+      "idClass": "Id31",
+      "idClassBtn": "IdB31",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202210021203(2).jpg",
+      "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202210021203(2).jpg",
       "TimeSlot": 202210021203,
       "MY": 2008,
       "PlateInfoVeriQA": true,
@@ -352,9 +447,12 @@
       "ExtraDetail": "(badge:Aero)TurboX?_MI_TrollhattanSweden"
     },
     {
-      "guid": "ea1f5aae-fb04-4543-aeb5-dda11c072015",
+       
       "id": "32",
+      "idClass": "Id32",
+      "idClassBtn": "IdB32",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202210161220.jpg",
+      "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202210161220.jpg",
       "TimeSlot": 202210161220,
       "MY": 2008,
       "PlateInfoVeriQA": true,
@@ -363,9 +461,12 @@
       "ExtraDetail": "(badge:Aero)TurboX?_MI_TrollhattanSweden/CaughtCount2"
     },
     {
-      "guid": "662c77c8-7ea7-4e29-95d6-04ceb355f21c",
+       
       "id": "33",
+      "idClass": "Id33",
+      "idClassBtn": "IdB33",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202210231259.jpg",
+      "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202210231259.jpg",
       "TimeSlot": 202210231259,
       "MY": 2002,
       "PlateInfoVeriQA": true,
@@ -374,9 +475,12 @@
       "ExtraDetail": "Aero_MI_TrollhattanSweden/CaughtCount6+"
     },
     {
-      "guid": "2879f4bc-7283-4cd3-8ea7-3a61abb84555",
+       
       "id": "34",
+      "idClass": "Id34",
+      "idClassBtn": "IdB34",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202210301154.jpg",
+      "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202210301154.jpg",
       "TimeSlot": 202210301154,
       "MY": 2008,
       "PlateInfoVeriQA": true,
@@ -385,9 +489,12 @@
       "ExtraDetail": "(badge:Aero)TurboX?_MI_TrollhattanSweden/CaughtCount3"
     },
     {
-      "guid": "c8263f4e-8232-4047-b59f-d4a8ae63b123",
+       
       "id": "35",
+      "idClass": "Id35",
+      "idClassBtn": "IdB35",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202210301255.jpg",
+      "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202210301255.jpg",
       "TimeSlot": 202210301255,
       "MY": 2003,
       "PlateInfoVeriQA": true,
@@ -396,9 +503,12 @@
       "ExtraDetail": "Linear2.3t_MI_TrollhattanSweden"
     },
     {
-      "guid": "15421ce7-ff4f-42d6-8cd6-f3fe2d52de4f",
+       
       "id": "36",
+      "idClass": "Id36",
+      "idClassBtn": "IdB36",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202211061251.jpg",
+      "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202211061251.jpg",
       "TimeSlot": 202211061251,
       "MY": 2003,
       "PlateInfoVeriQA": true,
@@ -407,9 +517,12 @@
       "ExtraDetail": "Linear2.3t_MI_TrollhattanSweden/CaughtCount2"
     },
     {
-      "guid": "dcee7526-8205-45b7-aa72-762a79bfc747",
+       
       "id": "37",
+      "idClass": "Id37",
+      "idClassBtn": "IdB37",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202211271302.jpg",
+      "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202211271302.jpg",
       "TimeSlot": 202211271302,
       "MY": 2011,
       "PlateInfoVeriQA": true,
@@ -418,9 +531,12 @@
       "ExtraDetail": "2.0T_MI_TrollhattanSweden/CaughtCount2"
     },
     {
-      "guid": "a9654703-b8dc-4a53-bb8e-0f32f065e61a",
+       
       "id": "38",
+      "idClass": "Id38",
+      "idClassBtn": "IdB38",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202301041409.jpg",
+      "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202301041409.jpg",
       "TimeSlot": 202301041409,
       "MY": 1993,
       "PlateInfoVeriQA": false,
@@ -429,9 +545,12 @@
       "ExtraDetail": "CE?"
     },
     {
-      "guid": "5095be56-2a33-4cdf-8d40-b5d77acc8ce8",
+       
       "id": "39",
+      "idClass": "Id39",
+      "idClassBtn": "IdB39",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202301291243.jpg",
+      "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202301291243.jpg",
       "TimeSlot": 202301291243,
       "MY": 2003,
       "PlateInfoVeriQA": true,
@@ -440,9 +559,12 @@
       "ExtraDetail": "Linear2.3t_MI_TrollhattanSweden/CaughtCount3"
     },
     {
-      "guid": "8822db28-0cf0-4eb9-bda2-30bd7f41a1af",
+       
       "id": "40",
+      "idClass": "Id40",
+      "idClassBtn": "IdB40",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202302131536.jpg",
+      "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202302131536.jpg",
       "TimeSlot": 202302131536,
       "MY": 2005,
       "PlateInfoVeriQA": true,

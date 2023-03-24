@@ -1,6 +1,10 @@
+@import url('https://fonts.cdnfonts.com/css/gill-sans');
+/* as reference of the font the brand used for advertisement */
 :root{
     --page-flex:row;
     --page-flex-space:space-between;
+    --page-flex-spaceA:space-between;
+    --page-flex-spaceB:space-between;
     --emblem-height:10vw;
     --list-height:50vmax;
     --footer-position:sticky;
@@ -10,23 +14,35 @@
     --page-dubby-circle-loc:25%;
     --page-text-color:white;
     --page-accent-color:rgb(196, 14, 11);
+
+    --container-width-tweak: 100vw;
+
     --container-mobi-loc-tweak: 0%;
+    --container-list-width-tweak: 75%;
+
+    --display-unit-pc-mobi-switch:20%;
 }
 
 *{
     color: --page-text-color;
-    background-color: gray;
+   
+                                                
+    
 }
 body{
     background-color:--page-bg-color;
+    background-color: gray;
+    font-family: 'Gill Sans', sans-serif;
+    font-weight: 500;
 }
 
 .pc-mobi-container{
-    margin: 5vmin;   
-    width: 100vw;
+    margin: 0 auto;  
+     
+    width: var(--container-width-tweak);
     display: flex;
     justify-content: var(--page-flex-space);
-    align-items: var(--page-flex-space);
+    align-items: var(--page-flex-spaceA);
     flex-direction:var(--page-flex);
    
     background-color: aqua;
@@ -37,57 +53,61 @@ body{
 }
 .emblem-container{
     border-radius: 3vmin;
-    width: 30%;
-    aspect-ratio: 1/2;
+    width: 18%;
+    aspect-ratio: 1/1;
     background-color: burlywood;
    
 }
 .dubbytext{
     border-radius: 50%;
-    width: 150%;
+    width: 220%;
     aspect-ratio: 1/1;
-    background-color: red ;
+    background-color: #8f91be89;
     margin-top:  var(--page-dubby-circle-loc);
-    transform: translateX(-25%);
+    transform: translateX(-35%);
     
 }
 
 .main-container{
     display: flex;
   flex-direction: column;
-  justify-content: space-between;
-    width: 65%;
+  justify-content:var(--page-flex-spaceB);
+    width: var(--container-list-width-tweak);
     background-color: beige;
-    height: 80vh;
+    height: 90vh;
+   
     
 }
-
-.main-container div {
-    width: 80%;
-    height: 10%;
-    margin: .5%;
-    background-color: lightblue;
+.list-container > div {
+    width: var(--display-unit-pc-mobi-switch);
+    aspect-ratio: 1/1;
+    margin: 2%;
+    background-color: #e7e7e753;
+    border-radius: 10%;
+    overflow: hidden;
 }
 
 
 .main-container .list-container {
     width: 90%;
-    height: 75%;
+    height: 90%;
     margin: 5%;
     background-color: lightblue;
+    overflow-y: scroll;
 }
+
 #option-row{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-      width: 100%;
+      width: 90%;
       background-color: beige;
-      height: 10%;
+      height: 7%;
 }
 #option-row div{
     width: 20%;
-    height: 5vh;
+    height: 100%;
     margin: .5%;
     background-color: maroon;
 }
@@ -96,12 +116,21 @@ body{
     :root{
         --page-flex:column;
         --page-flex-space:center;
+        --page-flex-spaceA:center;
+        --page-flex-spaceB: start;
         --container-mobi-loc-tweak: -20%;
+        --container-width-tweak: 98vw;
+        --display-unit-pc-mobi-switch:40%;
     }
 }
 @media screen and (min-width: 1024px){
     :root{
         --page-flex:row;
         --page-flex-space:space-between;
+        --page-flex-spaceA:center;
+        --page-flex-spaceB: space-between;
+        --container-mobi-loc-tweak: 0%;
+        --container-width-tweak: 88vw;
+        --display-unit-pc-mobi-switch:20%;
     }
 }
