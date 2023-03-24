@@ -207,8 +207,8 @@ SaabCaught.forEach(makeUnitWindow);
             displayVeil.addEventListener('click', () => {
                                 
                 displayVeil.classList.toggle('open'); 
-                /* remove class didn't work */ /* MARK!!! */
-                document.querySelectorAll('.open').classList.toggle('open');
+                /* remove class didn't work */ /* MARK!!! */ /* solved? */
+                document.querySelector('.open').classList.toggle('open');
                       
             });
                                             
