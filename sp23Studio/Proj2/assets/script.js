@@ -18,38 +18,23 @@ console.log("# in Collection = ", SaabCaught.length - 1);  */
 
 import SaabCaught from "./jsonTrans.js";
 
-//testing out loop
-for (let i = 0; i<SaabCaught.length - 1; i++){
+
+//sorting
+function sortMY (a, b){
+    return a.MY - b.MY;}
+
+const SaabCaught2 = Array.from(SaabCaught);
+const sortMYed = SaabCaught2.sort(sortMY);
+
+/* console.log(SaabCaught2); */
+console.log(sortMYed);
+
+
+
+//display indivi obj in time order
+/* for (let i = 0; i<SaabCaught.length - 1; i++){
 console.log( SaabCaught[i + 1])
-
-}
-// locate the list container
-let list = document.querySelector("#list-here")
-
-/* //Sort the MY json array
-function SortByMY() {
-    SaabCaughtAlt.sort(function(a, b){return a - b});
-    console.log(SaabCaughtAlt);
- } */
-            /* 
-            // testing adding div out 
-            function text(SaabCaught){
-
-            const wrapDiv = document.createElement("div"); //create the photo-content unit
-            wrapDiv.classList.add("photocontent"); //add the assigned style in css (big wrapper)
-
-            const unitImgDiv = document.createElement('img'); // add data img into wrapper unit
-            unitImgDiv.classList.add("photolinked");
-            unitImgDiv.src = SaabCaught.ImgsPathThumb; 
-
-            wrapDiv.appendChild(unitImgDiv); // add generated img and text into the unit wrapper
-
-            
-            // add generated unit into the list container
-            document.querySelector('.list-container').appendChild(wrapDiv); 
-            }
-
-            SaabCaught.forEach(test); */
+} */
 
         function makeUnit(SaabCaught){
             const unitIndiviId = SaabCaught.idClass;
@@ -70,6 +55,26 @@ function SortByMY() {
             document.querySelector('.list-container').appendChild(unitBlock);  //send wrapped into list
         }
         SaabCaught.forEach(makeUnit);
+
+        function makeUnitMY(sortMYed){
+                   
+            const unitBlock = document.createElement("div"); // create icon for each obj & add class
+            unitBlock.classList.add("photocontent");
+        
+            const unitImgDiv = document.createElement('img'); // add data img into wrapper unit
+            unitImgDiv.classList.add("photolinked");
+            unitImgDiv.src = sortMYed.ImgsPathThumb;  //MARK to change into thumb link version
+            
+            unitImgDiv.setAttribute("alt", "Loading..."); // text show then file's too big
+        
+            unitBlock.appendChild(unitImgDiv); // add generated img and text into the unit wrapper
+            const unitIndiviId = sortMYed.idClass;//assign individual id to each generated div (for button )
+            unitBlock.setAttribute("id", unitIndiviId) //id for button event reference
+            
+            document.querySelector('.list-container').appendChild(unitBlock);  //send wrapped into list
+        }
+        /* sortMYed.forEach(makeUnitMY); */ //option testing
+
 
 function makeUnitWindow(SaabCaught){
     const displayIndiviId = SaabCaught.idClassBtn;
@@ -96,6 +101,7 @@ function makeUnitWindow(SaabCaught){
     document.querySelector('.display-unit').appendChild(displayUnitContent); // add the unit into veil list
 
 }
+
 SaabCaught.forEach(makeUnitWindow);
 
 
@@ -203,7 +209,8 @@ SaabCaught.forEach(makeUnitWindow);
 
          
           
-
+            
+            //closing the opened veil and content    
             displayVeil.addEventListener('click', () => {
                                 
                 displayVeil.classList.toggle('open'); 
@@ -214,25 +221,26 @@ SaabCaught.forEach(makeUnitWindow);
                                             
 
 
-
-//set loop  function of Time: generate div base on template
-function generateDivTime(){
-
-}
-
-//set loop function of MY : generate div base on template ()
-function generateDivMY(){
-
-
-}
-
 //button sort func [by time, and by MY]
+
 //event listenr on option sort div (time)
+const btnTime =document.getElementById("btnTime")
+btnTime.addEventListener('click', () => {
+    const list =document.querySelector('.list-container');  // delete the old divs
+    let deleting = list.querySelectorAll('div');
+    deleting.forEach(div => div.remove());
+            
+    SaabCaught.forEach(makeUnit);//and regenerate the divs
+    console.log("by time");
+    });
 
-        // delete the old divs
-        //and regenerate the divs
-
-//event listenr on option sort div (MY)
-
-        // delete the old divs
-        //and regenerate the divs
+    //event listenr on option sort div (MY)
+    const btnMY =document.getElementById("btnMY")
+    btnMY.addEventListener('click', () => {
+        const list =document.querySelector('.list-container');  // delete the old divs
+        let deleting = list.querySelectorAll('div');
+        deleting.forEach(div => div.remove());
+                
+        sortMYed.forEach(makeUnitMY);//and regenerate the divs
+        console.log("by MY?");
+        });

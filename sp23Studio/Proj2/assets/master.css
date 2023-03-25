@@ -80,7 +80,7 @@ body{
 }
 .list-container > div {
     width: var(--display-unit-pc-mobi-switch);
-    aspect-ratio: 1/1;
+    aspect-ratio: 3/2;
     margin: 2%;
     background-color: #e7e7e753;
     border-radius: 10%;
@@ -110,6 +110,9 @@ body{
     height: 100%;
     margin: .5%;
     background-color: maroon;
+}
+.photolinked{
+    width: 100%;
 }
 
 @media screen and (min-width: 320px){
