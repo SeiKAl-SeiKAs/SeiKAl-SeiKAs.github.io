@@ -57,7 +57,6 @@ console.log( SaabCaught[i + 1])
             
 
         }
-
         function makeUnitMY(sortMYed){
                    
             const unitBlock = document.createElement("div"); // create icon for each obj & add class
@@ -75,8 +74,7 @@ console.log( SaabCaught[i + 1])
             const unitIndiviId = sortMYed.idClass;//assign individual id to each generated div (for button )
             unitBlock.setAttribute("id", unitIndiviId) //id for button event reference
             
-            document.querySelector('.list-container').appendChild(unitBlock);  //send wrapped into list
-            
+            document.querySelector('.list-container').appendChild(unitBlock);  //send wrapped into list          
         }
         /* sortMYed.forEach(makeUnitMY); */ //option testing
 
@@ -355,11 +353,11 @@ btnTime.addEventListener('click', () => {
     SaabCaught.forEach(makeUnit);//and regenerate the divs
     buttonLis(); */
    
-
-    const toggleA = document.querySelector('.photocontentA');
-        toggleA.forEach( toggleA.classList.toggle('list-close'));
-        const toggleB = document.querySelector('.photocontentB');
-        toggleB.forEach( toggleB.classList.toggle('list-close'));
+    const list =document.querySelector('.list-container');
+    let toggleA = list.querySelectorAll('.photocontentA');
+        toggleA.forEach(toggleA => toggleA.classList.toggle('list-close'));
+    let toggleB = list.querySelectorAll('.photocontentB');
+        toggleB.forEach(toggleB =>toggleB.classList.toggle('list-close'));
         console.log("by MY?");   
 
 
@@ -375,10 +373,11 @@ btnTime.addEventListener('click', () => {
                 
         sortMYed.forEach(makeUnitMY);//and regenerate the divs
         buttonLis(); */
-        const toggleA = document.querySelector('.photocontentA');
-        toggleA.forEach( toggleA.classList.toggle('list-close'));
-        const toggleB = document.querySelector('.photocontentB');
-        toggleB.forEach( toggleB.classList.toggle('list-close'));
+        const list =document.querySelector('.list-container');
+    let toggleA = list.querySelectorAll('.photocontentA');
+        toggleA.forEach(toggleA => toggleA.classList.toggle('list-close'));
+    let toggleB = list.querySelectorAll('.photocontentB');
+        toggleB.forEach(toggleB =>toggleB.classList.toggle('list-close'));
         console.log("by MY?");
         });
                                             
