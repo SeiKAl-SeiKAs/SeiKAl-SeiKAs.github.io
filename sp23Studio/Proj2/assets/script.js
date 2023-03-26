@@ -83,16 +83,27 @@ function makeUnitWindow(SaabCaught){
     
     const displayUnitImgDiv = document.createElement("div");
     const displayUnitImg = document.createElement("img");
+
     const displayUnitText = document.createElement("div");
 
+/*  list out Camera time, model,modelVar  MY  */
+    /* const cameratime = SaabCaught.TimeSlot; */
+    const displayTextTemplate = 
+                `
+                <p>Photo captured in ${SaabCaught.TimeSlot} </p>
+                <p>Vehicle model : ${SaabCaught.Model} , ${SaabCaught.ModelVar} </p>
+                <p>MY (approx.) : ${SaabCaught.MY} </p>
+                `
     displayUnitContent.classList.add("display-unit-inner"); // add class name :: ref to mock's
     
     displayUnitImgDiv.classList.add("dispaly-img");
     displayUnitImg.classList.add("img-large-linked");
+    displayUnitImg.src = SaabCaught.ImgsPath;
     displayUnitText.classList.add("display-text");
 
     displayUnitImgDiv.appendChild(displayUnitImg); // wrap img links in container
-     
+    displayUnitText.insertAdjacentHTML('beforeend', displayTextTemplate);
+
     displayUnitContent.appendChild(displayUnitImgDiv);//wrap multiple sect into unit
     displayUnitContent.appendChild(displayUnitText);
 
@@ -203,9 +214,57 @@ SaabCaught.forEach(makeUnitWindow);
             
             
             
-            unitBtn.addEventListener('click', () => {
-                displayVeil.classList.toggle('open');
-                unitBtnC.classList.toggle('open'); });
+            unitBtn.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtnC.classList.toggle('open'); });
+
+
+
+            unitBtn1.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtn1C.classList.toggle('open'); });
+            unitBtn2.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtn2C.classList.toggle('open'); });
+            unitBtn3.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtn3C.classList.toggle('open'); });
+            unitBtn4.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtn4C.classList.toggle('open'); });
+            unitBtn5.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtn5C.classList.toggle('open'); });
+            
+            unitBtn6.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtn6C.classList.toggle('open'); });
+            unitBtn7.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtn7C.classList.toggle('open'); });
+            unitBtn8.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtn8C.classList.toggle('open'); });
+            unitBtn9.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtn9C.classList.toggle('open'); });
+            unitBtn10.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtn10C.classList.toggle('open'); });
+            
+            unitBtn11.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtn11C.classList.toggle('open'); });
+            unitBtn12.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtn12C.classList.toggle('open'); });
+            unitBtn13.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtn13C.classList.toggle('open'); });
+            unitBtn14.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtn14C.classList.toggle('open'); });
+            unitBtn15.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtn15C.classList.toggle('open'); });
+            
+            unitBtn16.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtn16C.classList.toggle('open'); });
+            unitBtn17.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtn17C.classList.toggle('open'); });
+            unitBtn18.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtn18C.classList.toggle('open'); });
+            unitBtn19.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtn19C.classList.toggle('open'); });
+            unitBtn20.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtn20C.classList.toggle('open'); });
+            
+            unitBtn21.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtn21C.classList.toggle('open'); });
+            unitBtn22.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtn22C.classList.toggle('open'); });
+            unitBtn23.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtn23C.classList.toggle('open'); });
+            unitBtn24.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtn24C.classList.toggle('open'); });
+            unitBtn25.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtn25C.classList.toggle('open'); });
+            
+            unitBtn26.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtn26C.classList.toggle('open'); });
+            unitBtn27.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtn27C.classList.toggle('open'); });
+            unitBtn28.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtn28C.classList.toggle('open'); });
+            unitBtn29.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtn29C.classList.toggle('open'); });
+            unitBtn30.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtn30C.classList.toggle('open'); });
+            
+            unitBtn31.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtn31C.classList.toggle('open'); });
+            unitBtn32.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtn32C.classList.toggle('open'); });
+            unitBtn33.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtn33C.classList.toggle('open'); });
+            unitBtn34.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtn34C.classList.toggle('open'); });
+            unitBtn35.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtn35C.classList.toggle('open'); });
+            
+            unitBtn36.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtn36C.classList.toggle('open'); });
+            unitBtn37.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtn37C.classList.toggle('open'); });
+            unitBtn38.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtn38C.classList.toggle('open'); });
+            unitBtn39.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtn39C.classList.toggle('open'); });
+            unitBtn40.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtn40C.classList.toggle('open'); });
 
          
           
