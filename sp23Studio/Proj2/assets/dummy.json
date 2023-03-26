@@ -3,6 +3,7 @@
        
       "id": "0",
       "idClass": "Id0",
+      "idClassB": "BId0",
       "idClassBtn": "IdB0",
       "ImgsPath": "n/a",
       "TimeSlot": 0,
@@ -16,6 +17,7 @@
        
       "id": "1",
       "idClass": "Id1",
+      "idClassB": "BId1",
       "idClassBtn": "IdB1",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202108162022.jpg",
       "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202108162022.jpg",
@@ -30,6 +32,7 @@
        
       "id": "2",
       "idClass": "Id2",
+      "idClassB": "BId2",
       "idClassBtn": "IdB2",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202108211320.jpg",
       "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202108211320.jpg",
@@ -44,6 +47,7 @@
        
       "id": "3",
       "idClass": "Id3",
+      "idClassB": "BId3",
       "idClassBtn": "IdB3",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202109191353.jpg",
       "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202109191353.jpg",
@@ -58,6 +62,7 @@
        
       "id": "4",
       "idClass": "Id4",
+      "idClassB": "BId4",
       "idClassBtn": "IdB4",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202109211147.jpg",
       "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202109211147.jpg",
@@ -72,6 +77,7 @@
        
       "id": "5",
       "idClass": "Id5",
+      "idClassB": "BId5",
       "idClassBtn": "IdB5",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202109241354.jpg",
       "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202109241354.jpg",
@@ -86,6 +92,7 @@
        
       "id": "6",
       "idClass": "Id6",
+      "idClassB": "BId6",
       "idClassBtn": "IdB6",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202109271445.jpg",
       "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202109271445.jpg",
@@ -100,6 +107,7 @@
        
       "id": "7",
       "idClass": "Id7",
+      "idClassB": "BId7",
       "idClassBtn": "IdB7",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202110081847.jpg",
       "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202110081847.jpg",
@@ -114,6 +122,7 @@
        
       "id": "8",
       "idClass": "Id8",
+      "idClassB": "BId8",
       "idClassBtn": "IdB8",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202110311653.jpg",
       "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202110311653.jpg",
@@ -128,6 +137,7 @@
        
       "id": "9",
       "idClass": "Id9",
+      "idClassB": "BId9",
       "idClassBtn": "IdB9",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202111051850.jpg",
       "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202111051850.jpg",
@@ -142,6 +152,7 @@
        
       "id": "10",
       "idClass": "Id10",
+      "idClassB": "BId10",
       "idClassBtn": "IdB10",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202111211259.jpg",
       "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202111211259.jpg",
@@ -156,6 +167,7 @@
        
       "id": "11",
       "idClass": "Id11",
+      "idClassB": "BId11",
       "idClassBtn": "IdB11",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202111221307.jpg",
       "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202111221307.jpg",
@@ -170,6 +182,7 @@
        
       "id": "12",
       "idClass": "Id12",
+      "idClassB": "BId12",
       "idClassBtn": "IdB12",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202112271043.jpg",
       "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202112271043.jpg",
@@ -184,6 +197,7 @@
        
       "id": "13",
       "idClass": "Id13",
+      "idClassB": "BId13",
       "idClassBtn": "IdB13",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202201221354.jpg",
       "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202201221354.jpg",
@@ -198,6 +212,7 @@
        
       "id": "14",
       "idClass": "Id14",
+      "idClassB": "BId14",
       "idClassBtn": "IdB14",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202202081137.jpg",
       "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202202081137.jpg",
@@ -212,6 +227,7 @@
        
       "id": "15",
       "idClass": "Id15",
+      "idClassB": "BId15",
       "idClassBtn": "IdB15",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202202280832.jpg",
       "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202202280832.jpg",
@@ -226,6 +242,7 @@
        
       "id": "16",
       "idClass": "Id16",
+      "idClassB": "BId16",
       "idClassBtn": "IdB16",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202202281531.jpg",
       "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202202281531.jpg",
@@ -240,6 +257,7 @@
        
       "id": "17",
       "idClass": "Id17",
+      "idClassB": "BId17",
       "idClassBtn": "IdB17",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202203061215.jpg",
       "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202203061215.jpg",
@@ -254,6 +272,7 @@
        
       "id": "18",
       "idClass": "Id18",
+      "idClassB": "BId18",
       "idClassBtn": "IdB18",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202203070831.jpg",
       "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202203070831.jpg",
@@ -268,6 +287,7 @@
        
       "id": "19",
       "idClass": "Id19",
+      "idClassB": "BId19",
       "idClassBtn": "IdB19",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202203131303.jpg",
       "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202203131303.jpg",
@@ -282,6 +302,7 @@
        
       "id": "20",
       "idClass": "Id20",
+      "idClassB": "BId20",
       "idClassBtn": "IdB20",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202203201219.jpg",
       "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202203201219.jpg",
@@ -296,6 +317,7 @@
        
       "id": "21",
       "idClass": "Id21",
+      "idClassB": "BId21",
       "idClassBtn": "IdB21",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202204031343.jpg",
       "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202204031343.jpg",
@@ -310,6 +332,7 @@
        
       "id": "22",
       "idClass": "Id22",
+      "idClassB": "BId22",
       "idClassBtn": "IdB22",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202204101254.jpg",
       "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202204101254.jpg",
@@ -324,6 +347,7 @@
        
       "id": "23",
       "idClass": "Id23",
+      "idClassB": "BId23",
       "idClassBtn": "IdB23",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202204101321.jpg",
       "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202204101321.jpg",
@@ -338,6 +362,7 @@
        
       "id": "24",
       "idClass": "Id24",
+      "idClassB": "BId24",
       "idClassBtn": "IdB24",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202204101335.jpg",
       "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202204101335.jpg",
@@ -352,6 +377,7 @@
        
       "id": "25",
       "idClass": "Id25",
+      "idClassB": "BId25",
       "idClassBtn": "IdB25",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202204241155.jpg",
       "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202204241155.jpg",
@@ -366,6 +392,7 @@
        
       "id": "26",
       "idClass": "Id26",
+      "idClassB": "BId26",
       "idClassBtn": "IdB26",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202204241336.jpg",
       "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202204241336.jpg",
@@ -380,6 +407,7 @@
        
       "id": "27",
       "idClass": "Id27",
+      "idClassB": "BId27",
       "idClassBtn": "IdB27",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202205081446.jpg",
       "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202205081446.jpg",
@@ -394,6 +422,7 @@
        
       "id": "28",
       "idClass": "Id28",
+      "idClassB": "BId28",
       "idClassBtn": "IdB28",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202205151214.jpg",
       "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202205151214.jpg",
@@ -408,6 +437,7 @@
        
       "id": "29",
       "idClass": "Id29",
+      "idClassB": "BId29",
       "idClassBtn": "IdB29",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202208291247.jpg",
       "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202208291247.jpg",
@@ -422,6 +452,7 @@
        
       "id": "30",
       "idClass": "Id30",
+      "idClassB": "BId30",
       "idClassBtn": "IdB30",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202208291314.jpg",
       "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202208291314.jpg",
@@ -436,6 +467,7 @@
       
       "id": "31",
       "idClass": "Id31",
+      "idClassB": "BId31",
       "idClassBtn": "IdB31",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202210021203(2).jpg",
       "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202210021203(2).jpg",
@@ -450,6 +482,7 @@
        
       "id": "32",
       "idClass": "Id32",
+      "idClassB": "BId32",
       "idClassBtn": "IdB32",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202210161220.jpg",
       "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202210161220.jpg",
@@ -464,6 +497,7 @@
        
       "id": "33",
       "idClass": "Id33",
+      "idClassB": "BId33",
       "idClassBtn": "IdB33",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202210231259.jpg",
       "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202210231259.jpg",
@@ -478,6 +512,7 @@
        
       "id": "34",
       "idClass": "Id34",
+      "idClassB": "BId34",
       "idClassBtn": "IdB34",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202210301154.jpg",
       "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202210301154.jpg",
@@ -492,6 +527,7 @@
        
       "id": "35",
       "idClass": "Id35",
+      "idClassB": "BId35",
       "idClassBtn": "IdB35",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202210301255.jpg",
       "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202210301255.jpg",
@@ -506,6 +542,7 @@
        
       "id": "36",
       "idClass": "Id36",
+      "idClassB": "BId36",
       "idClassBtn": "IdB36",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202211061251.jpg",
       "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202211061251.jpg",
@@ -520,6 +557,7 @@
        
       "id": "37",
       "idClass": "Id37",
+      "idClassB": "BId37",
       "idClassBtn": "IdB37",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202211271302.jpg",
       "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202211271302.jpg",
@@ -534,6 +572,7 @@
        
       "id": "38",
       "idClass": "Id38",
+      "idClassB": "BId38",
       "idClassBtn": "IdB38",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202301041409.jpg",
       "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202301041409.jpg",
@@ -548,6 +587,7 @@
        
       "id": "39",
       "idClass": "Id39",
+      "idClassB": "BId39",
       "idClassBtn": "IdB39",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202301291243.jpg",
       "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202301291243.jpg",
@@ -562,6 +602,7 @@
        
       "id": "40",
       "idClass": "Id40",
+      "idClassB": "BId40",
       "idClassBtn": "IdB40",
       "ImgsPath": "assets/imgs/sp23stu2proj2Alt/202302131536.jpg",
       "ImgsPathThumb": "assets/imgs/sp23stu2proj2Thumb/202302131536.jpg",
