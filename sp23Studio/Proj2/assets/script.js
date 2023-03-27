@@ -121,10 +121,12 @@ function makeUnitWindow(SaabCaught){
 SaabCaught.forEach(makeUnit);
 /* sortMYed.forEach(makeUnitMY); */
 SaabCaught.forEach(makeUnitWindow);
+addEventListenerToElements();
+console.log("checking new DOM elements...")
 
 
 // toggle detail window = indivi id for toggle
-    const unitBtn = document.getElementById("protoid"); //demo assign
+    
     //icon box as btn
     const unitBtn1 =document.getElementById('Id1')
     const unitBtn2 =document.getElementById('Id2')
@@ -173,7 +175,7 @@ SaabCaught.forEach(makeUnitWindow);
 
 
 
-     const unitBtnC =document.getElementById("IdBproto") // proto testing
+    
 
             const unitBtn1C =document.getElementById("IdB1")
             const unitBtn2C =document.getElementById("IdB2")
@@ -222,7 +224,7 @@ SaabCaught.forEach(makeUnitWindow);
             const displayVeil = document.querySelector('.display-veil');
             
                 
-    unitBtn.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtnC.classList.toggle('open'); });
+    
 /* 
     unitBtn1.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtn1C.classList.toggle('open'); });
     unitBtn2.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtn2C.classList.toggle('open'); });
@@ -310,6 +312,9 @@ btnTime.addEventListener('click', () => {
 
 
     console.log("by time");
+
+    addEventListenerToElements();
+            console.log("checking new DOM elements...")
     });
 
 
@@ -324,7 +329,9 @@ btnTime.addEventListener('click', () => {
         deleting.forEach(div => div.remove());
                 
         sortMYed.forEach(makeUnitMY);//and regenerate the divs
-        
+        console.log("by MY");
+        addEventListenerToElements();
+            console.log("checking new DOM elements...")
        /*  const list =document.querySelector('.list-container');
     let toggleA = list.querySelectorAll('.photocontentA');
         toggleA.forEach(toggleA => toggleA.classList.toggle('list-close'));
@@ -427,7 +434,7 @@ btnTime.addEventListener('click', () => {
                     const unitBtn40C =document.getElementById("IdB40")
         
                     const displayVeil = document.querySelector('.display-veil'); 
-            unitBtn.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtnC.classList.toggle('open'); });
+            
 
             unitBtn1.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtn1C.classList.toggle('open'); });
             unitBtn2.addEventListener('click', () => {  displayVeil.classList.toggle('open');   unitBtn2C.classList.toggle('open'); });
@@ -488,8 +495,8 @@ btnTime.addEventListener('click', () => {
 
 //re add listener to elements
 
-
-          setInterval(() => {
+//MARK do activate this for final draft
+        /*   setInterval(() => {
             addEventListenerToElements();
             console.log("checking new DOM elements...")
-          }, 1000);
+          }, 5000); */
