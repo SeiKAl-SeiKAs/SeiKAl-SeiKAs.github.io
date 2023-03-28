@@ -104,6 +104,7 @@ body{
     margin-top: var(--emblem-move-top);
     margin-left: var(--emblem-move-left);
     z-index: 15; 
+    pointer-events: none;
    
 }
 .dubbytext{
@@ -161,17 +162,23 @@ transform: var(--dubby-positionY-tweak);
     background-color: #e7e7e753;
     border-radius: 10%;
     overflow: hidden;
-    animation:heartbeat 12s ease-in-out infinite both
+    
 }
 
-
- @keyframes heartbeat{
-    from{transform:scale(1);transform-origin:center center;animation-timing-function:ease-out}
-    10%{transform:scale(.91);animation-timing-function:ease-in}
-    17%{transform:scale(.98);animation-timing-function:ease-out}
-    33%{transform:scale(.87);animation-timing-function:ease-in}
-    45%{transform:scale(1);animation-timing-function:ease-out}
+.list-item-trans {
+	animation: swirl-in-fwd 0.3s both;
 }
+@keyframes swirl-in-fwd {
+    0% {
+      transform: rotate(-90deg) scale(0.4);
+      opacity: 0;
+    }
+    100% {
+      transform: rotate(0) scale(1);
+      opacity: 1;
+    }
+  }
+
 
 #I1852{
     display: none;
@@ -392,6 +399,7 @@ flex-direction: row;
     }
 }
 .title{
+    
   position: fixed;
-top: 0;
+bottom: 0;
 left: 0;}
