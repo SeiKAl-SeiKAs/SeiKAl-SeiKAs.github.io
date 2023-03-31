@@ -11,6 +11,7 @@ a{color: blueviolet;}
 a:active{color:brown}
 
 .decoBox{
+  pointer-events: none;
    width:50%;
    height: max-content;
    position: fixed; 
