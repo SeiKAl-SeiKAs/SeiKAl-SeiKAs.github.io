@@ -1,0 +1,139 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Texturina&display=swap');
+
+
+:root{
+    --padding: 5%;
+    --flex-dir: row;
+    --caption: 1.5em;
+
+    --min-container-width:50%;
+
+    --color1:#f21fb0cc;
+    --color2:#ffffffff;
+    --color3:#502378ff;
+    --color4:#ffffff66;
+    
+
+    
+
+
+}
+body{
+     border: 5vmin;
+     background-color:#53606A;
+     font-family: 'Texturina', serif;
+}
+figcaption{
+    font-size: var(--caption);
+}
+h1{
+    color: var(--color1);
+}
+a{
+    font-size: 3em;
+    color: white;
+}
+#C1{ stroke: var(--color1);}
+#C2{ stroke: var(--color2);}
+#C3{ stroke: var(--color3);}
+#C4{ stroke: var(--color4);}
+
+
+.container{
+    background-color:#53606A;
+    flex-direction: var(--flex-dir);
+
+    margin: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+
+}
+.container > div{
+    background-color: #99A1A6; 
+    width: var(--min-container-width);
+    margin: 5%;
+     padding: var(--padding);
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    
+    }
+.source{
+    width: 100%;
+}
+
+#imgSource{
+    object-fit: contain;
+    max-width:100%;
+    
+
+}
+#img{
+max-width: 100%;
+}
+#svg{
+    max-width: 100%;
+    aspect-ratio: 1;
+    object-fit:fill;
+    overflow: hidden;
+}
+.svg{
+    max-width: 100%;
+    max-height: 100%;
+    aspect-ratio: 1;
+
+  
+}
+
+
+    @media screen and (min-width: 320px){
+        :root{
+            --flex-dir:column;
+            --min-container-width:80vw;
+            --caption: 1em;
+        }
+    
+}
+@media screen and (min-width: 425px){
+    :root{
+        
+        --color1:#261ff2cc;
+        --color2:#ffffffff;
+        --color3:rgb(35, 96, 120);
+        --color4:#ffffff66;
+        
+    }
+
+}
+@media screen and (min-width: 1024px){
+    :root{
+        
+        --color1:#c8f21fcc;
+        --color2:#ffffffff;
+        --color3:rgb(120, 75, 35);
+        --color4:#ffffff66;
+        
+    }
+
+}
+@media screen and (min-width: 1024px){
+    :root{
+        --flex-dir:row;
+        --min-container-width:50%;
+        --color1:#f21fb0cc;
+        --color2:#ffffffff;
+        --color3:#502378ff;
+        --color4:#ffffff66;
+        
+    }
+
+}
