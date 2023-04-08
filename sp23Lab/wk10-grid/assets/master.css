@@ -1,0 +1,133 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Donegal+One&display=swap');
+
+ 
+ 
+ body{
+    min-height: 100vh;
+    font-family: 'Donegal One', serif;
+    background-color: lightgray;
+ }
+ 
+ .grid-container {
+    min-height: 100vh;
+    max-height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 10vh 2fr 10vh;
+
+    
+    grid-row-gap: 10px;
+
+    justify-items: stretch;
+    align-items: stretch;
+
+    grid-template-areas:
+    "t t "
+    "a . "
+    "f f ";
+
+
+ }
+
+.main-sect {
+    margin:var(--gene-margin);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr ;
+
+    grid-column-gap: 1vh;
+    grid-row-gap: 1vh;
+
+    justify-items: stretch;
+    align-items: stretch;
+
+ 
+
+ 
+
+ }
+
+
+.c{
+    min-height: 50px;
+    background-color: lightcyan;
+   grid-column:  span 2;
+   font-size:var(--font-content);
+}
+
+
+header{
+position: sticky;
+text-align: center;
+font-size: 5vw;
+}
+
+.b {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.t{
+     grid-area: t; 
+    background-color: aqua;
+}
+.a{
+     grid-area: a;
+    
+    padding:5%;
+    font-size: 0.3rem;
+    background-color: azure;
+    font-size:var(--font-content);
+}
+
+.a div{
+    position:sticky;
+    top:0;
+
+}
+
+.f{
+    grid-area:f;
+    background-color: aqua;
+    min-height: 50px;
+}
+:root{
+        --font-content: 0.4rem;
+        --gene-margin:5%;
+        
+}
+
+@media screen and (min-width: 320px){
+    :root{
+        --font-content: 1vw;
+        --gene-margin:2%;
+    }
+
+}
+
+@media screen and (min-width: 768px){
+    :root{
+        --font-content: 0.4rem;
+        --gene-margin:5%;
+        
+}
+}
+
+@media screen and (min-width: 1024px){
+    :root{
+        --font-content: 0.7rem;
+        --gene-margin:2%;
+        
+}
+}
+@media screen and (min-width: 1440px){
+    :root{
+        --font-content: 1rem;
+        --gene-margin:5%;
+        
+}
+}
