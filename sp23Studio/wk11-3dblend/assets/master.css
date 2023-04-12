@@ -1,0 +1,26 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Mitr&display=swap');
+
+
+body {
+  background-color: lightslategray;
+  margin: 0;
+  font-family: 'Mitr', sans-serif;
+  color: white;
+}
+
+model-viewer {
+  width: 60vw;
+  height: 60vh;
+}
+#container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 98vh;
+}
+#hint{
+  font-size: 10em;
+  color: white;
+}
