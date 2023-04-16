@@ -6,40 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/reset.css">
     <link rel="stylesheet" href="assets/master.css">
+    <script src="assets/data.js" defer></script>
     
 
-    <title>Proj3</title>
+    <title>C2SP3: Walk or Fall</title>
 </head>
 <!-- Proj 3 API project proto layout -->
 
 <body>
+<h1 id="">title dummy</h1>
+<div class="pc-mobi">
+		<div class="chart-gacha">
+			
+			<div class="icon-btn">
+					<div class="ani-picto-container" id="pictoMove">
+						<div class="walk">W</div>
+						<div class="fall">F</div>
+						<div class="fall-hard">FH</div>
+					</div>
+					<div class="gacha-btn" id="gachaBtn"></div>
+			</div>
+			<!-- rate sect: good fair poor -->
+			<div class="chart-all" id="chartAll">
+				<!-- pie chart (rate % / all number) -->
+				<div>dummy pie</div>
+				
+			</div>
+			<!--  rem to div the arry into per YR -->
+			<div class="chart-year-sect" id="chartYR">
+				<!-- layer bar chart (rate sect/ per year)-->
+				<div>dummy bar</div>
+				<div>dummy bar</div>
+				<div>dummy bar</div>
+				<div>dummy bar</div>
+			</div>
 
-    <div class="great-container">
-        <div class="chart">
-            <div class="motion-picto"></div>
-            <div class="data-analy">
-                <div class="pie-all"></div>
-                <div class="pie-sect-container">
-                    <div class="pie-sect"></div>
-                    <div class="pie-sect"></div>
-                    <div class="pie-sect"></div>
 
-                </div>
-                <!-- +- base on brough sect (js generate) -->
-
-               <!--  <div class="old-check"></div>
-                <div class="new-check"></div>
-                <div class="data-ver-date"></div> -->
-
-                <!-- walk gacha % // walk or fall == base on data bad-road% -->
-                <div class="gacha-but"> WALK!</div>
-            </div>
-        </div>
+		</div>
 
 
-        <div class="map"></div>
 
-    </div>
+		<div class="iframe">
+			<iframe allow="geolocation" src="https://data.cityofnewyork.us/dataset/Street-Pavement-Rating-Map/h933-akrx/embed?width=700&height=1000" 
+			width="100%" height="100%" style="border:0; padding: 0; margin: 0;"></iframe>
+				<!-- MARK fix the width& height -->
+			</iframe>
+		</div>
+
+</div>
     
 <footer></footer>
 
