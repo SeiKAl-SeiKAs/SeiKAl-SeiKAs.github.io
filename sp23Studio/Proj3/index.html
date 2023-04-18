@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/reset.css">
     <link rel="stylesheet" href="assets/master.css">
-    <script src="assets/data.js" defer></script>
     
+   
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js" defer></script>
+<script src="assets/data.js" defer></script>
 
     <title>C2SP3: Walk or Fall</title>
 </head>
@@ -24,21 +26,24 @@
 						<div class="fall">F</div>
 						<div class="fall-hard">FH</div>
 					</div>
-					<div class="gacha-btn" id="gachaBtn"></div>
+					<h5>Walk on road between</h5>
+					<input onchange="filterFunc()" type="date" id="startDate" value="2000-11-04">
+					<h5> and</h5>
+					<input  onchange="filterFunc()" type="date" id="endDate" value="2023-03-15">
+					<div class="gacha-btn" id="gachaBtn"> Walk or Fall?</div>
 			</div>
 			<!-- rate sect: good fair poor -->
 			<div class="chart-all" id="chartAll">
 				<!-- pie chart (rate % / all number) -->
-				<div>dummy pie</div>
-				
+				<div id="chartContainerAll" ></div>
+				chart js proto
 			</div>
 			<!--  rem to div the arry into per YR -->
 			<div class="chart-year-sect" id="chartYR">
 				<!-- layer bar chart (rate sect/ per year)-->
-				<div>dummy bar</div>
-				<div>dummy bar</div>
-				<div>dummy bar</div>
-				<div>dummy bar</div>
+				<div id="temp2ndtext"></div>
+				
+				<div>chart.js container (proto)</div>
 			</div>
 
 
