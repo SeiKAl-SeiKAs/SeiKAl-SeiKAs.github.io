@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+:root{
+        --melon-colorgr3: #0c4515;
+        --melon-colorgr2: #2f873b;
+        --melon-colorgr1:  #a5d373;
+        --melon-colorgr0:  #dcdfb9;
+        --melon-colorw: #faf5e1;
+        --melon-coloror1: #dbb68f;
+        --melon-coloror2: #bb7e5d;
+
+}
+body{
+background-color: var(--melon-colorw);
+font-family: 'Varela Round', sans-serif;
+}
+
+.header{
+    display: flex;
+width: 100%;
+height: 10vh;
+justify-content: space-between;
+
+    position: sticky;
+top: 0;
+background-color: var(--melon-colorgr2);
+}
+.header div{
+    background-color: var(--melon-coloror1);
+}
+.header :last-child{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#logo{
+    display: flex;
+
+    width: 20%;
+    background-color: var(--melon-colorgr0);
+    justify-content: center;
+    align-items: center;
+}
+#logo-img{
+    width: 90%;
+    object-fit: cover;
+
+}
+.enter-main{
+    display: flex;
+    width: 90%;
+    min-height: 90vh;
+    align-items: center;
+    margin: 0 auto;
+}
+.enter-aside{
+width: 20%;
+border:3%;
+min-height: 60vh;
+background-color: var(--melon-colorw);
+box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, 
+rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+ rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+
+ padding-left: 5%;
+ border-radius: 3rem;
+
+}
+#enter-select-1{
+
+    background-color: var(--melon-coloror2);
+    border-radius: 3rem;
+    padding: 1rem;
+    color: var(--melon-colorw);
+}
+
+
+.icon-column-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 65%;
+    padding:3%;
+    background-color: var(--melon-colorgr1);
+    min-height: 80%;
+    margin: 0 auto;
+    overflow: auto;
+    flex-direction: row;
+    border-radius:5%;
+}
+
+.icon-column-container  :nth-child(2n) {
+    width: 18%;
+    aspect-ratio: 1/1;
+    margin: 1%;
+    background-color: var(--melon-coloror1);
+}
+.icon-column-container  :nth-child(2n+1) {
+    width: 18%;
+    aspect-ratio: 1/1;
+    margin: 1%;
+    background-color: var(--melon-colorw);
+}

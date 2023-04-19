@@ -3,36 +3,52 @@
 const url = 'https://data.cityofnewyork.us/resource/6yyb-pb25.json';
 
 //MARk: after func design
-fetch(url + '?$limit=15000') // limit current highest (5000= fast, 15000 = 5sec+)
+/* fetch(url + '?$limit=15000') */ // limit current highest (5000= fast, 15000 = 5sec+)
 
-/* fetch("./assets/pave1000.json") */ // temp smol file 
+/* fetch("./assets/pave1000.json") */ // temp smol file (instant)
+fetch("./assets/pave15000.json")  // local file 1+min local
+/* fetch("./assets/pave35000.json")  */ // local file (esti 5+min)
+/* fetch("./assets/pave.json") */  // local full file  (forever)
 .then(response => response.json())
 .then(data => {
 	fullData = data;
 	rateProcess(fullData);
+	console.log(fullData);
 })
-let locData = [];
+
+//get full array length; (approx 135K-)
+let arrayMax = 133553; //array size (local / api respose would be slow)
+let randomTemp = 0
+// random proto:
+function offsetRandom(arrayMax) {
+	Math.floor(Math.random() * arrayMax);
+	console.log
+}
+
+
+//back-up arrays
+/* let locData = [];
 const processData = Array.from(locData);
-
-
-
-
-const chart = document.querySelector("#chartAll");
-
-
 let yrArray=[] // repeat or name change?
 let tempArray=Array.from(processData)
+ */
+
+//declare global var
+let Rgood = 0
+let Rfair = 0
+let Rpoor = 0
+let Runknown = 0
 
 
 
 
 
 const rateProcess = (fullData)=>{ //process full data first
-	let Rgood = 0
+	/* let Rgood = 0
 	let Rfair = 0
 	let Rpoor = 0
-	let Runknown = 0
-console.log('running... The total count');
+	let Runknown = 0 */
+								console.log('running... The total count');
 // run and divide through array
 	fullData.forEach( streetRate =>{
 		if (streetRate.ratinglaye == 'GOOD' ) Rgood++
@@ -47,38 +63,39 @@ console.log('running... The total count');
 	console.log( 'Poor:' + Rpoor)
 	console.log( '?state:' + Runknown)
 
-let dummycharttext = document.getElementById('temp2ndtext');
-let textDummy = document.createTextNode('Good:' + Rgood + '   Fair:' + Rfair + '   Poor:' + Rpoor + '   ????:' + Runknown)
-	
-dummycharttext.appendChild(textDummy);
+				let dummycharttext = document.getElementById('temp2ndtext');
+				let textDummy = document.createTextNode('Good:' + Rgood + '   Fair:' + Rfair + '   Poor:' + Rpoor + '   ????:' + Runknown)
+					
+				dummycharttext.appendChild(textDummy);
 
-var chart = new CanvasJS.Chart("chartContainerAll", {
-	animationEnabled: true,
-	backgroundColor: "transparent",
-	title:{
-		text: "Rating overall (proto:15000)",
-		fontFamily:"Mitr",
-		horizontalAlign: "left",
-		fontSize:15
-	},
-	data: [{
-		type: "doughnut",
-		startAngle: 60,
-		innerRadius: 30,
-		indexLabelFontSize: 10,
-		indexLabel: "{label} - #percent%",
-		toolTipContent: "<b>{label}:</b> {y} (#percent%)",
-		indexLabelPlacement: "inside",
-		dataPoints: [
-			{ y: Rgood, label: "Good" },
-			{ y: Rfair, label: "Fair" },
-			{ y: Rpoor, label: "Poor" },
-			{ y: Runknown, label: "Null"},
-			
-		]
-	}]
-});
-chart.render();
+				//chart.js for ALL# pie chart
+						var chart = new CanvasJS.Chart("chartContainerAll", {
+							animationEnabled: true,
+							backgroundColor: "transparent",
+							title:{
+								text: "Rating overall (proto:15000)",
+								fontFamily:"Mitr",
+								horizontalAlign: "left",
+								fontSize:15
+							},
+							data: [{
+								type: "doughnut",
+								startAngle: 60,
+								innerRadius: 30,
+								indexLabelFontSize: 10,
+								indexLabel: "{label} - #percent%",
+								toolTipContent: "<b>{label}:</b> {y} (#percent%)",
+								indexLabelPlacement: "inside",
+								dataPoints: [
+									{ y: Rgood, label: "Good" },
+									{ y: Rfair, label: "Fair" },
+									{ y: Rpoor, label: "Poor" },
+									{ y: Runknown, label: "Null"},
+									
+								]
+							}]
+						});
+						chart.render();
 
 }
 
