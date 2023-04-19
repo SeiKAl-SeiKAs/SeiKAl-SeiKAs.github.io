@@ -6,8 +6,8 @@ const url = 'https://data.cityofnewyork.us/resource/6yyb-pb25.json';
 /* fetch(url + '?$limit=15000') */ // limit current highest (5000= fast, 15000 = 5sec+)
 
 /* fetch("./assets/pave1000.json") */ // temp smol file (instant)
-fetch("./assets/pave15000.json")  // local file 1+min local
-/* fetch("./assets/pave35000.json")  */ // local file (esti 5+min)
+/* fetch("./assets/pave15000.json")  */ // local file 2 sec?local
+fetch("./assets/pave35000.json")  // local file (esti 5+min)
 /* fetch("./assets/pave.json") */  // local full file  (forever)
 .then(response => response.json())
 .then(data => {
@@ -38,10 +38,6 @@ let Rgood = 0
 let Rfair = 0
 let Rpoor = 0
 let Runknown = 0
-
-
-
-
 
 const rateProcess = (fullData)=>{ //process full data first
 	/* let Rgood = 0
@@ -97,25 +93,13 @@ const rateProcess = (fullData)=>{ //process full data first
 						});
 						chart.render();
 
+
 }
-
-
-/* let Rgood = rateProcess(Rgood)
-let Rfair = rateProcess(Rfair)
-let Rpoor = rateProcess(Rpoor)
-let Runknown = rateProcess(Runknown) */
-console.log( 'Good:' + Rgood)
-	console.log( 'Fair:' + Rfair)
-	console.log( 'Poor:' + Rpoor)
-	console.log( '?state:' + Runknown)
-//set let for chart all to process
-/* let goodAL= Rgood;
-let fairAL= Rfair;
-let poorAL= Rpoor;
-let quesAL= Runknown; */
-
-
-
+//copy the value to filter vars
+let FRgood = Rgood
+let FRfair = Rfair
+let FRpoor = Rpoor
+let FRunknown = Runknown
 
 
 
