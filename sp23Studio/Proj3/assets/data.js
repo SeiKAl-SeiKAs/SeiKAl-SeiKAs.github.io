@@ -2,6 +2,8 @@
 
 const url = 'https://data.cityofnewyork.us/resource/6yyb-pb25.json';
 
+let arrayLength = 35000;
+
 //MARk: after func design
 /* fetch(url + '?$limit=15000') */ // limit current highest (5000= fast, 15000 = 5sec+)
 
@@ -9,21 +11,37 @@ const url = 'https://data.cityofnewyork.us/resource/6yyb-pb25.json';
 /* fetch("./assets/pave15000.json")  */ // local file 2 sec?local
 fetch("./assets/pave35000.json")  // local file (esti 5+min)
 /* fetch("./assets/pave.json") */  // local full file  (forever)
+
+//set dataset length;
+
 .then(response => response.json())
 .then(data => {
 	fullData = data;
 	rateProcess(fullData);
-	console.log(fullData);
+	console.log(fullData.length);
 })
 
 //get full array length; (approx 135K-)
 let arrayMax = 133553; //array size (local / api respose would be slow)
+let paveLength = arrayLength;
 let randomTemp = 0
 // random proto:
 function offsetRandom(arrayMax) {
-	Math.floor(Math.random() * arrayMax);
-	console.log
+	randomTemp = Math.floor(Math.random() * arrayMax);
+	console.log ("Offset generated:" + randomTemp);
+
+	if(randomTemp + paveLength > arrayMax){
+		let ranMinus = 	Math.floor(Math.random()* 100) * Math.floor(Math.random()* 100)
+		//x^2
+		console.log ("safe-count-activated:" + ranMinus);
+		randomTemp = randomTemp - ranMinus - paveLength;
+		return randomTemp;
+	}
+
+	return randomTemp;
 }
+offsetRandom(arrayMax);
+console.log(randomTemp);
 
 
 //back-up arrays

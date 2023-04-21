@@ -1,0 +1,58 @@
+body{
+    
+    background-image: url("imgs/texture-paper.png");
+    background-color: #17150e27;
+}
+
+.header{
+    background-color: #6a6464c8;
+    color: white;
+}
+.title{
+    background-color: transparent;
+}
+.title-pos-mid{
+    background-color: transparent;
+}
+.seg1, .seg2, .seg3, .seg4, .seg5, .seged{
+    background-color: transparent;
+}
+.side-menu{
+    background-color: #47474710;
+}
+.side-list {
+    background-color: transparent;
+}
+.side-list a{
+   line-height: 1.6em;
+    border-radius: 40%;
+ background-color: #d6cdae32;
+}
+.side-list a:nth-child(n){
+
+    background-color: #debd4685;
+  
+  }
+.surprise{
+    background-color: transparent;
+}
+.seg3-period-spinner{
+    background-color: transparent;
+}
+.question-wheel, .inner-que-wheel, .outer-que-wheel{
+    background-color: transparent;
+}
+.ques1, .ques2, .ques3, .ques4{
+    background-color: transparent;
+}
+.seg5-punc1{
+    background-color: transparent;
+}
+.seg5-punc2{
+    background-color: transparent;
+}
+.question-wheel-seged{
+    background-color: transparent;
+    opacity: 50%;
+    transform: scale(0.5);
+}
