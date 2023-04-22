@@ -11,5 +11,217 @@
 .font-2{ font-family: 'Asul', sans-serif;}
 .font-3{ font-family: 'Jacques Francois', serif;}
 
+:root{
+    --width-set-switch:80vw;
+    --font-ave: 2rem;
+    --flex-dir:row;
+    --flex-dir2:column;
+}
+
+body{
+    text-align: center;
+    background-color: gainsboro;
+    font-size: var(--font-ave);
+    margin: 0 auto;
+}
+.container{
+width: var(--width-set-switch);
+margin: 0 auto;
+
+}
+.banner-grid{
+   
+    background-image: url("imgs/screen-shot.png");
+    
+    min-height: 15em;
+    max-height: 80vh;
+
+    display: grid;
+grid-template-columns: repeat(6, 1fr);
+grid-template-rows: repeat(6, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+    
+}
+.banner-grid div {font-size: calc(var(--font-ave) * 3);}
+
+.banner-grid :nth-child(1){ grid-area: 1 / 2 / 2 / 3; }
+.banner-grid :nth-child(2){ grid-area: 2 / 5 / 3 / 6; }
+.banner-grid :nth-child(3){ grid-area: 4 / 6 / 5 / 7; }
+.banner-grid :nth-child(4){grid-area: 4 / 4 / 5 / 5; }
+.banner-grid :nth-child(5){grid-area: 6 / 3 / 7 / 4; }
+.banner-grid :nth-child(6){grid-area: 5 / 2 / 6 / 3; }
+.banner-grid :nth-child(7){grid-area: 3 / 1 / 4 / 2; }
+.banner-grid :nth-child(8){grid-area: 1 / 6 / 2 / 7; }
+.banner-grid :nth-child(9){ grid-area: 3 / 2 / 4 / 6; }
+.banner-grid :last-child{ font-size: var(--font-ave);}
 
 
+.banner-text{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.doc-flex{
+    font-size: calc(var(--font-ave) * 0.8);
+    display: flex;
+    flex-direction: var(--flex-dir2);
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.doc-flex :first-child{
+    
+    max-width: 35%;
+    padding: 3%;
+   
+}
+
+.vis-ele{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    margin: 0 auto;
+}
+.vis-ele div{
+    min-width: 20%;
+    font-size: calc(var(--font-ave) * 3);
+}
+.vis-ele .smaller{
+    font-size: calc(var(--font-ave) * 0.8);
+}
+
+
+
+
+.iframe {
+    display: flex;
+    flex-direction:  var(--flex-dir);
+    width: 100%;
+    min-height:40em;
+    
+    
+}
+.iframe iframe{
+    overflow: hidden;
+}
+.iframe :first-child{
+    margin: 2%;
+   width:35%;
+    aspect-ratio: 9/21;
+}
+.iframe :last-child{
+    margin: 2%;
+    aspect-ratio: 16/9;
+    width: 65%
+}
+.font-lay{
+    display: flex;
+    flex-wrap: wrap;
+}
+.font-lay div{
+    padding: calc( var(--font-ave) * 2 );
+    width: 30%;
+    font-size: var(--font-ave);
+}
+@media screen and (min-width: 320px) {
+
+    :root {
+        --width-set-switch:100vw;
+        --font-ave: 1rem;
+        --flex-dir:row;
+        --flex-dir2:column;
+
+    }
+    .iframe{
+      display: none;
+    }
+        
+    
+
+}
+@media screen and (min-width: 768px) {
+
+    :root {
+        --width-set-switch:80vw;
+        --font-ave: 2rem;
+        --flex-dir:column;
+        --flex-dir2:row;
+
+    }
+    
+    .iframe{
+        display: block;
+     }
+         
+    
+
+}
+#ani1, #ani5 {animation: vibrate-1 1s ease-in infinite both;}
+@keyframes vibrate-1 {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translate(-2px, 2px);
+    }
+    40% {
+      transform: translate(-2px, -2px);
+    }
+    60% {
+      transform: translate(2px, 2px);
+    }
+    80% {
+      transform: translate(2px, -2px);
+    }
+    100% {
+      transform: translate(0);
+    }
+  }
+#ani2, #ani6 {animation: shake-bottom 2s cubic-bezier(0.190, 1.000, 0.220, 1.000) infinite both;}
+@keyframes shake-bottom {
+    0%,
+    100% {
+      transform: rotate(0deg);
+      transform-origin: 50% 100%;
+    }
+    10% {
+      transform: rotate(2deg);
+    }
+    20%,
+    40%,
+    60% {
+      transform: rotate(-4deg);
+    }
+    30%,
+    50%,
+    70% {
+      transform: rotate(4deg);
+    }
+    80% {
+      transform: rotate(-2deg);
+    }
+    90% {
+      transform: rotate(2deg);
+    }
+  }
+  
+ #ani3, #ani4, #ani7, #ani8 {animation: pulsate-fwd 3s cubic-bezier(0.600, 0.040, 0.980, 0.335) infinite both;
+ }
+ @keyframes pulsate-fwd {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  } 
