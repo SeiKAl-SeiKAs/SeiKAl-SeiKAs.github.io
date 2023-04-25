@@ -17,56 +17,53 @@ body{
   width: 100vw;
   min-height: 100vh;
 background-color: azure;
+justify-content: space-between;
+align-content: space-between;
 }
-.chart-gacha{
+.L-container{
   display: flex;
   flex-wrap: wrap;
   min-width: 50vw;
   min-height: 50vh;
 justify-content: center;
 align-items: center;
-
+flex-direction: column;
 }
-.icon-btn{
+
+ .gene-container{
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-content: space-around;
-
-  width: 40%;
-  height: auto;
-  aspect-ratio: 3/4;
-  background-color: aqua;
+  flex-wrap: nowrap;
+  min-width: 50vw;
+  min-height: 50vh;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+/* MARK change after ani */
 }
+
+.picto-frame{
+ width: 33%;
+ aspect-ratio: 1;
+ /* overflow: hidden; */
+ /* MARK ani alter */
+overflow: scroll;
+ background-color: violet;
+  
+}
+
 .ani-picto-container{
-  width: 80%;
-  min-height: 50%;
-  aspect-ratio: 1;
+  display: flex;
+ 
+  width: 300%;
+ height: 100%;
+  
+  opacity: 0.8;
   background-color: mintcream;
 }
-.gacha-btn{
-  height: 20%;
-  min-width:50%;
-  background-color: tan;
+.ani-picto-container img{
+  width: 33%;
 }
 
-.chart-all{
-  min-width: 45%;
-  min-height: 20%;
-  height: fit-content;
-  background-color: aquamarine;
-}
-#chartContainerAll{
- height: 30vh; 
-  width: 100%;
-}
-
-
-.chart-year-sect{
-  min-width: 85%;
-  min-height: 35%;
-  background-color: burlywood;
-}
 
 .iframe{
   width:100vw;

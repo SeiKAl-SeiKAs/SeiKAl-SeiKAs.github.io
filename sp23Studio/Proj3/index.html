@@ -16,73 +16,62 @@
 <!-- Proj 3 API project proto layout -->
 
 <body>
-<h1 id="">title dummy</h1>
+
 <div class="pc-mobi">
-		<!-- <div class="chart-gacha">
-			
-			<div class="icon-btn">
-					<div class="ani-picto-container" id="pictoMove">
-						<div class="walk">W</div>
-						<div class="fall">F</div>
-						<div class="fall-hard">FH</div>
-					</div>
-					
-					<div class="gacha-btn" id="gachaBtn"> Walk or Fall?</div>
-			</div>
-			
-			<div class="chart-all" id="chartAll">
-				
-				<div id="chartContainerAll" ></div>
-				
-			</div>
-			<div class="chart-year-sect" id="chartYR">
-				
-				<div id="temp2ndtext"></div>
-				
-				<div>generate color blocks (heatmap like, but not quite)</div>
-			</div>
+		
+	<div class="L-container">
 
-
-		</div> -->
+		<h1 id="title-text">Walk, Fall, or Fall hard.</h1>
+		<h3> Road pavement condition in NYC</h3>
+		<br><br>
 
 		<div class="gene-container">
+
+			<div class="picto-frame">
+				<div class="ani-picto-container" id="pictoMove">
+					<img src="assets/imgs/walk.svg" alt="walk"  class="walk">
+					<img src="assets/imgs/fall.svg" alt="fall" class="fall">
+					<img src="assets/imgs/fall-hard.svg" alt="fall-hard" class="fall-hard">
+				</div> 
+			</div>
+
 			<div class="pie-number-text">
 				<p>
-					Of <div> <!-- pave.length --></div>records in the list of <div><!-- arrayMax --></div>, <br>
-					<div><!-- %  --></div>% of the segments are rated as Good; <br>
-					<div><!-- %  --></div>% of the segments are rated as Fair; <br>
-					<div><!-- %  --></div>% of the segments are rated as Poor; <br>
-					Does it fit your expectation? Or shall the standard be raised?
+					Of <div> <!-- pave.length -->##</div>records in the list of <div><!-- arrayMax --> ##</div>, <br>
+					<div id="displayW"><!-- %  -->//%</div> of the segments are rated as Good; <br>
+					<div id="displayF"><!-- %  -->//%</div> of the segments are rated as Fair; <br>
+					<div id="displayFh"><!-- %  -->//%</div> of the segments are rated as Poor; <br>
+					<br>
+					Does it fit your expectation?
+					<br> Or shall the standard be raised?
 
 				</p>
 			</div>
+			<br>
+			<div id="order"> Put the color blocks in order</div>
+			<div id="refresh"> Get me another set of data.</div>
 
 			<div id="block-gene-container">
 				<div> <!-- segment gene mix --></div>
-				<div> <!-- gene in 3 column -->
+				<!-- gene in 3 column-->
 					<div><!-- good --></div>
 					<div><!-- fair --></div>
 					<div><!-- poor --></div>
 				</div>
 
-			</div>
-
-
 		</div>
+	</div>
 
 
-
-
-		<div class="iframe">
-			<iframe allow="geolocation" src="https://data.cityofnewyork.us/dataset/Street-Pavement-Rating-Map/h933-akrx/embed?width=700&height=1000" 
-			width="100%" height="100%" style="border:0; padding: 0; margin: 0;"></iframe>
-				<!-- MARK fix the width& height -->
-			</iframe>
-		</div>
+	<div class="iframe">
+		<iframe allow="geolocation" src="https://data.cityofnewyork.us/dataset/Street-Pavement-Rating-Map/h933-akrx/embed?width=700&height=1000" 
+		width="100%" height="100%" style="border:0; padding: 0; margin: 0;"></iframe>
+			<!-- MARK fix the width& height -->
+		</iframe>
+	</div>
 
 </div>
     
-<footer></footer>
 
 </body>
 </html>

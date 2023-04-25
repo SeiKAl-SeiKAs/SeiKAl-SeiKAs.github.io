@@ -4,6 +4,8 @@ const url = 'https://data.cityofnewyork.us/resource/6yyb-pb25.json';
 
 let arrayLength = 35000;
 
+//esti change  array.length == 1000;
+
 //MARk: after func design
 /* fetch(url + '?$limit=15000') */ // limit current highest (5000= fast, 15000 = 5sec+)
 
