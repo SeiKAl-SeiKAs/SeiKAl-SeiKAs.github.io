@@ -19,6 +19,7 @@ body{
 background-color: azure;
 justify-content: space-between;
 align-content: space-between;
+font-size: 0.8rem;
 }
 .L-container{
   display: flex;
@@ -42,7 +43,7 @@ flex-direction: column;
 }
 
 .picto-frame{
- width: 33%;
+ width: 20%;
  aspect-ratio: 1;
  /* overflow: hidden; */
  /* MARK ani alter */
@@ -122,8 +123,8 @@ overflow: scroll;
   }
 }
 .open{
- /*  display: block; */
- background-color: red;
+  display: none;
+/*  background-color: red; */
 }
 .pie-number-text{
   text-align: center;
@@ -142,4 +143,55 @@ overflow: scroll;
 .iframe iframe{
 height: 100%;
 width: 100%;
+}
+
+.button_solid014 a{
+  background: #eee;
+  border-radius: 3px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 10rem;
+  padding: 1rem 2rem;
+  color: #313131;
+  transition: 0.3s ease-in-out;
+  font-weight: 600;
+  box-shadow: 5px 5px 0 #6bb6ff;
+  border-radius: 50px;
+}
+.button_solid014 a:hover {
+background-color: #b3d9ff;
+box-shadow: 0 0 0;
+transform: translate(5px, 5px);
+}
+.button_solid014 a:after {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transition: 0.2s ease-in-out;
+  content: "\f0da";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  transform: translateY(-50%);
+}
+.button_solid004 a {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 240px;
+  padding: 10px 25px;
+  color: #FFF;
+  transition: 0.3s ease-in-out;
+  font-weight: 600;
+  background: #6bb6ff;
+  border-radius: 8px;
+  border-bottom: solid 5px #1d7fde;
+}
+.button_solid004 a:hover {
+  border-bottom: solid 2px #1d7fde;
+  transform: translateY(3px);
 }

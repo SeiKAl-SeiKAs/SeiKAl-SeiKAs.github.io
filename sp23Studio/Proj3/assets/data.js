@@ -2,7 +2,60 @@
 
 const url = 'https://data.cityofnewyork.us/resource/6yyb-pb25.json';
 
+const numberInput = document.querySelector('#lengthInput');
+const refreshBtn = document.querySelector('#refresh');
 let arrayLength = 1000;
+
+let saveValue = 0 ;
+load();
+
+if(localStorage.getItem("saveValue") === null){
+	save();
+	console.log("paveL saved:" + saveValue);
+}else{
+	load;
+	console.log ("paveL data finded. paveL =" + saveValue);
+}
+
+
+numberInput.setAttribute('placeholder', arrayLength);
+
+/* MARk , S/L */
+numberInput.oninput = () => {
+
+	arrayLength = numberInput.value;
+	console.log(arrayLength);
+	save();
+	return arrayLength;
+	
+}
+console.log("updated" + arrayLength);
+function getNewOffset(){
+
+	
+	console.log( "arrayLength updated : " + arrayLength);
+	save();
+	location.reload();
+}
+
+
+
+
+
+function load(){
+	saveValue = localStorage.getItem ("saveValue");
+	numberInput.value = saveValue;
+	arrayLength = saveValue;
+}
+function save(){
+	saveValue = numberInput.value;
+	localStorage.setItem("saveValue", saveValue)
+}
+
+refreshBtn.addEventListener('click', () => getNewOffset());
+
+
+
 
 //esti change  array.length == 1000;
 
@@ -19,13 +72,21 @@ fetch("./assets/pave1000.json") // temp smol file (instant)
 .then(response => response.json())
 .then(data => {
 	fullData = data;
-	togClass;
-	setTimeout(	rateProcess(fullData), 3000);
-	console.log(fullData.length);
-	setTimeout(togClass, 2000);
+	OverAll();
+	
 })
 
 //set async?
+
+async function OverAll() {
+
+	await rateProcess(fullData);
+	console.log(fullData.length);
+	await loadAniSwitch();
+	/* await loadAniSwitch(); */
+  }
+  
+  
 
 //get full array length; (approx 135K-)
 let arrayMax = 133553; //array size (local / api respose would be slow)
@@ -46,6 +107,10 @@ function offsetRandom(arrayMax) {
 
 	return randomTemp;
 }
+
+
+
+
 offsetRandom(arrayMax);
 console.log(randomTemp);
 
@@ -110,9 +175,9 @@ const rateProcess = (fullData)=>{ //process full data first
 				
 }
 
-const togClass = function loadAniSwitch(){
-	const loader = document.querySelector('.lds-ellipsis');
-	loader.classList.toggle('open');
+function loadAniSwitch(){
+	const loader = document.querySelector(".lds-ellipsis");
+	loader.classList.toggle("open");
 }
 
 //copy the value to filter vars
@@ -153,7 +218,6 @@ function blockGenerate(fullData){ /* MARK */
 /* MARK -activate? */
 /* fullData.forEach(blockGenerate); */
 
-//filter idea : dateof date, (don't touch the rate, gacha related)
 
 
 /* EVENT LIS    TO THE OPTION list (select active) */
