@@ -159,7 +159,8 @@ width: 100%;
   transition: 0.3s ease-in-out;
   font-weight: 600;
   box-shadow: 5px 5px 0 #6bb6ff;
-  border-radius: 50px;
+  border-radius: 2.5rem;
+  border: 0.1rem solid black;
 }
 .button_solid014 a:hover {
 background-color: #b3d9ff;
@@ -194,4 +195,37 @@ transform: translate(5px, 5px);
 .button_solid004 a:hover {
   border-bottom: solid 2px #1d7fde;
   transform: translateY(3px);
+}
+.blockBase{
+  width: 1.3rem;
+  height: 1.3rem;
+  
+
+}
+#geneBContainer div:hover {
+ /*  transform: scale(1.2);
+  transition: 0.1s; */
+  opacity:0;
+  animation: scale-out-center 0.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+@keyframes scale-out-center {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 1;
+  }
+}
+.blockGood{ background-color: #5598b3;}
+.blockFair{background-color: #e1e351;}
+.blockPoor{background-color: #d4a156;}
+
+#geneBContainer{
+  min-width: 50vw;
+  max-width: 80vw;
+  display: flex;
+  gap: 0.3rem;
+  flex-wrap: wrap;
 }

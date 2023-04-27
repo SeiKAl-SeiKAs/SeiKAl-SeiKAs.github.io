@@ -57,24 +57,8 @@ refreshBtn.addEventListener('click', () => getNewOffset());
 
 
 
-//esti change  array.length == 1000;
 
-//MARk: after func design
-/* fetch(url + '?$limit=15000') */ // limit current highest (5000= fast, 15000 = 5sec+)
 
-fetch("./assets/pave1000.json") // temp smol file (instant)
-/* fetch("./assets/pave15000.json")  */ // local file 2 sec?local
-/* fetch("./assets/pave35000.json") */  // local file (esti 5+min)
-/* fetch("./assets/pave.json") */  // local full file  (forever)
-
-//set dataset length;
-
-.then(response => response.json())
-.then(data => {
-	fullData = data;
-	OverAll();
-	
-})
 
 //set async?
 
@@ -86,12 +70,16 @@ async function OverAll() {
 	/* await loadAniSwitch(); */
   }
   
-  
+
 
 //get full array length; (approx 135K-)
 let arrayMax = 133553; //array size (local / api respose would be slow)
 let paveLength = arrayLength;
 let randomTemp = 0
+
+offsetRandom(arrayMax);
+console.log("offset seed:  " + randomTemp);
+
 // random proto:
 function offsetRandom(arrayMax) {
 	randomTemp = Math.floor(Math.random() * arrayMax);
@@ -111,8 +99,7 @@ function offsetRandom(arrayMax) {
 
 
 
-offsetRandom(arrayMax);
-console.log(randomTemp);
+
 
 
 //declare global var
@@ -125,6 +112,15 @@ let goodPie = 0
 let fairPie = 0
 let poorPie = 0
 
+//block gene loc set 
+const geneBlock = document.querySelector('#geneBContainer');
+/* const geneGBlock = document.querySelector('#BBGoodContainer');
+const geneFBlock = document.querySelector('#BBFairContainer');
+const geneFhBlock = document.querySelector('#BBPoorContainer'); */
+
+
+
+
 const rateProcess = (fullData)=>{ //process full data first
 	/* let Rgood = 0
 	let Rfair = 0
@@ -132,6 +128,40 @@ const rateProcess = (fullData)=>{ //process full data first
 	let Runknown = 0 */
 	
 			console.log('running... The total count');
+//sect genefirst, then count 
+fullData.forEach( streetRate =>{
+	//set the gene location
+
+
+
+	const geneUnitB = document.createElement("div");
+
+		if (streetRate.ratinglaye == 'GOOD' ) {
+			geneUnitB.classList.add("blockBase");
+			geneUnitB.classList.add("blockGood");
+			geneBlock.appendChild(geneUnitB);
+		}
+		else if (streetRate.ratinglaye == 'FAIR' ) {
+			geneUnitB.classList.add("blockBase");
+			geneUnitB.classList.add("blockFair");
+			geneBlock.appendChild(geneUnitB);
+			
+		}
+		else if (streetRate.ratinglaye == 'POOR' ) {
+			geneUnitB.classList.add("blockBase");
+			geneUnitB.classList.add("blockPoor");
+			geneBlock.appendChild(geneUnitB);
+			
+		}
+		else {
+			geneUnitB.classList.add("blockBase");
+			geneBlock.appendChild(geneUnitB);
+		}
+	console.log("gene done!")
+	})
+
+
+
 // run and divide through array
 	fullData.forEach( streetRate =>{
 		if (streetRate.ratinglaye == 'GOOD' ) Rgood++
@@ -222,3 +252,25 @@ function blockGenerate(fullData){ /* MARK */
 
 /* EVENT LIS    TO THE OPTION list (select active) */
 /* EVENT LIS the gacha button */
+
+
+//where fetch goes
+
+//MARk: after func design
+// 4-26-21:24 refresh new segment working
+
+
+/* fetch("./assets/pave1000.json") */ // temp smol file (instant)
+/* fetch("./assets/pave15000.json")  */ // local file 2 sec?local
+/* fetch("./assets/pave35000.json") */  // local file (esti 5+min)
+/* fetch("./assets/pave.json") */  // local full file  (forever)
+
+
+fetch(url + '?$limit=' + arrayLength + '&$offset=' + randomTemp) 
+
+.then(response => response.json())
+.then(data => {
+	fullData = data;
+	OverAll();
+	
+})
