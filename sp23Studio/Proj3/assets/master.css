@@ -1,8 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Mitr&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mitr&family=Rubik+Dirt&family=Yuji+Syuku&display=swap');
 
 body{
   background-color: lightgrey;
-  font-family: 'Mitr', sans-serif;
+ /* font-family: 'Yuji Syuku', serif; */
+ font-family: 'Mitr', sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-size: 0.8rem;
+  
+  margin:  0 auto;
+
 }
 :root{
   --pc-mobi-flex-dir:column;
@@ -17,24 +27,21 @@ body{
   width: 100vw;
   min-height: 100vh;
 background-color: azure;
-justify-content: space-between;
-align-content: space-between;
-font-size: 0.8rem;
-}
-.L-container{
-  display: flex;
-  flex-wrap: wrap;
-  min-width: 50vw;
-  min-height: 50vh;
-justify-content: center;
-align-items: center;
 flex-direction: column;
+justify-content: center;
+align-content: center;
+font-size: 0.8rem;
+
+margin:  0 auto;
+
+transition:0.3s;
 }
+
 
  .gene-container{
   display: flex;
   flex-wrap: nowrap;
-  min-width: 50vw;
+  min-width: 80vw;
   min-height: 50vh;
 justify-content: center;
 align-items: center;
@@ -47,8 +54,9 @@ flex-direction: column;
  aspect-ratio: 1;
  /* overflow: hidden; */
  /* MARK ani alter */
-overflow: scroll;
- background-color: violet;
+overflow: hidden;
+ background-color: transparent;
+ z-index: 10;
   
 }
 
@@ -59,7 +67,28 @@ overflow: scroll;
  height: 100%;
   
   opacity: 0.8;
-  background-color: mintcream;
+  background-color: transparent;
+  animation: walkToFall;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  animation-delay: 2s;
+}
+@keyframes walkToFall {
+  0%{
+    transform: translate(0, 0);
+  }
+  40%{
+    transform: translate(-33%, 0);
+  }
+  80%{
+    transform: translate(-66%, 0);
+  }
+  100%{
+    transform: translate(0, 0);
+  }
+  
+  
 }
 .ani-picto-container img{
   width: 33%;
@@ -70,6 +99,7 @@ overflow: scroll;
   position: relative;
   width: 80px;
   height: 80px;
+  z-index: 10;
   
  /*  display: none; */
 }
@@ -128,21 +158,35 @@ overflow: scroll;
 }
 .pie-number-text{
   text-align: center;
+ z-index: 10;
+ padding:3rem;
+ background-color: #ffffffcc;
+ border-radius: 5vw;
+ border: 0.2rem solid white;
+ box-shadow: 1rem 1rem 1rem #ffffff73 ;
 }
 #paveLong, #arrayLong, #displayW,  #displayF, #displayFh{
   font-size: 2rem;
 }
 
 .iframe{
-  width:100vw;
-  min-height: 50vh;
-  border:0; 
-  padding: 0; 
-  margin: 0;
+  width:100%;
+  height: 50vh;
+  /* border:0; 
+  padding: 0;  */
+ 
+  margin:  0 auto;
+  
+  background-color: aqua;
 }
 .iframe iframe{
 height: 100%;
-width: 100%;
+width: 100vw;
+
+display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .button_solid014 a{
@@ -170,9 +214,9 @@ transform: translate(5px, 5px);
 .button_solid014 a:after {
   position: absolute;
   top: 50%;
-  right: 20px;
+  right: 1rem;
   transition: 0.2s ease-in-out;
-  content: "\f0da";
+  content: "　▶";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   transform: translateY(-50%);
@@ -197,8 +241,10 @@ transform: translate(5px, 5px);
   transform: translateY(3px);
 }
 .blockBase{
-  width: 1.3rem;
-  height: 1.3rem;
+  width: 1.2vw;
+  height: 1.2vw;
+  will-change: opacity;
+  border: 0.1rem solid seashell;
   
 
 }
@@ -218,14 +264,26 @@ transform: translate(5px, 5px);
     opacity: 1;
   }
 }
-.blockGood{ background-color: #5598b3;}
-.blockFair{background-color: #e1e351;}
-.blockPoor{background-color: #d4a156;}
+.blockGood{ background-color: #b8ecff;}
+.blockFair{background-color: #feffb1;}
+.blockPoor{background-color: #ffe1b5;}
 
 #geneBContainer{
   min-width: 50vw;
   max-width: 80vw;
   display: flex;
-  gap: 0.3rem;
+  gap: 0.2rem;
   flex-wrap: wrap;
+  margin-top: -70vh;
+  z-index: 2;
 }
+
+#externelle-iframe{
+ 
+margin: 0 auto;
+
+}
+#lengthInput, #offsetDisplay ,  .button_solid014 {z-index: 10;}
+.title-container {width: 100vw; text-align: center; z-index: 15; margin-bottom: 5vh;}
+.title-container h1, h3 {font-size: 2rem; font-family: 'Rubik Dirt', cursive; z-index: 15;}
+#displayW, #displayF, #displayFh, #paveLong, #arrayLong, #offsetDisplay {font-family: 'Rubik Dirt', cursive;}

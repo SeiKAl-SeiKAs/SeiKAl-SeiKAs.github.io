@@ -73,7 +73,7 @@ async function OverAll() {
 
 
 //get full array length; (approx 135K-)
-let arrayMax = 133553; //array size (local / api respose would be slow)
+let arrayMax = 133397; //array size : temp local (later switch to fetch)
 let paveLength = arrayLength;
 let randomTemp = 0
 
@@ -245,8 +245,20 @@ function blockGenerate(fullData){ /* MARK */
 		
 
 } 
-/* MARK -activate? */
-/* fullData.forEach(blockGenerate); */
+
+function iframeWidthFix(){
+	const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+	const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
+
+	const ifrUrlFL = 'https://data.cityofnewyork.us/dataset/Street-Pavement-Rating-Map/h933-akrx/embed?width=' + vw + '&height=' + (0.5* vh);
+
+	document.getElementById('externelle-iframe').src = ifrUrlFL;
+	
+	console.log ("vw:" + vw);
+
+}
+iframeWidthFix();
+
 
 
 
