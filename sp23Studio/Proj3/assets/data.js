@@ -10,7 +10,7 @@ let saveValue = 0 ;
 load();
 
 if(localStorage.getItem("saveValue") === null){
-	arrayLength = 100;
+	arrayLength = 1000;
 	numberInput.value = arrayLength;
 	save();
 	console.log("paveL saved:" + saveValue);
