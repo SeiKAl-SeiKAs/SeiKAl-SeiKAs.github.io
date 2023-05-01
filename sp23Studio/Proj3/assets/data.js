@@ -197,9 +197,11 @@ fullData.forEach( streetRate =>{
 
 	const displayP = document.getElementById("paveLong");
 	const displayA = document.getElementById("arrayLong");
+	const displayOffDis = document.getElementById("offsetDisplay");
 
 	displayP.innerHTML = paveLength;
 	displayA.innerHTML = arrayMax;
+	displayOffDis.innerHTML = "Array Length :" + paveLength + "　offset seed:" + randomTemp;
 
 	
 				
@@ -250,7 +252,7 @@ function iframeWidthFix(){
 	const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 	const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
 
-	const ifrUrlFL = 'https://data.cityofnewyork.us/dataset/Street-Pavement-Rating-Map/h933-akrx/embed?width=' + vw + '&height=' + (0.5* vh);
+	const ifrUrlFL = 'https://data.cityofnewyork.us/dataset/Street-Pavement-Rating-Map/h933-akrx/embed?width=' + vw + '&height=' + (0.7* vh);
 
 	document.getElementById('externelle-iframe').src = ifrUrlFL;
 	
@@ -259,11 +261,22 @@ function iframeWidthFix(){
 }
 iframeWidthFix();
 
+// set map collase
+
+function togDatMap(){
+const datMap = document.getElementById("datMap");
+const everythingElse = document.getElementById("chartAndStuff");
+
+datMap.classList.toggle("open");
+everythingElse.classList.toggle("open");
+
+}
+
+const openCloseBtn = document.getElementById("mapBtn");
+
+openCloseBtn.addEventListener('click', () => togDatMap());
 
 
-
-/* EVENT LIS    TO THE OPTION list (select active) */
-/* EVENT LIS the gacha button */
 
 
 //where fetch goes
