@@ -10,6 +10,8 @@ let saveValue = 0 ;
 load();
 
 if(localStorage.getItem("saveValue") === null){
+	arrayLength = 100;
+	numberInput.value = arrayLength;
 	save();
 	console.log("paveL saved:" + saveValue);
 }else{
@@ -44,8 +46,9 @@ function getNewOffset(){
 
 function load(){
 	saveValue = localStorage.getItem ("saveValue");
-	numberInput.value = saveValue;
 	arrayLength = saveValue;
+	numberInput.value = saveValue;
+	
 }
 function save(){
 	saveValue = numberInput.value;
