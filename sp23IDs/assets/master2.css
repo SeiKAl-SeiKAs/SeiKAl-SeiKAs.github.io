@@ -219,7 +219,7 @@ rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
 }
 
 .icon-column-container  :nth-child(2n) {
-    width: 16%;
+    width: 6rem;
     aspect-ratio: 1/1;
     margin: 1%;
     background-color: var(--white);
@@ -227,12 +227,15 @@ rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
     border: 0.1rem solid var(--black);
 }
 .icon-column-container  :nth-child(2n+1) {
-    width: 16%;
+    width: 6rem;
     aspect-ratio: 1/1;
     margin: 1%;
     background-color: var(--accent);
     border-radius: 2rem;
     border: 0.1rem solid var(--black);
+}
+.icon-column-container  img{
+   padding: 1rem;
 }
 
 .work-main{
@@ -400,6 +403,7 @@ transition: 0.2s;
     font-size: 1.5rem;
 }
 
+
 .qa-user{
     display: block;
     background-color: var(--white);
@@ -419,19 +423,22 @@ transition: 0.2s;
 display: inline;
 background-color: var(--white);
 border: 0.1rem solid var(--black);
-width: 3rem;
-height: 3rem;
-padding: 2rem;
+width: 5rem;
+height: 5rem;
+padding: 1rem;
 
 border-radius: 50%;
 
 }
+
 .qa-user :last-child{
     display: inline;
-min-width: 60%;
+min-width:60%;
 background-color: var(--white);
-padding: 2rem;
+padding: 0 2rem 0 ;
 border-bottom: 0.2rem solid var(--black);
+margin-top: -2rem;
+
 }
 .qa-type{
     width: 90%;
@@ -546,6 +553,7 @@ color: var(--black);
 .demo-pic-flex img{
     border: 10%;
     width: 30%;
+    object-fit: cover;
     aspect-ratio:5/4 ;
     background-color: var(--accent);
     border-radius: 3rem;
