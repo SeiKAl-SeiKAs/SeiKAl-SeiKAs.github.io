@@ -20,75 +20,108 @@
 <div class="pc-mobi">
 		
 	<div class="title-container">
+		<br><br>
 		<h1 id="title-text">Walk, Fall, or Fall hard.</h1>
 		<br>
 		<h3> Road pavement condition in NYC</h3>
 	</div>	
 
-		
-
-		<div class="gene-container"  id="chartAndStuff">
-
-			
-		<br><br>
-
-			<div class="picto-frame">
-				<div class="ani-picto-container" id="pictoMove">
-					<img src="assets/imgs/walk.svg" alt="walk"  class="walk">
-					<img src="assets/imgs/fall.svg" alt="fall" class="fall">
-					<img src="assets/imgs/fall-hard.svg" alt="fall-hard" class="fall-hard">
-				</div> 
-			</div>
-
-			<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
-
-			<div class="pie-number-text">
-				
-				<p >
-					Of <div id="paveLong"> <!-- pave.length -->##</div>records in the list of <div id="arrayLong"><!-- arrayMax --> ##</div> <br>
-					<div id="displayW">%</div> of the segments are rated as Good; <br>
-					<div id="displayF">%</div> of the segments are rated as Fair; <br>
-					<div id="displayFh">%</div> of the segments are rated as Poor; <br>
-					<br>
-					Does it fit your expectation?
-					<br> Or shall the standard be raised?
-
-				</p>
-			</div>
-			<br>
-			<!-- <div class="button_solid004" id="order">
-				<a href="">Put the color blocks in order</a>
-			  </div> -->
-			<br>
-			<input type="number" id="lengthInput" placeholder="enter # between 1~20000">
-			<br>
-			<div id="offsetDisplay"> </div>
-			<div class="button_solid014" id="refresh">
-				<a href="">Get another set of data.</a>
-			  </div>
-
-			<div id="block-gene-container">
-				<div id="geneBContainer"> <!-- segment gene mix --></div>
-				
+	<div class="context-contain">
+				<div class="picto-frame">
+					<div class="ani-picto-container" id="pictoMove">
+						<img src="assets/imgs/walk.svg" alt="walk"  class="walk">
+						<img src="assets/imgs/fall.svg" alt="fall" class="fall">
+						<img src="assets/imgs/fall-hard.svg" alt="fall-hard" class="fall-hard">
+					</div> 
 				</div>
 
+			<p> 
+				NYC is a busy city.
+				People drive and walk around to keep it working.
+				Is it safe to walk around? 
+				Probably not after rain, or when one wears uncomfty shoes.
+				<br><br>
+				Well, it's you to judge. Although this dataset only includes pavement and not sidewalks.
+				<br><br>
+				▼▽▼▽▼▽▼▽▼▽▼▽▼▽▼▽▼▽▼▽▼
+			</p>
+	</div>
+	<div></div>
+	
+		<div class="gene-container"  id="chartAndStuff">
+			
+				<div class="dat-text-section">
+					
+
+					<section>					
+
+						<div class="pie-number-text">
+							
+							<p >
+								Of <div id="paveLong"> <!-- pave.length -->##</div>records in the list of <div id="arrayLong"><!-- arrayMax --> ##</div> <br>
+								<div id="displayW">%</div> of the segments are rated as Good; <br>
+								<div id="displayF">%</div> of the segments are rated as Fair; <br>
+								<div id="displayFh">%</div> of the segments are rated as Poor; <br>
+								<br>
+								Does it fit your expectation?
+								<br> Or shall the standard be raised?
+
+							</p>
+						</div>
+						<br>
+					</section>
+
+					<section>
+						<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+						
+						<div id="offsetDisplay"> </div>
+						
+						
+						<input type="number" id="lengthInput" placeholder="enter # between 1~20000">
+						
+						
+						
+
+						<!-- <div class="button" id="button-5">
+							<div id="translate"></div>
+							<a href="">Get another set of data.</a>
+						</div> -->
+
+						<div class="button_solid014" id="refresh">
+							<a href="">Get another set of data.</a>
+						</div>
+
+					</section>
+
+					
+				</div>
+						<div id="geneBContainer"> <!-- segment gene mix --></div>		
+			<!-- <div id="block-gene-container"></div> -->
+				
+				
+				
+			
 		
-</div> <!-- gene-container end -->	
-
-	<div class="map-btn" id="mapBtn"> Show / Hide Map ▽<!-- open map --> </div>
-
-
-
-	<div class="iframe open" id="datMap">
-		<div></div>
-		<iframe id="externelle-iframe" allow="geolocation" src="https://data.cityofnewyork.us/dataset/Street-Pavement-Rating-Map/h933-akrx/embed?width=1080&height=1000" 
-		></iframe>
-			<!-- MARK fix the width& height -->
-		</iframe>
-		<div></div>
 	</div>
 
-</div>
+			
+	<div class="iframe" id="datMap">
+		<iframe id="externelle-iframe" allow="geolocation" 
+		src="https://data.cityofnewyork.us/dataset/Street-Pavement-Rating-Map/h933-akrx/embed?width=1080&height=1000">
+		</iframe>
+		</div>
+
+		
+		</div> 
+
+
+	
+
+
+
+	
+
+
     
 
 </body>

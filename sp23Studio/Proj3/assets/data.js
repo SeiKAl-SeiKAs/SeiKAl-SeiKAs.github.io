@@ -255,7 +255,7 @@ function iframeWidthFix(){
 	const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 	const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
 
-	const ifrUrlFL = 'https://data.cityofnewyork.us/dataset/Street-Pavement-Rating-Map/h933-akrx/embed?width=' + vw + '&height=' + (0.7* vh);
+	const ifrUrlFL = 'https://data.cityofnewyork.us/dataset/Street-Pavement-Rating-Map/h933-akrx/embed?width=' + vw + '&height=' + (0.8* vh);
 
 	document.getElementById('externelle-iframe').src = ifrUrlFL;
 	
@@ -264,9 +264,9 @@ function iframeWidthFix(){
 }
 iframeWidthFix();
 
-// set map collase
+// set map collapse
 
-function togDatMap(){
+/* function togDatMap(){
 const datMap = document.getElementById("datMap");
 const everythingElse = document.getElementById("chartAndStuff");
 
@@ -277,7 +277,7 @@ everythingElse.classList.toggle("open");
 
 const openCloseBtn = document.getElementById("mapBtn");
 
-openCloseBtn.addEventListener('click', () => togDatMap());
+openCloseBtn.addEventListener('click', () => togDatMap()); */
 
 
 
