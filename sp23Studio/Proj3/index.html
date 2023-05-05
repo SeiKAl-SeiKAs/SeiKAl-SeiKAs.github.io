@@ -11,7 +11,7 @@
 <script src="https://canvasjs.com/assets/script/canvasjs.min.js" defer></script>
 <script src="assets/data.js" defer></script>
 <!-- presentation deck: https://docs.google.com/presentation/d/1o1tYhP0V51CaWa3Jo8ncevTenohAlj8Zl7KOBwetYE0/edit?usp=sharing  -->
-    <title>C2SP3: Walk or Fall</title>
+    <title>C2SP3: Walk or Fall | F-Array </title>
 </head>
 <!-- Proj 3 API project proto layout -->
 
@@ -21,7 +21,7 @@
 		
 	<div class="title-container">
 		<br><br>
-		<h1 id="title-text">Walk, Fall, or Fall hard.</h1>
+		<h1 id="title-text">Walk, Fall, or Fall&nbsp;hard.</h1>
 		<br>
 		<h3> Road pavement condition in NYC</h3>
 	</div>	
@@ -39,15 +39,25 @@
 				NYC is a busy city.
 				People drive and walk around to keep it working.
 				Is it safe to walk around? 
-				Probably not after rain, or when one wears uncomfty shoes.
+				Probably not after rain, or when one wears uncomfty&nbsp;shoes.
 				<br><br>
-				Well, it's you to judge. Although this dataset only includes pavement and not sidewalks.
+				Well, it's you to judge. Although this dataset only includes pavement and not&nbsp;sidewalks.
 				<br><br>
-				▼▽▼▽▼▽▼▽▼▽▼▽▼▽▼▽▼▽▼▽▼
+				▽▼▽▼▽▼▽▼▽▼▽▼▽▼▽▼▽▼▽▼
 			</p>
 	</div>
 	<div></div>
 	
+			
+	<div class="iframe" id="datMap">
+		<iframe id="externelle-iframe" allow="geolocation" 
+		src="https://data.cityofnewyork.us/dataset/Street-Pavement-Rating-Map/h933-akrx/embed?width=1080&height=1000">
+		</iframe>
+		</div>
+		<br>
+		<p class="divi-text">▼▽▼▽▼▽▼▽▼▽▼</p>
+		<br>
+
 		<div class="gene-container"  id="chartAndStuff">
 			
 				<div class="dat-text-section">
@@ -73,11 +83,18 @@
 
 					<section>
 						<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
-						
+						<div class="pie-number-text pie-alt">
+							<p> One block = one segment in data</p>
+							<div class="blockBase blockGood"></div> <p>Good pavement</p>
+							<div class="blockBase blockFair"></div> <p>Average pavement</p>
+							<div class="blockBase blockPoor"></div> <p>You'll fall on your face</p>
+
+						</div>
 						<div id="offsetDisplay"> </div>
-						
-						
-						<input type="number" id="lengthInput" placeholder="enter # between 1~20000">
+
+						<!-- <p>enter # between 1~20000</p>
+											
+						<input type="number" id="lengthInput" placeholder="enter #"> -->
 						
 						
 						
@@ -88,7 +105,7 @@
 						</div> -->
 
 						<div class="button_solid014" id="refresh">
-							<a href="">Get another set of data.</a>
+							<a href="">Get me another set of data.</a>
 						</div>
 
 					</section>
@@ -98,18 +115,15 @@
 						<div id="geneBContainer"> <!-- segment gene mix --></div>		
 			<!-- <div id="block-gene-container"></div> -->
 				
-				
+			<div class="button_solid014" id="link-to-cuz">
+				<a href="cus-array-ver/index.html">Or see data in your choice of array length.</a>
+			</div>		
 				
 			
 		
 	</div>
 
-			
-	<div class="iframe" id="datMap">
-		<iframe id="externelle-iframe" allow="geolocation" 
-		src="https://data.cityofnewyork.us/dataset/Street-Pavement-Rating-Map/h933-akrx/embed?width=1080&height=1000">
-		</iframe>
-		</div>
+
 
 		
 		</div> 

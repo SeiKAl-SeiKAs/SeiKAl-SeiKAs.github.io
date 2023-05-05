@@ -7,7 +7,7 @@ const refreshBtn = document.querySelector('#refresh');
 let arrayLength = 1000;
 
 let saveValue = 0 ;
-load();
+/* load();
 
 if(localStorage.getItem("saveValue") === null){
 	arrayLength = 1000;
@@ -22,7 +22,7 @@ if(localStorage.getItem("saveValue") === null){
 
 numberInput.setAttribute('placeholder', arrayLength);
 
-/* MARk , S/L */
+// S/L MARK
 numberInput.oninput = () => {
 
 	arrayLength = numberInput.value;
@@ -40,10 +40,6 @@ function getNewOffset(){
 	location.reload();
 }
 
-
-
-
-
 function load(){
 	saveValue = localStorage.getItem ("saveValue");
 	arrayLength = saveValue;
@@ -53,7 +49,7 @@ function load(){
 function save(){
 	saveValue = numberInput.value;
 	localStorage.setItem("saveValue", saveValue)
-}
+} */
 
 refreshBtn.addEventListener('click', () => getNewOffset());
 
@@ -117,12 +113,6 @@ let poorPie = 0
 
 //block gene loc set 
 const geneBlock = document.querySelector('#geneBContainer');
-/* const geneGBlock = document.querySelector('#BBGoodContainer');
-const geneFBlock = document.querySelector('#BBFairContainer');
-const geneFhBlock = document.querySelector('#BBPoorContainer'); */
-
-
-
 
 const rateProcess = (fullData)=>{ //process full data first
 	/* let Rgood = 0
@@ -204,10 +194,8 @@ fullData.forEach( streetRate =>{
 
 	displayP.innerHTML = paveLength;
 	displayA.innerHTML = arrayMax;
-	displayOffDis.innerHTML = "Array Length :" + paveLength + "　offset seed:" + randomTemp;
-
-	
-				
+	displayOffDis.innerHTML = "　offset seed:" + randomTemp;
+			
 }
 
 function loadAniSwitch(){
@@ -216,18 +204,18 @@ function loadAniSwitch(){
 }
 
 //copy the value to filter vars
-let FRgood = Rgood
+/* let FRgood = Rgood
 let FRfair = Rfair
 let FRpoor = Rpoor
 let FRunknown = Runknown
-
+ */
 
 
 // gene mouseover title.properties (colorblocks)
 
 /* loc, loc-start, loc-end, rate#, rate word, time of record */
 
-function blockGenerate(fullData){ /* MARK */
+/* function blockGenerate(fullData){ //MARK
 		//create div
 		const blockGene = document.createElement("div");
 		//get rate property (good fair poor)
@@ -249,13 +237,13 @@ function blockGenerate(fullData){ /* MARK */
 		//if else insert class type
 		
 
-} 
+}  */
 
 function iframeWidthFix(){
 	const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 	const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
 
-	const ifrUrlFL = 'https://data.cityofnewyork.us/dataset/Street-Pavement-Rating-Map/h933-akrx/embed?width=' + vw + '&height=' + (0.8* vh);
+	const ifrUrlFL = 'https://data.cityofnewyork.us/dataset/Street-Pavement-Rating-Map/h933-akrx/embed?width=' + vw + '&height=' + (0.6* vh);
 
 	document.getElementById('externelle-iframe').src = ifrUrlFL;
 	
